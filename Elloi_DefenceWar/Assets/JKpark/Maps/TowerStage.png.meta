@@ -1,0 +1,2237 @@
+fileFormatVersion: 2
+guid: c82f8c50960e8364bb309ce8f6afeaaa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TowerStage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1935
+        width: 67
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94b818969456024d9897a244f647109
+      internalID: 1469549341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 2007
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00df54a4b24e5e74ab3200285f234bb2
+      internalID: 1188235876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1942
+        width: 49
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96576403361c6d54aa24003a429adabe
+      internalID: 40704672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_3
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1936
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c1f8e1b8b6eef40bfce8a14b73dbd6
+      internalID: -410612227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1943
+        width: 29
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caae67fd802606d4cb079593b5144e3f
+      internalID: -888486429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1937
+        width: 72
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48459428dbd5a247b5850bd6152d6a5
+      internalID: 463553876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1936
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b23e238947e4d479911f60faca6d0d
+      internalID: 173611051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1936
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37a212544a7ae64480c62d8ef257e54
+      internalID: -1825291636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1935
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbaadcb140c0ec4ca07576e1474539d
+      internalID: 551389489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1777
+        width: 447
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19c402415be0104aac2617a2f5d32d3
+      internalID: 844155365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1619
+        width: 446
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f4913cc5e9a564cac62142a494baa2
+      internalID: 1307250722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1461
+        width: 446
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764d097903e62b8459654a2336753367
+      internalID: 39244081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_12
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1250
+        width: 41
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bacc99dd05c9d34a8e556a3b670044c
+      internalID: -1912202599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1326
+        width: 428
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9bd97c51cc330448f1fd4e8e949a45
+      internalID: -1942444338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_14
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1279
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6be74b8ec03bb4982e9bfdf363a31e
+      internalID: -1609319102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1145
+        width: 438
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f847ad19bf95c409784fb4064e72d9
+      internalID: 962215627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_16
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1115
+        width: 443
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ec7b6d91bdb5c48896b4a002383bec
+      internalID: -635606314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 987
+        width: 446
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dbf3d7fc32a0f43b1dce549c93a351
+      internalID: 1112753044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_18
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 983
+        width: 446
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297d3c3d7c4ba8b418096c98739528c2
+      internalID: 2057878047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_19
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 979
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0804ca946c29b049ae78f034978fa31
+      internalID: 172026985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_20
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 981
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae00410c84aef24685f36fc4c4aae31
+      internalID: -1055892938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_21
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 982
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3b9ba7d47f6c94484d03a81af4e759
+      internalID: -751167440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 829
+        width: 448
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe3f89b1b1ff3b42acebd7ab1bc8b29
+      internalID: 1526601636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_23
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 975
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea828a7c47cfcc444b1054981891bb1d
+      internalID: -466526025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_24
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 972
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac68778a3bb24c45a9dbd4b0a0b2762
+      internalID: -404852330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_25
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 978
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a38984995a926b44a6f63aa3f49c0e3
+      internalID: 566316351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_26
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 838
+        width: 447
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfb16d771bae324594642ce9a320373
+      internalID: -1906680460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_27
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 829
+        width: 474
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0440bf938b09f7143b2395ceae7bc9ec
+      internalID: -654139323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_28
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 829
+        width: 523
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8662c66fef0a56c4fb62ffb88d72aac9
+      internalID: 1817854165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 685
+        width: 450
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ed0970bd3205448855e5e6354bb848
+      internalID: 1518636874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_30
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 671
+        width: 446
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5060e7071ca8896448f5b8beda6e505e
+      internalID: -528937447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_31
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 696
+        width: 456
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ed6dbda5b4fbb4288fb1a5a4eecf6c
+      internalID: -906241854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_32
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 677
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49917eeb8bf1d04dbf474d9860686c0
+      internalID: -301466756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_33
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 672
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef039522638c07e43bd74e26b263f51b
+      internalID: -1710971284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_34
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 699
+        width: 446
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976631a1a9c7ffc42814c32f13f08d5e
+      internalID: 1486384588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_35
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 676
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547de1b37243e724791c73c7db365f55
+      internalID: 83054360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_36
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 672
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c338c16414ea4e642a8e801722da36de
+      internalID: 1157880557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_37
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 696
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a0b90a590751b4593053146704d8d4
+      internalID: -1877404519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_38
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 683
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c804a3725dee0e745a813617eec2ba08
+      internalID: 1005553214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 450
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cddc0fe4781b364db6712d97e367dfd
+      internalID: 134790526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_40
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 513
+        width: 446
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb77111038d00545826caaa083934c2
+      internalID: 371985227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_41
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 513
+        width: 447
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644d1dc0d194dca4b895f26079eaae24
+      internalID: 366113755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_42
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 513
+        width: 446
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a2e6107b885714c8fb44e5f8f81464
+      internalID: -867164422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 450
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693dcb72f68e21147bd08c000c3bf9dd
+      internalID: 1123486530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_44
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 355
+        width: 447
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc5464febbdcfd44b2f2f0d519214e9
+      internalID: 1931685755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_45
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 355
+        width: 447
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ec75e49f460094caf9a806c6876127
+      internalID: -520324140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_46
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 355
+        width: 447
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9349555104110f54d99585a449688ce1
+      internalID: 797754200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_47
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 423
+        width: 56
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f706dacf74043cb469ca3263e2756ed7
+      internalID: 1288026148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_48
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 420
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c1e6361753a4c46b30c1f66b7ec613
+      internalID: -176870595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_49
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 355
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9ee946f14c1604392476adb4a18071
+      internalID: 58803856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_50
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 356
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6842b5eb9cb1464dbf986b65a00ff72
+      internalID: -1020357087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_51
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 356
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df55a0a4ebeea64bb372d4e2e67c857
+      internalID: -1956568873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_52
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 355
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4214b480545efb45b49b9b85442e0bc
+      internalID: -1447354411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 448
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c208fdaae18efcd46bb4b8db5e208cd0
+      internalID: 2134414201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_54
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 197
+        width: 446
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e828e5792039e7f458969dbfc99b5f16
+      internalID: 1924190897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_55
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 197
+        width: 447
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d3fa106faab5e49a80aab368b1548b
+      internalID: -1585347483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_56
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 212
+        width: 450
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a1878b86557764fbbb2617016cf308
+      internalID: -1774969700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_57
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 297
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b248f516ff245246a3bbd78b6e003da
+      internalID: 484787928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_58
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 296
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a850eddfbe8bb0c43956c08af0a13271
+      internalID: -42413567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_59
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 297
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3760b01e86b64f4a9e6f37e85461fde
+      internalID: 610130264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_60
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 296
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfd4a2fc38a6384e87d0f228c9e7db1
+      internalID: 2091447628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_61
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 298
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198e31c2bb836204c98797a97478046f
+      internalID: -1283312307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_62
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 298
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193edc59f4399404c83e01dcf08fda25
+      internalID: -1524417119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_63
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 198
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e8db70802e83146b1a9a3cc8409ed7
+      internalID: -1232066841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_64
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 206
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656065032376bec469320bdf43d6777c
+      internalID: -504930346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_65
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 198
+        width: 77
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7146e1cf5c5e27c49b39b2fbb17c6ac4
+      internalID: 1756636408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_66
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 198
+        width: 77
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22059c6a2c9ceea4ca49d210c138c5a5
+      internalID: -302276296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_67
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 198
+        width: 77
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7214ba77a3d92414ab9c9e655a96d02b
+      internalID: -1571255250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_68
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 369
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f368fffb0e54749b263db55b9fd45c
+      internalID: -1055843178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_69
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 158
+        width: 187
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c5086bd4be5844285c185a6cced861
+      internalID: 666960548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_70
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 159
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223251e0ba3bddd4d813225c271d5b2e
+      internalID: -1814017822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_71
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 160
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5defcd87cec11a845b5fa8424e25d514
+      internalID: 1332141144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_72
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 159
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df80420bdd6efbc46b9f70f1827c2e71
+      internalID: 304266546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_73
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 180
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebfa720d49ef894f80719ccf14f3b09
+      internalID: 11398524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_74
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 180
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34b25f080af8f947bb65ec4b207dfa3
+      internalID: -34870455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_75
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 154
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed26c2bc9f6fea4591174230f9fbe09
+      internalID: -1558901335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 71
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e170b5b56cae824580d951e76fd9a1d
+      internalID: -1208104711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_77
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 159
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962336ccafd0d8647a0b76366304bf92
+      internalID: -1602835902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_78
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d142599e89ecd42bbc3cac7dd4cb2c
+      internalID: -1129554929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_79
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 159
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2403986ccfa6cd34699aac1c5c3ada74
+      internalID: 587986781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_80
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 158
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f6c6b6b7261fd46be502127ad2bd14
+      internalID: 265469425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_81
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 158
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfeced3a81189304db6c1ad990944f36
+      internalID: -89800788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_82
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 158
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5282cdac7d77a4283017de5546dc7e
+      internalID: 645827474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_83
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 158
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646e32a4de1890545abb464ecca2dfc3
+      internalID: 1575235958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_84
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 89
+        width: 106
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97767289cad9a274aad0e801171a7c8d
+      internalID: 1496150306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_85
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 100
+        width: 77
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebe8e1251e113b409a2c813d95a0e6f
+      internalID: -1050672465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_86
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 451
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7892706b1a77504bbefa88e1079c388
+      internalID: 393385558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_87
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 0
+        width: 450
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e04aa417e6afd43ad62d2885529aab
+      internalID: -530858703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_88
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 15
+        width: 450
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f158ed9e786773d4698f4b8a9f2e6d6b
+      internalID: -1059974893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_89
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 99
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8449d8320fe749b43b1879722e0bc6a2
+      internalID: -1930913235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_90
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd826e38c20c184aa79ddfa017cfc98
+      internalID: 1210283776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_91
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 9
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a4e8f02203e21459bb0c9d7a2cf49e
+      internalID: -572728416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_92
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 4
+        width: 111
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cc512e6685c544b8755166067b26ff
+      internalID: 1212948159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_93
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 1
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492191176fac6084f9cdc2c8aecbd5aa
+      internalID: 1483894843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerStage_94
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 0
+        width: 45
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe5a7651bfadc044b7a06526ff5cc38
+      internalID: -1193712386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TowerStage_0: 1469549341
+      TowerStage_1: 1188235876
+      TowerStage_10: 1307250722
+      TowerStage_11: 39244081
+      TowerStage_12: -1912202599
+      TowerStage_13: -1942444338
+      TowerStage_14: -1609319102
+      TowerStage_15: 962215627
+      TowerStage_16: -635606314
+      TowerStage_17: 1112753044
+      TowerStage_18: 2057878047
+      TowerStage_19: 172026985
+      TowerStage_2: 40704672
+      TowerStage_20: -1055892938
+      TowerStage_21: -751167440
+      TowerStage_22: 1526601636
+      TowerStage_23: -466526025
+      TowerStage_24: -404852330
+      TowerStage_25: 566316351
+      TowerStage_26: -1906680460
+      TowerStage_27: -654139323
+      TowerStage_28: 1817854165
+      TowerStage_29: 1518636874
+      TowerStage_3: -410612227
+      TowerStage_30: -528937447
+      TowerStage_31: -906241854
+      TowerStage_32: -301466756
+      TowerStage_33: -1710971284
+      TowerStage_34: 1486384588
+      TowerStage_35: 83054360
+      TowerStage_36: 1157880557
+      TowerStage_37: -1877404519
+      TowerStage_38: 1005553214
+      TowerStage_39: 134790526
+      TowerStage_4: -888486429
+      TowerStage_40: 371985227
+      TowerStage_41: 366113755
+      TowerStage_42: -867164422
+      TowerStage_43: 1123486530
+      TowerStage_44: 1931685755
+      TowerStage_45: -520324140
+      TowerStage_46: 797754200
+      TowerStage_47: 1288026148
+      TowerStage_48: -176870595
+      TowerStage_49: 58803856
+      TowerStage_5: 463553876
+      TowerStage_50: -1020357087
+      TowerStage_51: -1956568873
+      TowerStage_52: -1447354411
+      TowerStage_53: 2134414201
+      TowerStage_54: 1924190897
+      TowerStage_55: -1585347483
+      TowerStage_56: -1774969700
+      TowerStage_57: 484787928
+      TowerStage_58: -42413567
+      TowerStage_59: 610130264
+      TowerStage_6: 173611051
+      TowerStage_60: 2091447628
+      TowerStage_61: -1283312307
+      TowerStage_62: -1524417119
+      TowerStage_63: -1232066841
+      TowerStage_64: -504930346
+      TowerStage_65: 1756636408
+      TowerStage_66: -302276296
+      TowerStage_67: -1571255250
+      TowerStage_68: -1055843178
+      TowerStage_69: 666960548
+      TowerStage_7: -1825291636
+      TowerStage_70: -1814017822
+      TowerStage_71: 1332141144
+      TowerStage_72: 304266546
+      TowerStage_73: 11398524
+      TowerStage_74: -34870455
+      TowerStage_75: -1558901335
+      TowerStage_76: -1208104711
+      TowerStage_77: -1602835902
+      TowerStage_78: -1129554929
+      TowerStage_79: 587986781
+      TowerStage_8: 551389489
+      TowerStage_80: 265469425
+      TowerStage_81: -89800788
+      TowerStage_82: 645827474
+      TowerStage_83: 1575235958
+      TowerStage_84: 1496150306
+      TowerStage_85: -1050672465
+      TowerStage_86: 393385558
+      TowerStage_87: -530858703
+      TowerStage_88: -1059974893
+      TowerStage_89: -1930913235
+      TowerStage_9: 844155365
+      TowerStage_90: 1210283776
+      TowerStage_91: -572728416
+      TowerStage_92: 1212948159
+      TowerStage_93: 1483894843
+      TowerStage_94: -1193712386
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
