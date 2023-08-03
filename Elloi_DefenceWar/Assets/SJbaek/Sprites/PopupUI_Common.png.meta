@@ -1,0 +1,4547 @@
+fileFormatVersion: 2
+guid: 10b077521e4e83b40b6e4f505fba4357
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PopupUI_Common_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 985
+        width: 69
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d75e7955451ec04a8228bc776570e9e
+      internalID: -745567758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 986
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23981ba122e93e4a89560fc6c8a04bb
+      internalID: -1203346788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 951
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54dc172bdcd9914d86558c6397a6c91
+      internalID: -1971002165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 987
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1868c5ca7de344046a5543c7744ea057
+      internalID: -918995357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 995
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e5ef916559d454c97c9c31c927930d
+      internalID: -1215438385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 974
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150aaa6bafdabf249907263a6ecd834d
+      internalID: -202376356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 989
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cae2cea2d8227446a5fb16d15e9db6c
+      internalID: 845303801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 989
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687bd5c89731b0540a0bd696ab0cd2a6
+      internalID: -23231147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_8
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 971
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab0f320d4447f741bfb758511ec0f7b
+      internalID: 596479582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 897
+        width: 68
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1552657e33e24794f1eb7790ac3a9
+      internalID: -1597951880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 941
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb9d98471f8ea34f9dfab31a15815e6
+      internalID: -1527704525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 949
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904b64c2248c4234fafa8fe45c7bbceb
+      internalID: 2104527313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_12
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 938
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f0e73b5d193e24abed5d6347e5df12
+      internalID: 1150227901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 937
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaf2cc1dda5bb94f828797db47e75fa
+      internalID: -323709705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_14
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 938
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e34cd15c0b22e46a2eca20f8789dae
+      internalID: 502295307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_15
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 945
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbe14070cf62d2458a15def28944cac
+      internalID: 189928770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 897
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b72ad2558910d44a5b39736f7587f9
+      internalID: 1573628307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 890
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a8e8eda1ea7b041834f32024acb582
+      internalID: 434658995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 885
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1cc22845b401b449b2bfe885059e22
+      internalID: 1849468703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 881
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adf027c315dbc54fab25dfc071e3f46
+      internalID: 2126621248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_20
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 884
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811d861cdef55764d8ebc833549033cb
+      internalID: 326084457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_21
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 919
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04877dbd3e982c499f7d286f7c7ca0b
+      internalID: 1674242056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 817
+        width: 77
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b129005ad93de243aab5a2b2a277175
+      internalID: -1040742542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_23
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 871
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7aedabd36ef204197406369548018d
+      internalID: -2049281371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_24
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 889
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0939546ed1774f8429ec7a268847854d
+      internalID: 1405359031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 863
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d825be26e90ea4aaa83998492473a9
+      internalID: -1674303259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_26
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 828
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505e8b2d2b673f34d923dfa30ad7b1a2
+      internalID: -1676310814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_27
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 824
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a85a6a9ae4466b448ebb083400fec88
+      internalID: 1765022068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_28
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 815
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692f9df727db54f458ed0c27c66155c0
+      internalID: -550910007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_29
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 831
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e0c9519f5c2aa43b0035963630342c
+      internalID: 57453301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_30
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 857
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e49717505a8c64980991ee328d9590
+      internalID: -1517758948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 840
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9937c7641f36b478bc0b2d9a67a025
+      internalID: -1503105162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_32
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 812
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177723577ee60fa45a6b04d7233c44b0
+      internalID: -1233094407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_33
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 829
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e51d70b62014f4a8afeb4287a59d1f
+      internalID: -121439924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 817
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd8135b5f271d345bfeee50c024751a
+      internalID: 468392374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_35
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 776
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7466b0129435e4793d305e32146af7
+      internalID: -1346165815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_36
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 795
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db35d12ec5e74d6499ae60be01e6768c
+      internalID: -712965976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_37
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 750
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235560c696a25144a7da9ddcb1d2f21
+      internalID: -879642085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_38
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 771
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0759f80da6a27d408b8b72ebc477763
+      internalID: -1461147051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_39
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 764
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095dac3c305de14408023491cc7164e8
+      internalID: -1261734521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_40
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 749
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03f1827e6553dc43a1218b1b837dff9
+      internalID: -1028828962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_41
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 755
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c927204dfa4854d4b8f28e15b8fcc8be
+      internalID: -1701963785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_42
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 724
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f7693211d10b346b2d68850f99f35f
+      internalID: 1272615744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_43
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 764
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896c6f16b9032ee4d9b15ec76e4c14ed
+      internalID: 1187333876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_44
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 531
+        width: 17
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b737dbf8ec66f4ab6c0637bddd2a82
+      internalID: -1003376390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_45
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 736
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e38a2121094804a8adea58092d5a0f
+      internalID: 763949411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 736
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a8dd6d74c9f8d4d803e2f5de99f445
+      internalID: -896748793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_47
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 736
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bf41e169848974181985763a30c37a
+      internalID: 1441410605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_48
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 692
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba875df75142054ebf32ef9f1e1fd73
+      internalID: -1841119583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_49
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 720
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69233b2915b5c2409bcdb190170e9f4
+      internalID: -9282835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 659
+        width: 70
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81491008c7cebcf49b7248585a3999e5
+      internalID: -1398459060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_51
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 679
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec4edea1928f74e8e65a421279092f
+      internalID: -1797223893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_52
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 706
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b35195aa2d929647bf32d9ef1dd0206
+      internalID: -1371785587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_53
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 688
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6de0d0ca95b9d3409bdd77822d0374f
+      internalID: 1943019082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_54
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 672
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdf21426bbe8c641a2ad4efb6bafef1
+      internalID: -1036989839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_55
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 676
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77cbe7ad7e311f479b8b7385d748732
+      internalID: -601483081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_56
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 674
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57745f09098714949ba03536190dd34d
+      internalID: 324290773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_57
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 675
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26930abfbb551d349921c16422cf3cc6
+      internalID: 943885670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_58
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 632
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3d54ec915b8474ab6053bc4d97b3ae
+      internalID: 1329654203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_59
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 655
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847ce552c57a20f4c8819282a4f2206a
+      internalID: 3549570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_60
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 593
+        width: 47
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770d864dcfa7f6343a143e0ffd8640c0
+      internalID: -2020241961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_61
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 640
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e547822ef60fe94393b2b9237dec45f
+      internalID: -291623373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_62
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 627
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4699a55e5919f49895ca76eedd1637
+      internalID: 1440066084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_63
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 617
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6929126d1927d304782abc775b60c870
+      internalID: -2087532991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_64
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 632
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2542c18712cbd0042b600b71f2ac56ec
+      internalID: -184163018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5864f29da6e5c84ab72e11ec5f6a3fc
+      internalID: -1299263063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_66
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 600
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160db1a68351ff04ca6cc689d356c70b
+      internalID: 601819364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 574
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8f29efc2d711a43a0a5e8c7db2887c
+      internalID: -593109206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_68
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 568
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7deaa788eb7c3469e783e08265ee93
+      internalID: -567088520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_69
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 561
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab500c1ee915344f81e027d19001d28
+      internalID: -1722367903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_70
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 588
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4f98a054a61944eb3858a1268757ef
+      internalID: -1013932299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_71
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 570
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb3f45a49c2b144bb799e4c9a98fef5
+      internalID: 1581085637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_72
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 530
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c735f41cac908b48b8d21b22e2e00d2
+      internalID: 1901283131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_73
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 551
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d628ad521b5aa44b4ef792d28467df
+      internalID: 1931433318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad3913576d0dc8489a36c11ea6fbc4a
+      internalID: 1687975797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_75
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 530
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1dabc7a334a33438d918c7d16ad4fd
+      internalID: -1489839940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_76
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 516
+        width: 56
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6fa60118c1c0c429fe04d80acffbaa
+      internalID: -75068142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_77
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 507
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f82cb89a8d53b45a91813fa392be78
+      internalID: 587340226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_78
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 495
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975c1b5871be9274b9519a448ab11671
+      internalID: -1573430923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_79
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 506
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f9d599f7ffdbf4e8a723fbac404ae8
+      internalID: -1398506874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_80
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 464
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf772e2918052468f343db4e9fe6ad
+      internalID: -592888311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_81
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 506
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c894e43bd209e4d8841e9b83e0126f
+      internalID: -1275678947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_82
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 494
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429e2cb761714244eb2dc7f0ffd11b28
+      internalID: 934002155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_83
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 464
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7b0a50e95ac8048a3bbe9bb705b7ba
+      internalID: -1516876569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_84
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 449
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3e3fe076f81954e8bb04f77a3fd643
+      internalID: 1773775844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_85
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 466
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956d9adc5148f7a47bb654d9fd68ed7b
+      internalID: -1466166172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_86
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 482
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317464a746e4485489ddf4a84d6e86a6
+      internalID: -1797495177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_87
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 444
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77ac272489e637429039a78cd885ace
+      internalID: -1994193323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_88
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 440
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c38b6ed6f7275a4fa4e98ead76440cc
+      internalID: -365806483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 85
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e56cf796e6cf14cadcc861fbd6b0c0
+      internalID: 90540749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_90
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 469
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bb96dbe4b2c8a439139f4777b58621
+      internalID: 274156287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_91
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 454
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10683fa7c375f294ebf4172c335da00b
+      internalID: 1922415188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_92
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 398
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e176fdfe7bb644ebdb5db1cd065bfe
+      internalID: 31016701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_93
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 443
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a8b927aacf8c84688b205ce60fedee
+      internalID: -1644300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_94
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 426
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83037ad4acfc1040931d37da3a1fb37
+      internalID: 660242057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_95
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 387
+        width: 7
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efde41834f869c2449fbeb88d84574d2
+      internalID: 734288363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_96
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 397
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827d72422c38dc244853c2d58dad130b
+      internalID: 1941902294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_97
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 390
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a183f8ff94a1040ac9a52659fb57ea
+      internalID: 849052141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_98
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 387
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03195821a8e947047bf0d95c7c14e207
+      internalID: -2037873914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 379
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3baa09f5722a943ac9ea03810bbd34
+      internalID: 604435554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_100
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 373
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce29f016551c89843bf7086b2e7606c9
+      internalID: -895268980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_101
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 373
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08d0dfbd2e0a0c4f945d202f164d35c
+      internalID: 651940051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_102
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 381
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d022b28aec27744bf8021d7d0604f1
+      internalID: -2042084091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_103
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 373
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce52c36f1500c342ba31c2e17e83e4f
+      internalID: -1831777592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_104
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 377
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed966a975f6f13f45a252109e12b2528
+      internalID: 2055948692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_105
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 373
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5f63fb0e328734b991354eba478ee3
+      internalID: 1749722238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_106
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 374
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf57e3f7a1c1d7a4c88baa75c6d29c2c
+      internalID: -2101273627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_107
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 374
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56087283b2943634bb1a603f4d6f4cfa
+      internalID: -1173251535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_108
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 375
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2012e13f025e3174ab176b85f24e8bf0
+      internalID: 1902045831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_109
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 377
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea0419c592e1bc41a3c7ca451d2b6e4
+      internalID: -75033637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_110
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 397
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3b6e91ad045dc4fb3b60852780b4df
+      internalID: -1210299045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_111
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 381
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228c801516fd5d8419035446ec737b83
+      internalID: 428859512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_112
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 382
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049fe36850253bd48a4892001910e0b7
+      internalID: -55235964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_113
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 383
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb332a8d0e345c24899d7e7e364ba716
+      internalID: 1900045568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_114
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 377
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bbdc457021d4b4e9399f7ffa0fb452
+      internalID: 2129464418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_115
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 343
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67376d49ff46a49b2a144c5bb9b2ad
+      internalID: -206070830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_116
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 381
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f45dc097a9a984fb8bccca381ad9d9
+      internalID: 2015846794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_117
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 317
+        width: 72
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99519b220f4056349adc7e94a73541d0
+      internalID: 1344262978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_118
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 316
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bfcbc4a34a5604fb42f5cb6e447462
+      internalID: 1530603344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_119
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 326
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52f00163afc018439f19e6a9adad111
+      internalID: -1370363585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_120
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 322
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57444d1bdb7ec964681c2cd1e9bd345d
+      internalID: 1859678860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_121
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 318
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b24bf949f165a459b30aa003eb5c9d
+      internalID: -1971832990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_122
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 317
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580792e1c9a336749b6bf25e4d7f96d8
+      internalID: -1052197932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_123
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 322
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f0fadee28b5f54ab35e2c853afc2fc
+      internalID: -928703660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_124
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 312
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048995648faaf5b4098385f27fe6e40f
+      internalID: 87498463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_125
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 312
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9765726251f3ae14bb031222ff4305f4
+      internalID: -1684087120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_126
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 312
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7891f7deb6ea51e4680aab0d3e0b6a2c
+      internalID: 265136029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_127
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 318
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625f5010dde48ff47b18d6e8a9cfa734
+      internalID: 1343932858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_128
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 317
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9293ab6edffaa74d922b545590eb739
+      internalID: 848072389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_129
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 321
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4adcf136d5b2b4fb133b59a9693b16
+      internalID: 1857247479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_130
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 312
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12a6cff2602c3840a7af94779219bda
+      internalID: -1570372892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_131
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 316
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e8bd15bdc6cc949a89634a8c704391
+      internalID: 698633990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_132
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 314
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176878b0cdc3d244ab4eb314182cc709
+      internalID: -1635930774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_133
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 188
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc18859434067e0498a56329c3afdcb2
+      internalID: 1329751853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_134
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 281
+        width: 65
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7519d12bde092ee43a0a6542228f9428
+      internalID: 217798571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_135
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 272
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334f63c7ca1fa724399f8823c8ba3c7d
+      internalID: 322759408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_136
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 254
+        width: 95
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baee9c431c44b5d4eae30dcd4888c942
+      internalID: 1208777692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_137
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 251
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6ddbe4fa2da47498b31fe667f4fde4
+      internalID: -409451277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_138
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 251
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd84a287d7050be42a9d49ebee8bdb84
+      internalID: 233294941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_139
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 257
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a90f601c1a06c84db8986fc630781f8
+      internalID: 1482680734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_140
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 251
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7fa535d56aaa4428593a0be35ab30d
+      internalID: -1923326417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_141
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 262
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d1673ee87ca5f428c68067c91672ae
+      internalID: -1546844704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_142
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 251
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6590c5ac846662244a6e80bf00548011
+      internalID: 985476466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_143
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 254
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf51b9caa41a674dbaf035b8f91c1fe
+      internalID: 674197035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_144
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 256
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe151e6d2a5b9c478935abde0c5ac8f
+      internalID: 402059440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_145
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 251
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6687caea3221a479e1efff74c18a7f
+      internalID: -1770414553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_146
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 257
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fda8ad7334d83747b0d64db728b3aa6
+      internalID: 1660204535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_147
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 259
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0f69440c01eca498bd8946fd5e7800
+      internalID: -1145566515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_148
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 251
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2239b8f64d2f1f842ac7cf6476779632
+      internalID: -1136299837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_149
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 185
+        width: 104
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a718e7dc0166524a802a0719d91e407
+      internalID: 1515511443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_150
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 185
+        width: 122
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc3668d63331eb458c6a1367dcfe06d
+      internalID: 879482001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_151
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 214
+        width: 68
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6adc6812fd7b814c8c229e988f6b0fe
+      internalID: -1207479211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_152
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 214
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce69901713b811046bb2c779bcbf8323
+      internalID: 1871628952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_153
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 214
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e858a63d4f272bc4198c636c86d6b237
+      internalID: 1801495079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_154
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 214
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4e961314e857949bbd816af9893cba
+      internalID: -471395287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_155
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 214
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149fffaac45e4de40800ea8b9db06413
+      internalID: -546355856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_156
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 194
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c785f76cc75629428337f4f11a29a92
+      internalID: 635819261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_157
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 194
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2126469bc370f514a83b9c15b18db515
+      internalID: -1305311137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_158
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 189
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2383977b0aaa8f64da23e69bc73d5c75
+      internalID: 1902463167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_159
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 185
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b9fbbc0702ed146a30978db6f41364
+      internalID: -235800472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_160
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 190
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82452aef427e9594694fd624ef5dd00c
+      internalID: -1750683300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_161
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 190
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e480d132a6c334f9217c69d31d138d
+      internalID: 1819838386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_162
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 185
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a6e6cc0fc507240be60326ff1c5937
+      internalID: -367741564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_163
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 185
+        width: 214
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a6ffd5a31bc8a45b374c55e73e9f2c
+      internalID: -284229128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_164
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4e21f8785adfd4198cf210e7ff75e9
+      internalID: 316921590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_165
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 162
+        width: 53
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccfe6595d8c1d74d88a1b4d1b2beb59
+      internalID: 1665428315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_166
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 162
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ae5aa0a20ae91419c06fe6259fd72c
+      internalID: -658400439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_167
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 162
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f9fdf347d789344b9d72a6ccbe2c9d
+      internalID: 356340660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_168
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 174
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5d1d0a1d992fa47a7b12328d0345c3
+      internalID: -43943945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_169
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 174
+        width: 30
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46b322d618337e47a63ae2cf1b6b022
+      internalID: -2070488031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_170
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 174
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5510be6585c45454482bbad5db8abd91
+      internalID: 954029824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_171
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 159
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58638766d8d6b114eb88174e5aeb8d56
+      internalID: 1802221023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_172
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 160
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653c1bcfa1227904b8c5c38dc8393321
+      internalID: 1550066175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_173
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 160
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60958a1b77449ae4a822f0f2fb634589
+      internalID: -949650404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_174
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 160
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d0bdba2975d384fa4b4b387ede5562
+      internalID: -1362796638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_175
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 168
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d921166116c0f34485c4d393be681f2
+      internalID: 618080482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_176
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 168
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4747fb33c44834f4180968d0cd7a5756
+      internalID: 665180969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_177
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 168
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d17b97918f78a438b5d092d90ffc88
+      internalID: 167128085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_178
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 139
+        width: 94
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b6b8a2662ede249801660117c41b1c
+      internalID: -1862517403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_179
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 139
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7331afd42a5eac645bebf105f3f858ca
+      internalID: 1282348127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_180
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 139
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd31d490e1426034c9df9d94d8caf831
+      internalID: 935168848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_181
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 172
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172a0814fbf75854fb139b50cd1dd2d2
+      internalID: -592558403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_182
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 162
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7a4500cde5ce348938dd87d1829e5f
+      internalID: -2115477853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_183
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 160
+        width: 72
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca40acad0738e4418e34be6b16874cc
+      internalID: 1310400414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_184
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 159
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eaa365a020fa3f4cbce0f49540289bb
+      internalID: 292045506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_185
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 89
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2a82d108faa7c4c8626286fa8ae076
+      internalID: -1845698158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_186
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 80
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9538b21db658907478206c48bde67cb3
+      internalID: -70477690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_187
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 139
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8018924fef6cd47b62aa8cee83da21
+      internalID: -646813553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_188
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 214
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8149a0f416cec634caa8a48cf90b8568
+      internalID: -1725291638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_189
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 40
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb825d58a4bc41458492e61d37309d5
+      internalID: 668983699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_190
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 43
+        width: 102
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c37e58a2b33d742b7d6a4a1c5783ba
+      internalID: 777412410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_191
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 81
+        width: 142
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3578d079f0e211e45bc81b3f6a0c6736
+      internalID: -177026769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_192
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 45
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728d6932eddfffb40ad61ca500df773d
+      internalID: -65006387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_193
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 50
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f0746f2e32da0428deae4b75f8a290
+      internalID: -513354410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_194
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 124
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd6d4c717f59f64db46fde855ac3dc1
+      internalID: 1917669541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_195
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 95
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdec75c11fd36543b0fa4ad4a4ed139
+      internalID: -1876833843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_196
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 38
+        width: 342
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acd7967e1905af42af45976ec5cea9e
+      internalID: -1396713682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_197
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 38
+        width: 15
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca5cbd1777b0b4aa8fac0df2221214
+      internalID: -1854750610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1017
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e9c1d922fd4f244819c2db4476d9bd
+      internalID: 72422218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PopupUI_Common_199
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 0
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1892890c544be142896a4ee6d5d576c
+      internalID: -2060855930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PopupUI_Common_0: -745567758
+      PopupUI_Common_1: -1203346788
+      PopupUI_Common_10: -1527704525
+      PopupUI_Common_100: -895268980
+      PopupUI_Common_101: 651940051
+      PopupUI_Common_102: -2042084091
+      PopupUI_Common_103: -1831777592
+      PopupUI_Common_104: 2055948692
+      PopupUI_Common_105: 1749722238
+      PopupUI_Common_106: -2101273627
+      PopupUI_Common_107: -1173251535
+      PopupUI_Common_108: 1902045831
+      PopupUI_Common_109: -75033637
+      PopupUI_Common_11: 2104527313
+      PopupUI_Common_110: -1210299045
+      PopupUI_Common_111: 428859512
+      PopupUI_Common_112: -55235964
+      PopupUI_Common_113: 1900045568
+      PopupUI_Common_114: 2129464418
+      PopupUI_Common_115: -206070830
+      PopupUI_Common_116: 2015846794
+      PopupUI_Common_117: 1344262978
+      PopupUI_Common_118: 1530603344
+      PopupUI_Common_119: -1370363585
+      PopupUI_Common_12: 1150227901
+      PopupUI_Common_120: 1859678860
+      PopupUI_Common_121: -1971832990
+      PopupUI_Common_122: -1052197932
+      PopupUI_Common_123: -928703660
+      PopupUI_Common_124: 87498463
+      PopupUI_Common_125: -1684087120
+      PopupUI_Common_126: 265136029
+      PopupUI_Common_127: 1343932858
+      PopupUI_Common_128: 848072389
+      PopupUI_Common_129: 1857247479
+      PopupUI_Common_13: -323709705
+      PopupUI_Common_130: -1570372892
+      PopupUI_Common_131: 698633990
+      PopupUI_Common_132: -1635930774
+      PopupUI_Common_133: 1329751853
+      PopupUI_Common_134: 217798571
+      PopupUI_Common_135: 322759408
+      PopupUI_Common_136: 1208777692
+      PopupUI_Common_137: -409451277
+      PopupUI_Common_138: 233294941
+      PopupUI_Common_139: 1482680734
+      PopupUI_Common_14: 502295307
+      PopupUI_Common_140: -1923326417
+      PopupUI_Common_141: -1546844704
+      PopupUI_Common_142: 985476466
+      PopupUI_Common_143: 674197035
+      PopupUI_Common_144: 402059440
+      PopupUI_Common_145: -1770414553
+      PopupUI_Common_146: 1660204535
+      PopupUI_Common_147: -1145566515
+      PopupUI_Common_148: -1136299837
+      PopupUI_Common_149: 1515511443
+      PopupUI_Common_15: 189928770
+      PopupUI_Common_150: 879482001
+      PopupUI_Common_151: -1207479211
+      PopupUI_Common_152: 1871628952
+      PopupUI_Common_153: 1801495079
+      PopupUI_Common_154: -471395287
+      PopupUI_Common_155: -546355856
+      PopupUI_Common_156: 635819261
+      PopupUI_Common_157: -1305311137
+      PopupUI_Common_158: 1902463167
+      PopupUI_Common_159: -235800472
+      PopupUI_Common_16: 1573628307
+      PopupUI_Common_160: -1750683300
+      PopupUI_Common_161: 1819838386
+      PopupUI_Common_162: -367741564
+      PopupUI_Common_163: -284229128
+      PopupUI_Common_164: 316921590
+      PopupUI_Common_165: 1665428315
+      PopupUI_Common_166: -658400439
+      PopupUI_Common_167: 356340660
+      PopupUI_Common_168: -43943945
+      PopupUI_Common_169: -2070488031
+      PopupUI_Common_17: 434658995
+      PopupUI_Common_170: 954029824
+      PopupUI_Common_171: 1802221023
+      PopupUI_Common_172: 1550066175
+      PopupUI_Common_173: -949650404
+      PopupUI_Common_174: -1362796638
+      PopupUI_Common_175: 618080482
+      PopupUI_Common_176: 665180969
+      PopupUI_Common_177: 167128085
+      PopupUI_Common_178: -1862517403
+      PopupUI_Common_179: 1282348127
+      PopupUI_Common_18: 1849468703
+      PopupUI_Common_180: 935168848
+      PopupUI_Common_181: -592558403
+      PopupUI_Common_182: -2115477853
+      PopupUI_Common_183: 1310400414
+      PopupUI_Common_184: 292045506
+      PopupUI_Common_185: -1845698158
+      PopupUI_Common_186: -70477690
+      PopupUI_Common_187: -646813553
+      PopupUI_Common_188: -1725291638
+      PopupUI_Common_189: 668983699
+      PopupUI_Common_19: 2126621248
+      PopupUI_Common_190: 777412410
+      PopupUI_Common_191: -177026769
+      PopupUI_Common_192: -65006387
+      PopupUI_Common_193: -513354410
+      PopupUI_Common_194: 1917669541
+      PopupUI_Common_195: -1876833843
+      PopupUI_Common_196: -1396713682
+      PopupUI_Common_197: -1854750610
+      PopupUI_Common_198: 72422218
+      PopupUI_Common_199: -2060855930
+      PopupUI_Common_2: -1971002165
+      PopupUI_Common_20: 326084457
+      PopupUI_Common_21: 1674242056
+      PopupUI_Common_22: -1040742542
+      PopupUI_Common_23: -2049281371
+      PopupUI_Common_24: 1405359031
+      PopupUI_Common_25: -1674303259
+      PopupUI_Common_26: -1676310814
+      PopupUI_Common_27: 1765022068
+      PopupUI_Common_28: -550910007
+      PopupUI_Common_29: 57453301
+      PopupUI_Common_3: -918995357
+      PopupUI_Common_30: -1517758948
+      PopupUI_Common_31: -1503105162
+      PopupUI_Common_32: -1233094407
+      PopupUI_Common_33: -121439924
+      PopupUI_Common_34: 468392374
+      PopupUI_Common_35: -1346165815
+      PopupUI_Common_36: -712965976
+      PopupUI_Common_37: -879642085
+      PopupUI_Common_38: -1461147051
+      PopupUI_Common_39: -1261734521
+      PopupUI_Common_4: -1215438385
+      PopupUI_Common_40: -1028828962
+      PopupUI_Common_41: -1701963785
+      PopupUI_Common_42: 1272615744
+      PopupUI_Common_43: 1187333876
+      PopupUI_Common_44: -1003376390
+      PopupUI_Common_45: 763949411
+      PopupUI_Common_46: -896748793
+      PopupUI_Common_47: 1441410605
+      PopupUI_Common_48: -1841119583
+      PopupUI_Common_49: -9282835
+      PopupUI_Common_5: -202376356
+      PopupUI_Common_50: -1398459060
+      PopupUI_Common_51: -1797223893
+      PopupUI_Common_52: -1371785587
+      PopupUI_Common_53: 1943019082
+      PopupUI_Common_54: -1036989839
+      PopupUI_Common_55: -601483081
+      PopupUI_Common_56: 324290773
+      PopupUI_Common_57: 943885670
+      PopupUI_Common_58: 1329654203
+      PopupUI_Common_59: 3549570
+      PopupUI_Common_6: 845303801
+      PopupUI_Common_60: -2020241961
+      PopupUI_Common_61: -291623373
+      PopupUI_Common_62: 1440066084
+      PopupUI_Common_63: -2087532991
+      PopupUI_Common_64: -184163018
+      PopupUI_Common_65: -1299263063
+      PopupUI_Common_66: 601819364
+      PopupUI_Common_67: -593109206
+      PopupUI_Common_68: -567088520
+      PopupUI_Common_69: -1722367903
+      PopupUI_Common_7: -23231147
+      PopupUI_Common_70: -1013932299
+      PopupUI_Common_71: 1581085637
+      PopupUI_Common_72: 1901283131
+      PopupUI_Common_73: 1931433318
+      PopupUI_Common_74: 1687975797
+      PopupUI_Common_75: -1489839940
+      PopupUI_Common_76: -75068142
+      PopupUI_Common_77: 587340226
+      PopupUI_Common_78: -1573430923
+      PopupUI_Common_79: -1398506874
+      PopupUI_Common_8: 596479582
+      PopupUI_Common_80: -592888311
+      PopupUI_Common_81: -1275678947
+      PopupUI_Common_82: 934002155
+      PopupUI_Common_83: -1516876569
+      PopupUI_Common_84: 1773775844
+      PopupUI_Common_85: -1466166172
+      PopupUI_Common_86: -1797495177
+      PopupUI_Common_87: -1994193323
+      PopupUI_Common_88: -365806483
+      PopupUI_Common_89: 90540749
+      PopupUI_Common_9: -1597951880
+      PopupUI_Common_90: 274156287
+      PopupUI_Common_91: 1922415188
+      PopupUI_Common_92: 31016701
+      PopupUI_Common_93: -1644300152
+      PopupUI_Common_94: 660242057
+      PopupUI_Common_95: 734288363
+      PopupUI_Common_96: 1941902294
+      PopupUI_Common_97: 849052141
+      PopupUI_Common_98: -2037873914
+      PopupUI_Common_99: 604435554
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
