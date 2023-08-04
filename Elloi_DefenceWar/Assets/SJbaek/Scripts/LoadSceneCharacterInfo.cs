@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CharacterInfo : MonoBehaviour
+public class LoadSceneCharacterInfo : MonoBehaviour
 {
     public void Onclick()
     {
