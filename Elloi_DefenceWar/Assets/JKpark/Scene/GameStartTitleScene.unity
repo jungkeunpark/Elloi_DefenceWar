@@ -962,6 +962,8 @@ MonoBehaviour:
   playerGold: 10000
   playerJuwel: 3000
   playerLevel: 0
+  exp: 0
+  playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
 --- !u!4 &1147361618
 Transform:
   m_ObjectHideFlags: 0
@@ -1656,7 +1658,7 @@ MonoBehaviour:
   m_text: "\uD654\uBA74\uC744 \uD074\uB9AD\uD574\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
-  m_sharedMaterial: {fileID: 9153792020693548859, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
+  m_sharedMaterial: {fileID: -5981423193685612096, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
