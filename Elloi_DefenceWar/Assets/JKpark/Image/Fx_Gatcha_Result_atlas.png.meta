@@ -1,0 +1,1885 @@
+fileFormatVersion: 2
+guid: a76c31ab614480243865858109efab13
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac178493357861b43b90f6ebd6bc84e6
+      internalID: 1137015931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 970
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089d00c87d9d3a04c85fbb185fc311c5
+      internalID: 102915150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 947
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b3b8f8e62dd74faf238aa59d38d96
+      internalID: -1916047590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 967
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d958893aedb0ac641819afae2bf826d2
+      internalID: -883483008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 967
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54aae53315e6a5e4fb08c7a9dd6c76c3
+      internalID: -1415450434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 935
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa6189654e130f4e860ef87f6806642
+      internalID: -1863754028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_6
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 950
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad3d79637c8aa8448ff5452da8e1220
+      internalID: -1282403863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_7
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 895
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70132e1ab4f866e46af1f63419671694
+      internalID: 744293359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_8
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 903
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56828bcc2e4ddc342b4fdd7be4add55b
+      internalID: -143830881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_9
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 892
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3384b1180c6a5c41a1be6bbbd177622
+      internalID: -916912745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837
+        width: 129
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982cd767e663b294c992aebc4288c0d9
+      internalID: 787482563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 844
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4292266811b26b842992fc04fb31fa2b
+      internalID: 1713573320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_12
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 835
+        width: 106
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e284f76191fa47646a239ddd650c5001
+      internalID: -548478665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_13
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 835
+        width: 103
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f88784595bc7d49af68d995bf8da78
+      internalID: -1305634730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_14
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 835
+        width: 71
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74eab4c4e6bef442a87ac9268dda8bd
+      internalID: 1023114186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_15
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 872
+        width: 52
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f025fcc7828c7244c9d5031bb58fbe96
+      internalID: 1842820364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_16
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 811
+        width: 89
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af1d9854973deb4da12dd28c37ecd40
+      internalID: -337492208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_17
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 818
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d417125395c81c848a9e02932c8dc262
+      internalID: -1732197062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_18
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 818
+        width: 89
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0986677afe6a016458f30ae6c6d8e190
+      internalID: 214634834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac9c7c3f6b5e1d42a1058ca1dac4346
+      internalID: -679690761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 711
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66269a4966c9b374a91dd11389d01b55
+      internalID: 707205650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 699
+        width: 105
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a369a814acd83e4484425b88a9c2988
+      internalID: 1114292629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_22
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 699
+        width: 105
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cd3428ee0f7c74abca8393f795c6d7
+      internalID: -529933214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_23
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 699
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7eab63837b805648a66724322b38550
+      internalID: -418210912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_24
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 788
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4e69b156a3545479c4b88c66ed01f0
+      internalID: -1336470697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_25
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 723
+        width: 89
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9a2f8405831194b8068cc3c7f036c1
+      internalID: 681699667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_26
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 733
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef5935d5f503114792df0f3bfb1a2c2
+      internalID: 1031326123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 733
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d2d9d01ffe8b34aa9380ccc6190a1e
+      internalID: -2100966749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_28
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 733
+        width: 93
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73fd8fe6b3322e44952db2d43300036
+      internalID: 1042469632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 135
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79b98f4c157db04f88334f272da6005
+      internalID: -1214364529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_30
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 665
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582fd89d769badf40b02389c91ffec7b
+      internalID: 66769887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_31
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 637
+        width: 240
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3728f1f6c6dbe45a141618f9feb6ed
+      internalID: 95802517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_32
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 689
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9a7a9ec7e39a641b7a6d76eb09e799
+      internalID: 801680686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_33
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 648
+        width: 105
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431cf1504647c7648840f8a35fdaa876
+      internalID: -1786377123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_34
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 648
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a1b0124a349de42b9f8d1d0a76375c
+      internalID: -1757809840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_35
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 648
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96502d08ecdcce4180a3a427ff11343
+      internalID: -1539721056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_36
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 648
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9891100888d97e944ba5fe4c2eee09f4
+      internalID: -1265372309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_37
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 648
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2c1a2c91577ef419a4e14c57b7aed4
+      internalID: 654874850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_38
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 568
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6cd5420c5e8ca4dbbbd3fc03e5d322
+      internalID: 2001531248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_39
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 553
+        width: 231
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b0a9749c800b6498a1206f1f445639
+      internalID: -1465240209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_40
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 601
+        width: 71
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a75df4e1d5abc246a85deebce8c6db0
+      internalID: 1329365336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_41
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 551
+        width: 105
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ee6271be13fb74f93d18ffedbf0c9d
+      internalID: -509756701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_42
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 596
+        width: 209
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc8ee3f28e71ac418543508f18ad368
+      internalID: 1927638735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_43
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 551
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba756345a5ca984681ce207df7f7510
+      internalID: 1580786826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_44
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 451
+        width: 152
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440ad9de70e4694489b750f5a3f478e6
+      internalID: -1035816903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_45
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 465
+        width: 81
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcedc3621d7c9724f91bd3e34777f574
+      internalID: 2112145841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_46
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 551
+        width: 225
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd046a946bc1b245a164384a30f2a20
+      internalID: 1797036503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_47
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 470
+        width: 162
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81069f4ab3e6a3439c753c0211a1585
+      internalID: -1751053434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_48
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 465
+        width: 120
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b12e9a27fbd434c867c8e77f75c6e0
+      internalID: -671630099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_49
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 465
+        width: 225
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d829876ae71ff449f3caac3b36cf43
+      internalID: -140982329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_50
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 465
+        width: 89
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace631dc7c194754aa7bf02640dfc07f
+      internalID: 1403407979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 179
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7021bd9934472479d03825e5bf97ab
+      internalID: -2066542615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_52
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 398
+        width: 114
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9b9eaf17ddef046876ed1b338da8cd
+      internalID: 837166977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_53
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 384
+        width: 154
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252f9e41c1f633846aa4f3a975171a70
+      internalID: -762854033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_54
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 397
+        width: 213
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e288c532bc3c643b0c4e1779c2a6f1
+      internalID: 955901841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_55
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 379
+        width: 227
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e510dcb0a003e4f48a0322289afa392a
+      internalID: -778560563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_56
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 313
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6e54ee215a2b548b5a8c44fbdad990
+      internalID: 757066241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_57
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 298
+        width: 204
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b76da6b53dff6c40b2bedb5dd93c083
+      internalID: 2142793454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_58
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 313
+        width: 184
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fad8b0558fe6a4aa69e4186552b814
+      internalID: -532088470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_59
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 293
+        width: 217
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2209cafc813580c4194d59e834f7eff1
+      internalID: -547656596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_60
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 281
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3295df07ddf1ca47ab85462f5347e67
+      internalID: -815958846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_61
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 281
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb64180d620637c4e88baddf221b7cad
+      internalID: 1546793261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_62
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 161
+        width: 213
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129c789cec21bf1409c714164c6d3179
+      internalID: -157722897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_63
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 169
+        width: 197
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c60721f8b371c47ab1961d1fcf707a
+      internalID: -589531664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_64
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 161
+        width: 213
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f8f5cc4b803864a8fc0fa415bbd05d
+      internalID: -1971893812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_65
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 161
+        width: 106
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35595012e9675546a37e0dbf8368997
+      internalID: -1573342863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_66
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 265
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a14d1598bf6f3459cfb46187fd9f7d
+      internalID: 1524270737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 265
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5057005a96da4664bbef2fc65495cd2b
+      internalID: -1727584430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5012e592b8e6e4592189716ed742da
+      internalID: -1845442290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_69
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 161
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2d7e05427936c49aac090cb9fed84b
+      internalID: 1342580221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_70
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 213
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361bf1c6a1ef80744b63900f1991c841
+      internalID: 975896440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_71
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 213
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d9f764dfa4f1140a0c7c8f4f79e31b
+      internalID: -1161667355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_72
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 0
+        width: 213
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ce58d9db8fa749a54dfbdeec110fa
+      internalID: 1392703826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_73
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 0
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc17fa3a1947b241a50af55e66e8a38
+      internalID: 216212977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_74
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 0
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35679fd3d5c8f9499235d5f0697af3e
+      internalID: -1987629662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_75
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 297
+        width: 264
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1feb6c562b38814284e384409678b6c
+      internalID: -1745226739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_76
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 386
+        width: 260
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe5d95c7e8935241aa6390647baf09a
+      internalID: -1795016757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_77
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 297
+        width: 264
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a580e1b5e05b754b93f5663e58d1951
+      internalID: -1717904015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fx_Gatcha_Result_atlas_78
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 385
+        width: 261
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879774284155ac742a0099c97a75b09c
+      internalID: -724978815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fx_Gatcha_Result_atlas_0: 1137015931
+      Fx_Gatcha_Result_atlas_1: 102915150
+      Fx_Gatcha_Result_atlas_10: 787482563
+      Fx_Gatcha_Result_atlas_11: 1713573320
+      Fx_Gatcha_Result_atlas_12: -548478665
+      Fx_Gatcha_Result_atlas_13: -1305634730
+      Fx_Gatcha_Result_atlas_14: 1023114186
+      Fx_Gatcha_Result_atlas_15: 1842820364
+      Fx_Gatcha_Result_atlas_16: -337492208
+      Fx_Gatcha_Result_atlas_17: -1732197062
+      Fx_Gatcha_Result_atlas_18: 214634834
+      Fx_Gatcha_Result_atlas_19: -679690761
+      Fx_Gatcha_Result_atlas_2: -1916047590
+      Fx_Gatcha_Result_atlas_20: 707205650
+      Fx_Gatcha_Result_atlas_21: 1114292629
+      Fx_Gatcha_Result_atlas_22: -529933214
+      Fx_Gatcha_Result_atlas_23: -418210912
+      Fx_Gatcha_Result_atlas_24: -1336470697
+      Fx_Gatcha_Result_atlas_25: 681699667
+      Fx_Gatcha_Result_atlas_26: 1031326123
+      Fx_Gatcha_Result_atlas_27: -2100966749
+      Fx_Gatcha_Result_atlas_28: 1042469632
+      Fx_Gatcha_Result_atlas_29: -1214364529
+      Fx_Gatcha_Result_atlas_3: -883483008
+      Fx_Gatcha_Result_atlas_30: 66769887
+      Fx_Gatcha_Result_atlas_31: 95802517
+      Fx_Gatcha_Result_atlas_32: 801680686
+      Fx_Gatcha_Result_atlas_33: -1786377123
+      Fx_Gatcha_Result_atlas_34: -1757809840
+      Fx_Gatcha_Result_atlas_35: -1539721056
+      Fx_Gatcha_Result_atlas_36: -1265372309
+      Fx_Gatcha_Result_atlas_37: 654874850
+      Fx_Gatcha_Result_atlas_38: 2001531248
+      Fx_Gatcha_Result_atlas_39: -1465240209
+      Fx_Gatcha_Result_atlas_4: -1415450434
+      Fx_Gatcha_Result_atlas_40: 1329365336
+      Fx_Gatcha_Result_atlas_41: -509756701
+      Fx_Gatcha_Result_atlas_42: 1927638735
+      Fx_Gatcha_Result_atlas_43: 1580786826
+      Fx_Gatcha_Result_atlas_44: -1035816903
+      Fx_Gatcha_Result_atlas_45: 2112145841
+      Fx_Gatcha_Result_atlas_46: 1797036503
+      Fx_Gatcha_Result_atlas_47: -1751053434
+      Fx_Gatcha_Result_atlas_48: -671630099
+      Fx_Gatcha_Result_atlas_49: -140982329
+      Fx_Gatcha_Result_atlas_5: -1863754028
+      Fx_Gatcha_Result_atlas_50: 1403407979
+      Fx_Gatcha_Result_atlas_51: -2066542615
+      Fx_Gatcha_Result_atlas_52: 837166977
+      Fx_Gatcha_Result_atlas_53: -762854033
+      Fx_Gatcha_Result_atlas_54: 955901841
+      Fx_Gatcha_Result_atlas_55: -778560563
+      Fx_Gatcha_Result_atlas_56: 757066241
+      Fx_Gatcha_Result_atlas_57: 2142793454
+      Fx_Gatcha_Result_atlas_58: -532088470
+      Fx_Gatcha_Result_atlas_59: -547656596
+      Fx_Gatcha_Result_atlas_6: -1282403863
+      Fx_Gatcha_Result_atlas_60: -815958846
+      Fx_Gatcha_Result_atlas_61: 1546793261
+      Fx_Gatcha_Result_atlas_62: -157722897
+      Fx_Gatcha_Result_atlas_63: -589531664
+      Fx_Gatcha_Result_atlas_64: -1971893812
+      Fx_Gatcha_Result_atlas_65: -1573342863
+      Fx_Gatcha_Result_atlas_66: 1524270737
+      Fx_Gatcha_Result_atlas_67: -1727584430
+      Fx_Gatcha_Result_atlas_68: -1845442290
+      Fx_Gatcha_Result_atlas_69: 1342580221
+      Fx_Gatcha_Result_atlas_7: 744293359
+      Fx_Gatcha_Result_atlas_70: 975896440
+      Fx_Gatcha_Result_atlas_71: -1161667355
+      Fx_Gatcha_Result_atlas_72: 1392703826
+      Fx_Gatcha_Result_atlas_73: 216212977
+      Fx_Gatcha_Result_atlas_74: -1987629662
+      Fx_Gatcha_Result_atlas_75: -1745226739
+      Fx_Gatcha_Result_atlas_76: -1795016757
+      Fx_Gatcha_Result_atlas_77: -1717904015
+      Fx_Gatcha_Result_atlas_78: -724978815
+      Fx_Gatcha_Result_atlas_8: -143830881
+      Fx_Gatcha_Result_atlas_9: -916912745
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
