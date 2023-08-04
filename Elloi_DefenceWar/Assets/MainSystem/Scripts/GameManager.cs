@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     // 프로그램 실행시 유지할 값들
+    public CharacterData[] gameDatas;
     public int playerGold = 10000;
     public int playerJuwel = 3000;
     public int playerLevel = 1;
     public int exp = 0;
     public string playerName = "최강미남박정근";
+    public GameObject[] characters;
 
     private void Awake()
     {

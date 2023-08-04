@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CharacterData_Ray
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: "\uB808\uC774"
+  health: 50
+  damage: 5
+  defense: 5
+  attackSpeed: 5
+  moveSpeed: 5
+  responeCoolTime: 5
+  cost: 5
+  rank: 5
+  characterImage: {fileID: 4882076550841095561, guid: 3ffe1f0a45f5377419c8468d89e0bc36, type: 3}
+  characterRank: {fileID: 6374768426921748864, guid: aae588e926b7173459c7dcad08b139ec, type: 3}

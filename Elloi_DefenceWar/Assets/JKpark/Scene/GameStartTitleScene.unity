@@ -959,9 +959,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac145a1fbe9a233468433e5b3c258c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameDatas:
+  - {fileID: 11400000, guid: ba947bb32815ede428990dd13de162f2, type: 2}
+  - {fileID: 11400000, guid: daf4b24a1de7097499a1a419e2b65567, type: 2}
+  - {fileID: 11400000, guid: 6dda72c7ff020a943b86a88aed0ecedf, type: 2}
   playerGold: 10000
   playerJuwel: 3000
   playerLevel: 0
+  exp: 0
+  playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
+  characters:
+  - {fileID: 7517574542039356602, guid: 0f3ccd098d5af1d4088be770f471472e, type: 3}
+  - {fileID: 289053107316765891, guid: 89c118c68b0071947b694a44741516fa, type: 3}
+  - {fileID: 8167872126678780202, guid: f9e5356472555bb47952e8c947ebe75d, type: 3}
 --- !u!4 &1147361618
 Transform:
   m_ObjectHideFlags: 0
@@ -1655,8 +1665,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uD654\uBA74\uC744 \uD074\uB9AD\uD574\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
-  m_sharedMaterial: {fileID: 9153792020693548859, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
+  m_sharedMaterial: {fileID: -4317098269028873890, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1687,8 +1697,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

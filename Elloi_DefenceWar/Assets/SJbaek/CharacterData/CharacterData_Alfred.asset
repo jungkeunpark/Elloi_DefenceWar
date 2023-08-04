@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CharacterData_Alfred
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: "\uC54C\uD504\uB808\uB4DC"
+  health: 40
+  damage: 4
+  defense: 4
+  attackSpeed: 4
+  moveSpeed: 4
+  responeCoolTime: 4
+  cost: 4
+  rank: 4
+  characterImage: {fileID: 5875347912659170873, guid: 59f211b0299ba48409b74225e8bdfaa1, type: 3}
+  characterRank: {fileID: 6374768426921748864, guid: 60256bc89c61a3e43a06471ac3ec3bd2, type: 3}
