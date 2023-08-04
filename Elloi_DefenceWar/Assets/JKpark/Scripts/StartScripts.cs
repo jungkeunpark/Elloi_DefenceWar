@@ -13,8 +13,5 @@ public class StartScripts : MonoBehaviour
     {
         int a = Random.Range(1, 6);
         Cameras[a].gameObject.SetActive(true);     
-
     }
-
-
 }

@@ -95,6 +95,16 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\LoadScenePartySet.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Title.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\LevelText.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\GoldText.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\JuwelText.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\NameText.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\LoadingScene.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\GetGold.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\LoadSceneStageWin.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\LoadSceneGatcha.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
