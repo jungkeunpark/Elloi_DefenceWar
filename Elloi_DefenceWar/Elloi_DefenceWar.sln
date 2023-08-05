@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{7358DD2D-3679-54B7-7800-8BE4474871FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{FCC0F909-2E01-78C5-0E0C-AB02EC114D57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{7358DD2D-3679-54B7-7800-8BE4474871FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7358DD2D-3679-54B7-7800-8BE4474871FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7358DD2D-3679-54B7-7800-8BE4474871FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC0F909-2E01-78C5-0E0C-AB02EC114D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC0F909-2E01-78C5-0E0C-AB02EC114D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC0F909-2E01-78C5-0E0C-AB02EC114D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC0F909-2E01-78C5-0E0C-AB02EC114D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,7 @@ using UnityEditor.U2D.Animation;
 public class InfoManager : MonoBehaviour
 {
     private CharacterData characterData;
+
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI health;
     public TextMeshProUGUI damage;
@@ -19,9 +20,9 @@ public class InfoManager : MonoBehaviour
     public Image characterImage;
     public Image characterRank;
 
-    private void Awake()
+    private void Update()
     {
-        characterData = GameManager.instance.gameDatas[1];
+        characterData = GameManager.instance.gameDatas[GameManager.instance.dataIndex];
 
         characterName.text = characterData.characterName;
         health.text = string.Format("{0}", characterData.health);
