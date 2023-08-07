@@ -939,7 +939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147361618}
-  - component: {fileID: 1147361617}
+  - component: {fileID: 1147361619}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -947,6 +947,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!114 &1147361617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,6 +965,8 @@ MonoBehaviour:
   playerLevel: 0
   exp: 0
   playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
+=======
+>>>>>>> origin/SeungJoo
 --- !u!4 &1147361618
 Transform:
   m_ObjectHideFlags: 0
@@ -979,6 +982,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147361619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147361616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac145a1fbe9a233468433e5b3c258c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerGold: 10000
+  playerJuwel: 3000
+  playerLevel: 1
+  exp: 0
+  playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
+  selectPartySet: {fileID: 0}
+  CharacterDatabase: {fileID: 4900000, guid: dc8cab02cb39e0243bb47ab82a7915d4, type: 3}
+  character_List: []
 --- !u!1 &1204557064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,8 +1680,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uD654\uBA74\uC744 \uD074\uB9AD\uD574\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
+<<<<<<< HEAD
   m_fontAsset: {fileID: 11400000, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
   m_sharedMaterial: {fileID: -5981423193685612096, guid: 173b8332e9385d84582f7a7c2435aa67, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
+  m_sharedMaterial: {fileID: -4317098269028873890, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
+>>>>>>> origin/SeungJoo
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1689,8 +1717,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
