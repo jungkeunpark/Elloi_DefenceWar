@@ -9,5 +9,4 @@ public class LoadSceneStageSelect : MonoBehaviour
     {
         SceneManager.LoadScene("StageSelectScene");
     }
-    
 }
