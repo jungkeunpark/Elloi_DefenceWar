@@ -9,4 +9,7 @@ public class PartySetManager : MonoBehaviour
 
     // 몇번 째 파티 셋 카드를 선택했는지?
     public int partyCardIndex = -1;
+
+    // 동일한 카드 체크
+    public int[] cardNums = new int[4] { -1, -1, -1, -1 };
 }
