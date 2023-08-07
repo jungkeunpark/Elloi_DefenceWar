@@ -31,9 +31,6 @@ public class GameManager : MonoBehaviour
     // 캐릭터 프리팹들
     // public GameObject[] characters;
 
-    // 파티 구성 씬 변수
-    public PartySet selectPartySet = null;
-
     // 게임 데이터
     public TextAsset CharacterDatabase; // 캐릭터 데이터
     public List<Character> AllCharacter_List, MyCharacter_List, CurCharacter_List;
