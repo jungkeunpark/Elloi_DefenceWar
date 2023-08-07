@@ -20,6 +20,10 @@ public class PartySetv2 : MonoBehaviour
             // 선택한 카드 인덱스 번호
             partySetManager.partyCardIndex = partySetCardNum;
         }
+
+        // 첫 클릭이면서 
+
+
         // 첫 클릭이 아니면서 다른 카드를 선택했는가?
         else if (partySetManager.isPartyCardClicked == true && partySetCardNum != partySetManager.partyCardIndex)
         {

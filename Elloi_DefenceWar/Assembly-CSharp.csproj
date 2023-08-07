@@ -57,11 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadScenePartySet.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartyCardClick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneGatcha.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\CardInfo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CardObjDatas.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\LevelText.cs" />
@@ -114,19 +116,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySet.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\GameData.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\CardObjDatas.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\ClickEffect\EffectManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\InfoCardClick.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\ClickEffect\MouseClickEffect.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\CardInfo.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartyCardClick.cs" />
-=======
-    <Compile Include="Assets\SJbaek\Scripts\InfoCardClick.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetManager.cs" />
->>>>>>> origin/SeungJoo
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -817,6 +807,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -837,9 +830,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
