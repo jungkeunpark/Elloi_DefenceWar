@@ -979,9 +979,10 @@ MonoBehaviour:
   playerLevel: 1
   exp: 0
   playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
-  selectPartySet: {fileID: 0}
   CharacterDatabase: {fileID: 4900000, guid: dc8cab02cb39e0243bb47ab82a7915d4, type: 3}
-  character_List: []
+  AllCharacter_List: []
+  MyCharacter_List: []
+  CurCharacter_List: []
 --- !u!1 &1204557064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,8 +1661,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uD654\uBA74\uC744 \uD074\uB9AD\uD574\uC8FC\uC138\uC694"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
-  m_sharedMaterial: {fileID: -4317098269028873890, guid: 30b4910aed336ae40bd4b66b400d7d5c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 38ae971971f5f234b8bd87f62b367c70, type: 2}
+  m_sharedMaterial: {fileID: -8237831242081763801, guid: 38ae971971f5f234b8bd87f62b367c70, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
