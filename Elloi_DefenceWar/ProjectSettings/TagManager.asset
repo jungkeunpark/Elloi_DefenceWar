@@ -3,24 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - GatchaButton
-<<<<<<< HEAD
-  - Enemy
-  - UI
-=======
-  - Stage
-  - PartySet
-  - PartyCard
->>>>>>> origin/SeungJoo
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - NPCVITA
+  - 
   - Water
   - UI
-  - FirstUI
+  - 
   - 
   - 
   - 
@@ -49,28 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: NPCVita
-    uniqueID: 3424083265
-    locked: 0
-  - name: UI
-    uniqueID: 2895617523
-    locked: 0
-  - name: Player / Enemy Firth
-    uniqueID: 3900938039
-    locked: 0
-  - name: Player / Enemy Third
-    uniqueID: 29043735
-    locked: 0
-  - name: Player / EnemySecond
-    uniqueID: 660124543
-    locked: 0
-  - name: Player / EnemyFirst
-    uniqueID: 863522817
-    locked: 0
-  - name: ICON
-    uniqueID: 4174427171
-    locked: 0
-  - name: FirstUI
-    uniqueID: 1281722915
     locked: 0

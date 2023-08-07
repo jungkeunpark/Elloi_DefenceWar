@@ -61,6 +61,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneGatcha.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\CardInfo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\LevelText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySet.cs" />
     <Compile Include="Assets\SJbaek\Scripts\GameData.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CardObjDatas.cs" />
@@ -115,6 +117,9 @@
     <Compile Include="Assets\SJbaek\Scripts\ClickEffect\MouseClickEffect.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CardInfo.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartyCardClick.cs" />
+=======
+    <Compile Include="Assets\SJbaek\Scripts\InfoCardClick.cs" />
+>>>>>>> origin/SeungJoo
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
