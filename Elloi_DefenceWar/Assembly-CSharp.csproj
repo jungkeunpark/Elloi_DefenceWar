@@ -57,10 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadScenePartySet.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneGatcha.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\CardInfo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\LevelText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -107,6 +109,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySet.cs" />
     <Compile Include="Assets\SJbaek\Scripts\GameData.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CardObjDatas.cs" />
@@ -117,6 +120,9 @@
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartyCardClick.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetv2.cs" />
+=======
+    <Compile Include="Assets\SJbaek\Scripts\InfoCardClick.cs" />
+>>>>>>> origin/SeungJoo
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -804,6 +810,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
@@ -822,6 +831,7 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -831,6 +841,8 @@
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
+=======
+>>>>>>> origin/SeungJoo
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="DOTween.Modules.csproj">
