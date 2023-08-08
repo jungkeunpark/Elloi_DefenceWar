@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PartyCard
+  - PartySet
+  - UI
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -40,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGroundUI
+    uniqueID: 1893281537
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 1532111583
+    locked: 0
+  - name: Player / Back
+    uniqueID: 2114881317
+    locked: 0
+  - name: Player / Middle
+    uniqueID: 3394924705
+    locked: 0
+  - name: Player / First
+    uniqueID: 4019209249
+    locked: 0
+  - name: FrontUI
+    uniqueID: 1281916589
     locked: 0

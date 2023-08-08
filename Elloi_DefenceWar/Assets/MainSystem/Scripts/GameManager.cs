@@ -28,8 +28,9 @@ public class GameManager : MonoBehaviour
     public int exp = 0;
     public string playerName = "최강미남박정근";
 
-    // 캐릭터 프리팹들
-    // public GameObject[] characters;
+    // 파티 구성 된 캐릭터 카드
+    public GameObject[] partySetCard = new GameObject[4];
+    public int[] partySetCardIndex = new int[4] { -1, -1, -1, -1 };
 
     // 게임 데이터
     public TextAsset CharacterDatabase; // 캐릭터 데이터
