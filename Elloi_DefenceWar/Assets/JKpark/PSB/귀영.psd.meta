@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc5ebaada04ede24bac07300b41501ee
+guid: fba4766172bbb054fb9f37c7ba0b2338
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fx_CharacterEnchant_04_0
+      name: "\uADC0\uC601_0"
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 122
-        height: 170
+        x: 292
+        y: 295
+        width: 175
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,29 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a5f2c57dd97ca74a98073e470884e3b
-      internalID: 928216357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fx_CharacterEnchant_04_1
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 12
-        width: 124
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c889ec0d6004a8945bb2e2f5f323e742
-      internalID: -702820860
+      spriteID: 92d4607a5db2a874284551527b492d63
+      internalID: -1616189843
       vertices: []
       indices: 
       edges: []
@@ -181,11 +160,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fx_CharacterEnchant_04_0: 928216357
-      Fx_CharacterEnchant_04_1: -702820860
+      "\uADC0\uC601_0": -1616189843
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
