@@ -5,9 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - PartyCard
+<<<<<<< HEAD
   - UI
   - Enemy
   - PartySet
+=======
+  - PartySet
+  - UI
+  - Enemy
+>>>>>>> origin/SeungJoo
   layers:
   - Default
   - TransparentFX
@@ -46,6 +52,7 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: BackGroundUI
+<<<<<<< HEAD
     uniqueID: 2154610095
     locked: 0
   - name: MiddleGround
@@ -62,4 +69,22 @@ TagManager:
     locked: 0
   - name: FrontUI
     uniqueID: 412813615
+=======
+    uniqueID: 1893281537
+    locked: 0
+  - name: MiddleGround
+    uniqueID: 1532111583
+    locked: 0
+  - name: Player / Back
+    uniqueID: 2114881317
+    locked: 0
+  - name: Player / Middle
+    uniqueID: 3394924705
+    locked: 0
+  - name: Player / First
+    uniqueID: 4019209249
+    locked: 0
+  - name: FrontUI
+    uniqueID: 1281916589
+>>>>>>> origin/SeungJoo
     locked: 0
