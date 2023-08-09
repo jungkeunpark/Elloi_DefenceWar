@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour
     public TextAsset CharacterDatabase; // 캐릭터 데이터
     public List<Character> AllCharacter_List, MyCharacter_List, CurCharacter_List;
 
+    // 아이템 갯수
+    public int doubleSpeedCount = 30;
+    public int autoItemCount = 30;
+
     private void Awake()
     {
         // 존재하고 있지 않다면 다시 최신화
