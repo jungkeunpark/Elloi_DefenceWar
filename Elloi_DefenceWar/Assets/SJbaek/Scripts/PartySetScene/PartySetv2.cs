@@ -423,10 +423,10 @@ public class PartySetv2 : MonoBehaviour
         }
 
         // ( 조건. 16 ) 0번 o, 1번 o, 2번 o, 3번 o
-        // ( 조건. 14 - 1 ) 플레이어가 선택한 파티 번호 0번 ==> 0번으로 이동
-        // ( 조건. 14 - 2 ) 플레이어가 선택한 파티 번호 1번 ==> 1번으로 이동
-        // ( 조건. 14 - 3 ) 플레이어가 선택한 파티 번호 2번 ==> 2번으로 이동
-        // ( 조건. 14 - 4 ) 플레이어가 선택한 파티 번호 3번 ==> 3번으로 이동
+        // ( 조건. 16 - 1 ) 플레이어가 선택한 파티 번호 0번 ==> 0번으로 이동
+        // ( 조건. 16 - 2 ) 플레이어가 선택한 파티 번호 1번 ==> 1번으로 이동
+        // ( 조건. 16 - 3 ) 플레이어가 선택한 파티 번호 2번 ==> 2번으로 이동
+        // ( 조건. 16 - 4 ) 플레이어가 선택한 파티 번호 3번 ==> 3번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] != -1)
         {
             if (partySetManager.partyCardIndex == 0)
