@@ -18,7 +18,7 @@ public class EffectManager : MonoBehaviour
             EffectCreate();
             spawnsTime = 0;
         }
-        spawnsTime += Time.deltaTime;
+        spawnsTime += Time.unscaledDeltaTime;
     }
 
     void EffectCreate()

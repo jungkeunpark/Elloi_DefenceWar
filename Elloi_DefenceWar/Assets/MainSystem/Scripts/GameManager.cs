@@ -7,8 +7,10 @@ using System.IO;
 [System.Serializable]
 public class Character
 {
-    public Character (string _Rank, string _Name, string _Health, string _Damage, string _Defense, string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
-    { Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet; }
+    public Character (string _Rank, string _Name, string _Health, string _Damage, string _Defense, 
+        string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
+    { Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; 
+        AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet; }
 
     public string Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
     public bool isGet;
@@ -35,6 +37,13 @@ public class GameManager : MonoBehaviour
     // 게임 데이터
     public TextAsset CharacterDatabase; // 캐릭터 데이터
     public List<Character> AllCharacter_List, MyCharacter_List, CurCharacter_List;
+
+    // 아이템 갯수
+    public int doubleSpeedCount = 30;
+    public int autoItemCount = 30;
+
+    // 현재 진행중인 스테이지 인덱스
+    public int nowStageIndex;
 
     private void Awake()
     {
