@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class LoadSceneStageWin : MonoBehaviour
 {
     public Canvas stage01;
+    public GameObject FightManager;
 
     public void LoadStageScene01()
     {
+        FightManager.gameObject.SetActive(true);
         stage01.gameObject.SetActive(true);
-    }
-
-    public void TestLoadStageScene()
-    {
-        SceneManager.LoadSceneAsync("FightScene_Test", LoadSceneMode.Additive);
     }
 }

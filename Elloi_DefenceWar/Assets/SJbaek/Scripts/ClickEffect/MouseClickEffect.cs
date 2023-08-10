@@ -27,14 +27,14 @@ public class MouseClickEffect : MonoBehaviour
     void Update()
     {
         // 랜덤한 방향으로 계속 이동
-        transform.Translate(direction * moveSpeed * Time.deltaTime);
+        transform.Translate(direction * moveSpeed * Time.unscaledDeltaTime);
 
         // 이펙트의 크기를 현재크기에서 0까지 줄임
         // Lerp는 선형보간 함수로, 두개의 값 사이를 시간에 따라 부드럽게 이동하는 값을 계산
-        transform.localScale = Vector2.Lerp(transform.localScale, Vector2.zero, Time.deltaTime * sizeSpeed);
+        transform.localScale = Vector2.Lerp(transform.localScale, Vector2.zero, Time.unscaledDeltaTime * sizeSpeed);
 
         Color color = sprite.color;
-        color.a = Mathf.Lerp(sprite.color.a, 0, Time.deltaTime * colorSpeed);
+        color.a = Mathf.Lerp(sprite.color.a, 0, Time.unscaledDeltaTime * colorSpeed);
         sprite.color = color;
 
         if(sprite.color.a <= 0.01f)

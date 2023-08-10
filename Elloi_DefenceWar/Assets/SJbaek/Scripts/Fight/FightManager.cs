@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class FightManager : MonoBehaviour
 {
+    // 게임 중지 캔버스
+    public Canvas gamePauseCanvas;
+
     // 현재 스테이지
     public int stage = 0;
 
@@ -36,9 +40,12 @@ public class FightManager : MonoBehaviour
     // 텍스트 
     public TextMeshProUGUI playerTowerHp;   // 플레이어 타워 체력
     public TextMeshProUGUI EnemyTowerHp;    // 적 타워 체력
+
     // 레벨업에 필요한 자원 텍스트
     public TextMeshProUGUI resource;
     public TextMeshProUGUI needLevelUpResourceMoneyText;
+    public Button levelUpButton;        // 레벨업 버튼
+
     // 아이템 갯수 텍스트
     public TextMeshProUGUI doubleSpeedCount;
     public TextMeshProUGUI autoCount;
@@ -56,9 +63,26 @@ public class FightManager : MonoBehaviour
         // { 텍스트 출력
         playerTowerHp.text = string.Format("{0} / {1}", curPlayerTowerHp, maxPlayerTowerHp[stage]);
         EnemyTowerHp.text = string.Format("{0} / {1}", curEnemyTowerHp, maxEnemyTowerHp[stage]);
-        needLevelUpResourceMoneyText.text = string.Format("{0}", needLevelUpResourceMoney[curResourceLevel]);
         doubleSpeedCount.text = string.Format("{0}", GameManager.instance.doubleSpeedCount);
         autoCount.text = string.Format("{0}", GameManager.instance.autoItemCount);
+        
+        // 자원 레벨업에 필요한 자원
+        // 최대 레벨 이라면?
+        if(curResourceLevel >= maxResourceLevel)
+        {
+            // 버튼 비활성화
+            levelUpButton.interactable = false;
+            needLevelUpResourceMoneyText.text = string.Format("MAX");
+        }
+
+        // 최대 레벨이 아니라면
+        else
+        {
+            // 버튼 활성화 
+            levelUpButton.interactable = true;
+            needLevelUpResourceMoneyText.text = string.Format("{0}", needLevelUpResourceMoney[curResourceLevel]);
+        }
+        
         // } 텍스트 출력
 
         // { 자원 계속 올려주기
@@ -70,8 +94,8 @@ public class FightManager : MonoBehaviour
         }
 
         resource.text = string.Format("{0} / {1}", (int)curResourceMoney, maxResourceMoney[curResourceLevel]);
-        // } 자원 계속 올려주기
-    }
+            // } 자원 계속 올려주기
+    }   // end 업데이트
 
     // 활성화 되면
     public void OnEnable()
@@ -123,5 +147,36 @@ public class FightManager : MonoBehaviour
                 curResourceLevel++;
             }
         }
+    }       // end 자원 레벨업 하는 함수
+
+    // 게임 정지 버튼 클릭 시
+    public void ClickGamePause()
+    {
+        // 게임 정지 UI 활성화
+        gamePauseCanvas.gameObject.SetActive(true);
+        // 게임 시간 0으로 변경
+        Time.timeScale = 0;
+    }
+
+    // 게임 패배 버튼 클릭시
+    public void ClickGameEnd()
+    {
+        // 게임 정지 UI 비활성화
+
+        // 게임 패배 UI 활성화
+
+        // 전투 매니저 리셋
+
+        // 게임 시간 1으로 변경
+    }
+
+    // 게임 재게 버튼 클릭시
+    public void ClickGameResume()
+    {
+        // 게임 정지 UI 비활성화
+        gamePauseCanvas.gameObject.SetActive(false);
+
+        // 게임 시간 1으로 변경
+        Time.timeScale = 1;
     }
 }
