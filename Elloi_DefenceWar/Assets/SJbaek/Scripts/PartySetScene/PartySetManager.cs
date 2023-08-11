@@ -33,6 +33,49 @@ public class PartySetManager : MonoBehaviour
         partySetManager = GetComponent<PartySetManager>();
     }
 
+    // 활성화 되었을 때
+    private void OnEnable()
+    {
+        // 게임매니저에 -1이 아닌 값이 있다면 파티셋 인덱스에 똑같이 적용해주기
+        for (int i = 0; i < partySetCards.Length; i++)
+        {
+            if(GameManager.instance.partySetCardIndex[i] != -1)
+            {
+                cardNums[i] = GameManager.instance.partySetCardIndex[i];
+
+                // UI Canvas 재구성
+                // 1. ( 왼쪽 ) 파티셋 카드에 자식오브젝트로 생성해놓기
+                GameObject playerCard = Instantiate(playerCards[cardNums[i]].transform.GetChild(2).gameObject, Vector2.zero, Quaternion.identity);
+                playerCard.transform.SetParent(partySetCards[i].transform);
+
+                // 위치, 크기 조절
+                playerCard.transform.localScale = new Vector2(1.2f, 1.2f);
+                playerCard.transform.position = partySetCards[i].transform.position;
+
+                // 카드 정보 활성화
+                partySetCards[i].transform.GetChild(1).gameObject.SetActive(true);
+                partySetCards[i].transform.GetChild(2).gameObject.SetActive(true);
+
+                // 카드 정보 수정
+                costs[i].text = string.Format("{0}", GameManager.instance.MyCharacter_List[cardNums[i]].Cost);
+                respons[i].text = string.Format("{0}", GameManager.instance.MyCharacter_List[cardNums[i]].ResponeCoolTime);
+
+                // 2. ( 오른쪽 ) 플레이어 카드에 정렬하고 이펙트 켜놓기
+                playerCards[cardNums[i]].transform.SetSiblingIndex(i);
+
+                // 카드 이펙트 활성화
+                playerCards[cardNums[i]].transform.GetChild(0).gameObject.SetActive(true);
+                playerCards[cardNums[i]].transform.GetChild(1).gameObject.SetActive(true);
+
+            }
+
+
+
+
+        }
+
+    }
+
     // { 파티셋 카드 클릭
     public void TapClick(int partySetCardNum)
     {
@@ -152,8 +195,12 @@ public class PartySetManager : MonoBehaviour
             playerCards[partySetCardNum].transform.GetChild(0).gameObject.SetActive(true);
             playerCards[partySetCardNum].transform.GetChild(1).gameObject.SetActive(true);
 
-            // 플레이어 카드의 transform을 가져온 다음
+            // 플레이어 카드의 gameObject 가져온 다음
             temp_CharacterCard = playerCards[partySetCardNum].transform.GetChild(2).gameObject;
+
+            // 게임매니저 파티셋 카드에 저장
+            Debug.Log(partyCardIndex);
+            GameManager.instance.partySetCardIndex[partySetManager.partyCardIndex] = partySetCardNum;
 
             // 파티셋카드의 자식오브젝트로 생성
             GameObject playerCard = Instantiate(temp_CharacterCard, Vector2.zero, Quaternion.identity);

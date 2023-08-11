@@ -25,7 +25,7 @@ public class CardInfo : MonoBehaviour
 
     void Start()
     {
-        TapClick(curRank);
+        // TapClick(curRank);
     }
 
     public void CardClick(int cardNum)
@@ -40,8 +40,10 @@ public class CardInfo : MonoBehaviour
         responeCoolTime.text = GameManager.instance.MyCharacter_List[cardNum].ResponeCoolTime;
         responeCoolTime.text = GameManager.instance.MyCharacter_List[cardNum].ResponeCoolTime;
         cost.text = GameManager.instance.MyCharacter_List[cardNum].Cost;
-        characterImage.sprite = cards[cardNum].GetComponentInChildren<CardObjDatas>().characterImage.sprite;
 
+        characterImage.sprite = cards[cardNum].GetComponentInChildren<CardObjDatas>().characterImage.sprite;
+        characterImage.SetNativeSize();
+        characterImage.transform.localScale = new Vector3(1.1f, 1.1f, 1.0f);
 
         if (GameManager.instance.MyCharacter_List[cardNum].Rank == "HERO")
         {
@@ -65,16 +67,16 @@ public class CardInfo : MonoBehaviour
         }
     }
 
-    public void TapClick(string tabName)
-    {
-        // 현재 캐릭터 리스트에 클릭한 랭크 캐릭터만 추가
-        curRank = tabName;
-        GameManager.instance.CurCharacter_List = GameManager.instance.MyCharacter_List.FindAll(x => x.Rank == curRank);
+    //public void TapClick(string tabName)
+    //{
+    //    // 현재 캐릭터 리스트에 클릭한 랭크 캐릭터만 추가
+    //    curRank = tabName;
+    //    GameManager.instance.CurCharacter_List = GameManager.instance.MyCharacter_List.FindAll(x => x.Rank == curRank);
         
-        // 카드 보이기
-        for (int i = 0; i < cards.Length; i++)
-        {
-            cards[i].SetActive(i < GameManager.instance.MyCharacter_List.Count);
-        }
-    }
+    //    // 카드 보이기
+    //    for (int i = 0; i < cards.Length; i++)
+    //    {
+    //        cards[i].SetActive(i < GameManager.instance.MyCharacter_List.Count);
+    //    }
+    //}
 }
