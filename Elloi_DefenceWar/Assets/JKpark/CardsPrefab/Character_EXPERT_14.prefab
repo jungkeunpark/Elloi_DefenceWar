@@ -100,7 +100,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2923241922265292238}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.57, y: 0.57, z: 0.57}
   m_ConstrainProportionsScale: 1
@@ -132,11 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389327520c274c64e923711ce425cf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backGround01: {fileID: 7233735947129997990}
-  backGround02: {fileID: 2539034950386880466}
-  characterImage: {fileID: 6012181823518655871}
-  characterText: {fileID: 3060250424844039511}
-  rank: {fileID: 8230349694032154906}
+  backGround01: {fileID: 0}
+  backGround02: {fileID: 0}
+  characterImage: {fileID: 0}
+  characterText: {fileID: 0}
+  rank: {fileID: 0}
 --- !u!1 &3511154581932879896
 GameObject:
   m_ObjectHideFlags: 0

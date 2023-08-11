@@ -178,8 +178,8 @@ RectTransform:
   m_GameObject: {fileID: 3792779240647716025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.57, y: 0.57, z: 0.57}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7874593628225579418}
   - {fileID: 1568470309051863956}
@@ -207,11 +207,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389327520c274c64e923711ce425cf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backGround01: {fileID: 4721889245256894611}
-  backGround02: {fileID: 3470454531909941664}
-  characterImage: {fileID: 2816429895460335661}
-  characterText: {fileID: 4923273275867124203}
-  rank: {fileID: 1085950225559385626}
+  backGround01: {fileID: 0}
+  backGround02: {fileID: 0}
+  characterImage: {fileID: 0}
+  characterText: {fileID: 0}
+  rank: {fileID: 0}
 --- !u!1 &5908923436005353128
 GameObject:
   m_ObjectHideFlags: 0
