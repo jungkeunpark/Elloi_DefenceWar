@@ -42,17 +42,26 @@ public class CardInfo : MonoBehaviour
         cost.text = GameManager.instance.MyCharacter_List[cardNum].Cost;
         characterImage.sprite = cards[cardNum].GetComponentInChildren<CardObjDatas>().characterImage.sprite;
 
+
         if (GameManager.instance.MyCharacter_List[cardNum].Rank == "HERO")
         {
             characterRank.sprite = ranks[0];
         }
-        else if(GameManager.instance.MyCharacter_List[cardNum].Rank == "ELITE")
+        else if(GameManager.instance.MyCharacter_List[cardNum].Rank == "MASTER")
         {
             characterRank.sprite = ranks[1];
         }
-        else if(GameManager.instance.MyCharacter_List[cardNum].Rank == "NOVICE")
+        else if (GameManager.instance.MyCharacter_List[cardNum].Rank == "ELITE")
         {
             characterRank.sprite = ranks[2];
+        }
+        else if (GameManager.instance.MyCharacter_List[cardNum].Rank == "EXPERT")
+        {
+            characterRank.sprite = ranks[3];
+        }
+        else if(GameManager.instance.MyCharacter_List[cardNum].Rank == "NOVICE")
+        {
+            characterRank.sprite = ranks[4];
         }
     }
 
