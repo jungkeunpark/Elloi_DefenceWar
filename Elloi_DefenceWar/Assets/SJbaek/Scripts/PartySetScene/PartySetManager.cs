@@ -92,7 +92,7 @@ public class PartySetManager : MonoBehaviour
             {
                 // 플레이어 카드의 이펙트 끄기
                 playerCards[partySetManager.cardNums[partySetCardNum]].transform.GetChild(0).gameObject.SetActive(false);
-                playerCards[partySetManager.cardNums[partySetCardNum]].transform.GetChild(2).gameObject.SetActive(false);
+                playerCards[partySetManager.cardNums[partySetCardNum]].transform.GetChild(1).gameObject.SetActive(false);
 
                 // 자식 오브젝트 파괴
                 Destroy(partySetCards[partySetCardNum].transform.GetChild(4).gameObject);
@@ -139,7 +139,7 @@ public class PartySetManager : MonoBehaviour
 
                 // 기존에 설정된 카드 이펙트 비활성화
                 playerCards[partySetManager.cardNums[partySetManager.partyCardIndex]].transform.GetChild(0).gameObject.SetActive(false);
-                playerCards[partySetManager.cardNums[partySetManager.partyCardIndex]].transform.GetChild(2).gameObject.SetActive(false);
+                playerCards[partySetManager.cardNums[partySetManager.partyCardIndex]].transform.GetChild(1).gameObject.SetActive(false);
             }
 
             // 카드 넘버 배열에 해당 카드 번호를 넣습니다.
@@ -150,7 +150,7 @@ public class PartySetManager : MonoBehaviour
 
             // 카드 이펙트 활성화
             playerCards[partySetCardNum].transform.GetChild(0).gameObject.SetActive(true);
-            playerCards[partySetCardNum].transform.GetChild(2).gameObject.SetActive(true);
+            playerCards[partySetCardNum].transform.GetChild(1).gameObject.SetActive(true);
 
             // 플레이어 카드의 transform을 가져온 다음
             temp_CharacterCard = playerCards[partySetCardNum].transform.GetChild(1).gameObject;

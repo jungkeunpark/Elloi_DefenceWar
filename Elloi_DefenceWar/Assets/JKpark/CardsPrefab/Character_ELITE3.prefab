@@ -161,6 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5639102202151342192}
+  - component: {fileID: 7162056436408755636}
   m_Layer: 5
   m_Name: Character_ELITE3
   m_TagString: Untagged
@@ -194,6 +195,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7162056436408755636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3792779240647716025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389327520c274c64e923711ce425cf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGround01: {fileID: 4721889245256894611}
+  backGround02: {fileID: 3470454531909941664}
+  characterImage: {fileID: 2816429895460335661}
+  characterText: {fileID: 4923273275867124203}
+  rank: {fileID: 1085950225559385626}
 --- !u!1 &5908923436005353128
 GameObject:
   m_ObjectHideFlags: 0
