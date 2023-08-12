@@ -46,6 +46,10 @@ public class FightManager : MonoBehaviour
     public TextMeshProUGUI needLevelUpResourceMoneyText;
     public Button levelUpButton;        // 레벨업 버튼
 
+    // 사용아이템 오브젝트
+    public Button doubleSpeedButton;
+    public Button auto;
+
     // 아이템 갯수 텍스트
     public TextMeshProUGUI doubleSpeedCount;
     public TextMeshProUGUI autoCount;
@@ -97,17 +101,21 @@ public class FightManager : MonoBehaviour
             // } 자원 계속 올려주기
     }   // end 업데이트
 
-    // 활성화 되면
-    public void OnEnable()
-    {
-        // 타워 체력 초기화
-        curPlayerTowerHp = maxPlayerTowerHp[stage];
-        curEnemyTowerHp = maxEnemyTowerHp[stage];
-    }
+    //// 활성화 되면
+    //public void OnEnable()
+    //{
+    //    // 타워 체력 초기화
+    //    curPlayerTowerHp = maxPlayerTowerHp[stage];
+    //    curEnemyTowerHp = maxEnemyTowerHp[stage];
+    //}
 
     // 게임을 배속하는 함수
     public void DoubleSpeed()
     {
+        // 이펙트 켜주기
+        
+
+        // 배속하기
         if(isDoublespeed == false)
         {
             Time.timeScale = 2.0f;

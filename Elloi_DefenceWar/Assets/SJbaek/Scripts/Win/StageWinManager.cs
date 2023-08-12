@@ -6,10 +6,6 @@ using TMPro;
 
 public class StageWinManager : MonoBehaviour
 {
-    // 스테이지 win 캔버스
-    public Canvas stageWinCanvas;
-    public Canvas[] stagesCanvas;
-
     // 스테이지 index (게임매니저가 들고 있음)
 
     // 스테이지 win 매니저가 들고 있을 변수들
@@ -37,18 +33,13 @@ public class StageWinManager : MonoBehaviour
     // 재시작 버튼 클릭 시
     public void ClickRetryButton()
     {
-        // 승리 UI캔버스 비활성화
-        stageWinCanvas.gameObject.SetActive(false);
-
-        // 전투스테이지 캔버스 활성화
-        stagesCanvas[GameManager.instance.nowStageIndex].gameObject.SetActive(true);
+        // ToDo: LoadScene (해당 씬)
     }
 
     // 홈 버튼 클릭 시
     public void ClickHomeButton()
     {
-        // 승리 UI캔버스 비활성화
-        stageWinCanvas.gameObject.SetActive(false);
+        // ToDo: LoadScene (스테이지 선택 씬)
     }
 
     // Update()
