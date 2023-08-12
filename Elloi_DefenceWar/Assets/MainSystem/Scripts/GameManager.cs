@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     // 싱글톤 패턴 사용
     public static GameManager instance;
 
+    // 파티 구성 프리팹
+    public GameObject[] curPartySetPrefabs = new GameObject[4];
+
     // 프로그램 실행시 유지할 값들
 
     // UI 데이터

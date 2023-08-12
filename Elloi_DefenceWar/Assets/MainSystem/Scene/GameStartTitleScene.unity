@@ -975,6 +975,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac145a1fbe9a233468433e5b3c258c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curPartySetPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerGold: 10000
   playerJuwel: 3000
   playerLevel: 1
@@ -985,7 +990,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  partySetCardIndex: ffffffffffffffffffffffffffffffff
+  partySetCardIndex: 0100000006000000080000000a000000
   CharacterDatabase: {fileID: 4900000, guid: dc8cab02cb39e0243bb47ab82a7915d4, type: 3}
   AllCharacter_List: []
   MyCharacter_List: []
