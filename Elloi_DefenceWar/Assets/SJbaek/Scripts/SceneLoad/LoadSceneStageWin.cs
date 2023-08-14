@@ -8,9 +8,8 @@ public class LoadSceneStageWin : MonoBehaviour
     public Canvas stage01;
     public GameObject FightManager;
 
-    public void LoadStageScene01()
+    public void LoadFightStageScene()
     {
-        FightManager.gameObject.SetActive(true);
-        stage01.gameObject.SetActive(true);
+        SceneManager.LoadScene("BattleScene01_Test");
     }
 }

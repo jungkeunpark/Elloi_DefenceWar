@@ -1,63 +1,128 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxHp = 10;
-    public int curHp;
-    public int damage = 5;
-    public int defense = 5;
-    public float attackSpeed = 1f;
-    public float moveSpeed = 3f;
+    public int enemyMaxHp = 1000;
+    public int enemyCurHp;
+    public int enemyDamage = 5;
+    public int enemyDefense = 5;
+    public float enemyAttackSpeed = 2f;
+    public float enemyMoveSpeed = 0.3f;
 
-    public float attackTimer;
-    bool isAttack = false;
+    public bool isBattle = false;               // 전투 중인지 체크
+    public bool isPlayer = false;               // 플레이어 공격 중인지 체크
+    public bool isTower = false;                // 타워 공격 중인지 체크
+    public bool isAttack = false;
+    public float attackTimer;                   // 공격 쿨타임
+
+    PlayerCharacter playerCharacter;
 
     private void Awake()
     {
-        curHp = maxHp;
+        enemyCurHp = enemyMaxHp;
     }
 
-    void Update()
+    private void OnEnable()
     {
-        if (!isAttack)
+        enemyCurHp = enemyMaxHp;
+    }
+
+    private void Update()
+    {
+        // 사망
+        if (enemyCurHp <= 0)
         {
-            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+            EnemyDead();
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (!isBattle && !isAttack)
+        {
+            transform.Translate(enemyMoveSpeed * Time.deltaTime * Vector2.left);
         }
 
-        if (isAttack)
+        if (isBattle)
         {
+            transform.Translate(Vector3.zero);
+
+            // 공격 속도 쿨타임
             attackTimer += Time.deltaTime;
 
-            if (attackTimer > attackSpeed)
+            if (attackTimer > enemyAttackSpeed)
             {
-                Debug.Log("에너미 어택");
+                // 공격 시작
+                isAttack = true;
                 attackTimer = 0;
             }
-        }
 
-        if (curHp <= 0)
-        {
-            gameObject.SetActive(false);
+            if (isAttack && attackTimer == 0)
+            {
+                if(isPlayer)
+                {
+                    playerCharacter.characterCurHP -= enemyDamage;
+                    isAttack = false;
+                }
+                else if(isTower)
+                {
+                    FightManager.fightManager.curPlayerTowerHp -= enemyDamage;
+                    isAttack = false;
+                }
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Equals("Player"))
+        if (collision.CompareTag("Player"))
         {
-            
+            playerCharacter = collision.GetComponent<PlayerCharacter>();
+            isBattle = true;
+            isAttack = true;
+            isPlayer = true;
+            isTower = false;
+        }
+
+        else if (collision.CompareTag("PlayerTower"))
+        {
+            isBattle = true;
+            isAttack = true;
+            isPlayer = false;
+            isTower = true;
         }
     }
 
-    private void OnEnable()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        curHp = maxHp;
+        if (collision.CompareTag("PlayerTower"))
+        {
+            isBattle = true;
+            isAttack = true;
+            isPlayer = false;
+            isTower = true;
+        }
     }
 
-    private void OnDisable()
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.CompareTag("Enemy"))
+        {
+            isBattle = false;
+            isTower = true;
+        }
+    }
+
+    public void EnemyDead()
+    {
+        gameObject.SetActive(false);
+        isBattle = false;
         isAttack = false;
+
+        playerCharacter.isAttack = false;
+        playerCharacter.isBattle = false;
     }
 }

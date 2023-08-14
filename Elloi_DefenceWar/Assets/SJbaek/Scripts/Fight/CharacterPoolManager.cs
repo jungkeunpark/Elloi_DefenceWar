@@ -22,6 +22,13 @@ public class CharacterPoolManager : MonoBehaviour
         {
             pools[index] = new List<GameObject>();
         }
+
+        // 각각의 캐릭터에 값 주기
+        for (int i = 0; i < characterPrefabs.Length; i++)
+        {
+            PlayerCharacter playerCharacter = characterPrefabs[i].GetComponent<PlayerCharacter>();
+            playerCharacter.SetCharacterCardValues(i);
+        }
     }
 
     public GameObject Get(int index)

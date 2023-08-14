@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class FightManager : MonoBehaviour
 {
@@ -11,22 +12,28 @@ public class FightManager : MonoBehaviour
     public CharacterPoolManager characterPoolManager;
     public EnemyPoolManager enemyPoolManager;
 
-    // 게임 중지 캔버스
-    public Canvas gamePauseCanvas;
+    // 캔버스들
+    public Canvas gamePauseCanvas;  // 게임 중지
 
     // 현재 스테이지
     public int stage = 0;
 
     // 스테이지마다 달라질 변수들
-    public List<int> maxResourceMoney;  // 플레이어 자원
-    public List<int> maxPlayerTowerHp;  // 플레이어 타워 체력
-    public List<int> maxEnemyTowerHp;   // 적 타워 체력
+    public List<int> maxResourceMoneys;  // 플레이어 자원
+    public List<int> maxPlayerTowerHps;  // 플레이어 타워 체력
+    public List<int> maxEnemyTowerHps;   // 적 타워 체력
 
+    public int maxPlayerTowerHp;    // 최대 플레이어 타워 체력
     public int curPlayerTowerHp;    // 현재 플레이어 타워 체력
+    public int maxEnemyTowerHp;     // 최대 적 타워 체력
     public int curEnemyTowerHp;     // 현재 적 타워 체력
 
+    // 타워 체력바 이미지
+    public Image playerTowerHpBar;
+    public Image enemyTowerHpBar;
+
     // 플레이어 자원
-    public float curResourceMoney;      // 현재 가진 자원
+    public float curResourceMoney;          // 현재 가진 자원
     public List<int> needLevelUpResourceMoney;  // 레벨업에 필요한 자원                  // 이거 아무것도 안넣었는데?
     public List<int> resourceIncrement;         // 자원 회복 증가량
     public int maxResourceLevel = 9;        // 최대 자원 레벨
@@ -40,6 +47,8 @@ public class FightManager : MonoBehaviour
     public Sprite[] characterCards;
     public int characterCardIndex;
 
+    // 캐릭터 카드 cost 텍스트들
+    public TextMeshProUGUI[] cardCostTexts;
     // 게임 아이템
     public bool isDoublespeed = false; // 게임 2배속 여부
 
@@ -65,8 +74,15 @@ public class FightManager : MonoBehaviour
         fightManager = this;
 
         // 타워 체력 초기화
-        curPlayerTowerHp = maxPlayerTowerHp[stage];
-        curEnemyTowerHp = maxEnemyTowerHp[stage];
+        maxPlayerTowerHp = maxPlayerTowerHps[stage];
+        maxEnemyTowerHp = maxEnemyTowerHps[stage];
+
+        curPlayerTowerHp = maxPlayerTowerHp;
+        curEnemyTowerHp = maxEnemyTowerHp;
+
+        // 체력바 초기화
+        playerTowerHpBar.fillAmount = 1f;
+        enemyTowerHpBar.fillAmount = 1f;
     }
 
     private void Start()
@@ -76,7 +92,11 @@ public class FightManager : MonoBehaviour
         {
             if (GameManager.instance.partySetCardIndex[index] != -1)
             {
+                // 캐릭터 카드의 이미지와 비용텍스트 변경
                 selectedCharacters[index].sprite = characterCards[index];
+                selectedCharacters[index].SetNativeSize();
+                selectedCharacters[index].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+                cardCostTexts[index].text = GameManager.instance.MyCharacter_List[GameManager.instance.partySetCardIndex[index]].Cost;
             }
 
             else { return; }
@@ -87,8 +107,8 @@ public class FightManager : MonoBehaviour
     private void Update()
     {
         // { 텍스트 출력
-        playerTowerHp.text = string.Format("{0} / {1}", curPlayerTowerHp, maxPlayerTowerHp[stage]);
-        EnemyTowerHp.text = string.Format("{0} / {1}", curEnemyTowerHp, maxEnemyTowerHp[stage]);
+        playerTowerHp.text = string.Format("{0} / {1}", curPlayerTowerHp, maxPlayerTowerHps[stage]);
+        EnemyTowerHp.text = string.Format("{0} / {1}", curEnemyTowerHp, maxEnemyTowerHps[stage]);
         doubleSpeedCount.text = string.Format("{0}", GameManager.instance.doubleSpeedCount);
         autoCount.text = string.Format("{0}", GameManager.instance.autoItemCount);
         
@@ -108,19 +128,23 @@ public class FightManager : MonoBehaviour
             levelUpButton.interactable = true;
             needLevelUpResourceMoneyText.text = string.Format("{0}", needLevelUpResourceMoney[curResourceLevel]);
         }
-        
         // } 텍스트 출력
 
         // { 자원 계속 올려주기
         curResourceMoney += Time.deltaTime * resourceIncrement[curResourceLevel];
 
-        if (curResourceMoney > maxResourceMoney[curResourceLevel])
+        if (curResourceMoney > maxResourceMoneys[curResourceLevel])
         {
-            curResourceMoney = maxResourceMoney[curResourceLevel];
+            curResourceMoney = maxResourceMoneys[curResourceLevel];
         }
 
-        resource.text = string.Format("{0} / {1}", (int)curResourceMoney, maxResourceMoney[curResourceLevel]);
-            // } 자원 계속 올려주기
+        resource.text = string.Format("{0} / {1}", (int)curResourceMoney, maxResourceMoneys[curResourceLevel]);
+        // } 자원 계속 올려주기
+
+        // 타워 체력바 업데이트
+        playerTowerHpBar.fillAmount = (float)curPlayerTowerHp / (float)maxPlayerTowerHp;
+        enemyTowerHpBar.fillAmount = (float)curEnemyTowerHp / (float)maxEnemyTowerHp;
+
     }   // end 업데이트
 
     //// 활성화 되면

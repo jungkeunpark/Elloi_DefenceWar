@@ -68,12 +68,7 @@ public class PartySetManager : MonoBehaviour
                 playerCards[cardNums[i]].transform.GetChild(1).gameObject.SetActive(true);
 
             }
-
-
-
-
         }
-
     }
 
     // { 파티셋 카드 클릭
