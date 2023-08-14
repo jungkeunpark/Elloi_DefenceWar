@@ -13,7 +13,7 @@ public class UseItemActiveEffect : MonoBehaviour
         
         else if (isActive)
         {
-            transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.back * rotationSpeed * Time.deltaTime);
         }
     }
 

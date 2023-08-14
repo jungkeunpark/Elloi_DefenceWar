@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class FightManager : MonoBehaviour
 {
+    // 스크립트
+    public static FightManager fightManager;
+    public CharacterPoolManager characterPoolManager;
+    public EnemyPoolManager enemyPoolManager;
+
     // 게임 중지 캔버스
     public Canvas gamePauseCanvas;
 
@@ -31,6 +36,7 @@ public class FightManager : MonoBehaviour
     public List<int> skillCoolTime;
 
     // 캐릭터 카드 이미지들
+    public Image[] selectedCharacters; 
     public Sprite[] characterCards;
     public int characterCardIndex;
 
@@ -47,8 +53,8 @@ public class FightManager : MonoBehaviour
     public Button levelUpButton;        // 레벨업 버튼
 
     // 사용아이템 오브젝트
-    public Button doubleSpeedButton;
-    public Button auto;
+    public GameObject doubleSpeedButton;
+    public GameObject auto;
 
     // 아이템 갯수 텍스트
     public TextMeshProUGUI doubleSpeedCount;
@@ -56,9 +62,25 @@ public class FightManager : MonoBehaviour
 
     private void Awake()
     {
+        fightManager = this;
+
         // 타워 체력 초기화
         curPlayerTowerHp = maxPlayerTowerHp[stage];
         curEnemyTowerHp = maxEnemyTowerHp[stage];
+    }
+
+    private void Start()
+    {
+        // 캐릭터 카드 셋팅
+        for (int index = 0; index < selectedCharacters.Length; index++)
+        {
+            if (GameManager.instance.partySetCardIndex[index] != -1)
+            {
+                selectedCharacters[index].sprite = characterCards[index];
+            }
+
+            else { return; }
+        }
     }
 
     // 업데이트
@@ -112,20 +134,19 @@ public class FightManager : MonoBehaviour
     // 게임을 배속하는 함수
     public void DoubleSpeed()
     {
-        // 이펙트 켜주기
-        
-
-        // 배속하기
-        if(isDoublespeed == false)
+        // 배속하기 & 이펙트 키기
+        if (isDoublespeed == false)
         {
             Time.timeScale = 2.0f;
             isDoublespeed = true;
+            doubleSpeedButton.transform.GetChild(0).gameObject.SetActive(true);
         }
 
         else if(isDoublespeed == true)
         {
             Time.timeScale = 1.0f;
             isDoublespeed = false;
+            doubleSpeedButton.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
