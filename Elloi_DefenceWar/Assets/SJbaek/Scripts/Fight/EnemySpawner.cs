@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 10f)
+        if (timer > 20f)
         {
             EnemySpawn();
             timer = 0f;

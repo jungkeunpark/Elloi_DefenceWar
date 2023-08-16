@@ -13,7 +13,9 @@ public class FightManager : MonoBehaviour
     public EnemyPoolManager enemyPoolManager;
 
     // 캔버스들
-    public Canvas gamePauseCanvas;  // 게임 중지
+    public Canvas gamePauseCanvas;  // 게임 중지 캔버스
+    public Canvas gameWinCanvas;    // 게임 승리 캔버스
+    public Canvas gameLoseCanvas;   // 게임 패배 캔버스
 
     // 현재 스테이지
     public int stage = 0;
@@ -42,15 +44,17 @@ public class FightManager : MonoBehaviour
     // 스킬 쿨타임
     public List<int> skillCoolTime;
 
-    // 캐릭터 카드 이미지들
+    // 캐릭터 카드
+    public GameObject[] cards;
     public Image[] selectedCharacters; 
-    public Sprite[] characterCards;
     public int characterCardIndex;
 
     // 캐릭터 카드 cost 텍스트들
     public TextMeshProUGUI[] cardCostTexts;
+
     // 게임 아이템
-    public bool isDoublespeed = false; // 게임 2배속 여부
+    public bool isDoubleSpeed = false; // 게임 2배속 여부
+    public bool useDoubleSpeed = false; // 아이템 사용 여부
 
     // 텍스트 
     public TextMeshProUGUI playerTowerHp;   // 플레이어 타워 체력
@@ -73,6 +77,9 @@ public class FightManager : MonoBehaviour
     {
         fightManager = this;
 
+        // 게임 시간 초기화
+        Time.timeScale = 1.0f;
+
         // 타워 체력 초기화
         maxPlayerTowerHp = maxPlayerTowerHps[stage];
         maxEnemyTowerHp = maxEnemyTowerHps[stage];
@@ -90,10 +97,18 @@ public class FightManager : MonoBehaviour
         // 캐릭터 카드 셋팅
         for (int index = 0; index < selectedCharacters.Length; index++)
         {
-            if (GameManager.instance.partySetCardIndex[index] != -1)
+            // 파티 셋팅이 되어 있지 않다면 비활성화 (그리드 되어있음)
+            if(GameManager.instance.partySetCardIndex[index] == -1)
+            {
+                cards[index].gameObject.SetActive(false);
+            }
+
+            // 파티 셋팅이 되어있다면...
+            else if (GameManager.instance.partySetCardIndex[index] != -1)
             {
                 // 캐릭터 카드의 이미지와 비용텍스트 변경
-                selectedCharacters[index].sprite = characterCards[index];
+                Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
+                selectedCharacters[index].sprite = tempSprite;
                 selectedCharacters[index].SetNativeSize();
                 selectedCharacters[index].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
                 cardCostTexts[index].text = GameManager.instance.MyCharacter_List[GameManager.instance.partySetCardIndex[index]].Cost;
@@ -145,31 +160,49 @@ public class FightManager : MonoBehaviour
         playerTowerHpBar.fillAmount = (float)curPlayerTowerHp / (float)maxPlayerTowerHp;
         enemyTowerHpBar.fillAmount = (float)curEnemyTowerHp / (float)maxEnemyTowerHp;
 
-    }   // end 업데이트
+        // 적 타워 파괴 시
+        if(curEnemyTowerHp <= 0)
+        {
+            DestroyEnemyTower();
+        }
 
-    //// 활성화 되면
-    //public void OnEnable()
-    //{
-    //    // 타워 체력 초기화
-    //    curPlayerTowerHp = maxPlayerTowerHp[stage];
-    //    curEnemyTowerHp = maxEnemyTowerHp[stage];
-    //}
+        // 플레이어 타워 파괴 시
+        if(curPlayerTowerHp <= 0)
+        {
+            DestoryPlayerTower();
+        }
+
+    }       // UpDate()
 
     // 게임을 배속하는 함수
     public void DoubleSpeed()
     {
         // 배속하기 & 이펙트 키기
-        if (isDoublespeed == false)
+        if (isDoubleSpeed == false)
         {
+            // 아이템 사용 체크
+            if(useDoubleSpeed == true)
+            {
+                return;
+            }
+            else if(useDoubleSpeed == false)
+            {
+                // 아이템 갯수 차감
+                useDoubleSpeed = true;
+                GameManager.instance.doubleSpeedCount--;
+            }
+
+            // 배속 활성화
             Time.timeScale = 2.0f;
-            isDoublespeed = true;
+            isDoubleSpeed = true;
             doubleSpeedButton.transform.GetChild(0).gameObject.SetActive(true);
         }
 
-        else if(isDoublespeed == true)
+        else if(isDoubleSpeed == true)
         {
+            // 배속 비활성화
             Time.timeScale = 1.0f;
-            isDoublespeed = false;
+            isDoubleSpeed = false;
             doubleSpeedButton.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
@@ -214,13 +247,7 @@ public class FightManager : MonoBehaviour
     // 게임 패배 버튼 클릭시
     public void ClickGameEnd()
     {
-        // 게임 정지 UI 비활성화
-
-        // 게임 패배 UI 활성화
-
-        // 전투 매니저 리셋
-
-        // 게임 시간 1으로 변경
+        DestoryPlayerTower();
     }
 
     // 게임 재게 버튼 클릭시
@@ -229,7 +256,35 @@ public class FightManager : MonoBehaviour
         // 게임 정지 UI 비활성화
         gamePauseCanvas.gameObject.SetActive(false);
 
-        // 게임 시간 1으로 변경
-        Time.timeScale = 1;
+        // 게임 시간 재변경
+        if(!isDoubleSpeed)
+        {
+            Time.timeScale = 1;
+        }
+        else if(isDoubleSpeed)
+        {
+            Time.timeScale = 2;
+        }
+        
+    }
+
+    // 적 타워 파괴
+    public void DestroyEnemyTower()
+    {
+        // 게임 시간 0으로 변경
+        Time.timeScale = 0;
+
+        // 승리 UI 등장
+        gameWinCanvas.gameObject.SetActive(true);
+    }
+
+    // 플레이어 타워 파괴
+    public void DestoryPlayerTower()
+    {
+        // 게임 시간 0으로 변경
+        Time.timeScale = 0;
+
+        // 패배 UI 등장
+        gameLoseCanvas.gameObject.SetActive(true);
     }
 }

@@ -9,7 +9,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log( GetComponentsInChildren<RectTransform>().Length);
+        //Debug.Log( GetComponentsInChildren<RectTransform>().Length);
         spawnPoint = GetComponentsInChildren<RectTransform>();
     }
 

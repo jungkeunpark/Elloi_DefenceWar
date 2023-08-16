@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.TextCore.Text;
 
 public class Enemy : MonoBehaviour
 {
-    public int enemyMaxHp = 1000;
-    public int enemyCurHp;
-    public int enemyDamage = 5;
-    public int enemyDefense = 5;
-    public float enemyAttackSpeed = 2f;
-    public float enemyMoveSpeed = 0.3f;
+    public int enemyMaxHp = 100;               // 몬스터 최대 체력
+    public int enemyCurHp;                      // 몬스터 현재 체력
+    public int enemyDamage = 5;                 // 몬스터 데미지
+    public int enemyDefense = 5;                // 몬스터 방어력
+    public float enemyAttackSpeed = 2f;         // 몬스터 공격속도
+    public float enemyMoveSpeed = 0.3f;         // 몬스터 이동속도
 
     public bool isBattle = false;               // 전투 중인지 체크
     public bool isPlayer = false;               // 플레이어 공격 중인지 체크
     public bool isTower = false;                // 타워 공격 중인지 체크
     public bool isAttack = false;
     public float attackTimer;                   // 공격 쿨타임
+
+    public Image enemyHPBar;                    // 몬스터 체력바
 
     PlayerCharacter playerCharacter;
 
@@ -37,6 +40,9 @@ public class Enemy : MonoBehaviour
         {
             EnemyDead();
         }
+
+        // 체력바 업데이트
+        enemyHPBar.fillAmount = (float)enemyCurHp / (float)enemyMaxHp;
     }
 
     void FixedUpdate()
@@ -118,6 +124,7 @@ public class Enemy : MonoBehaviour
 
     public void EnemyDead()
     {
+        transform.eulerAngles = new Vector3(0, 0, 0);
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
