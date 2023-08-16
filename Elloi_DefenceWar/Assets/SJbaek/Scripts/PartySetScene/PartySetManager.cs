@@ -68,12 +68,7 @@ public class PartySetManager : MonoBehaviour
                 playerCards[cardNums[i]].transform.GetChild(1).gameObject.SetActive(true);
 
             }
-
-
-
-
         }
-
     }
 
     // { 파티셋 카드 클릭
@@ -199,7 +194,7 @@ public class PartySetManager : MonoBehaviour
             temp_CharacterCard = playerCards[partySetCardNum].transform.GetChild(2).gameObject;
 
             // 게임매니저 파티셋 카드에 저장
-            Debug.Log(partyCardIndex);
+            // Debug.Log(partyCardIndex);
             GameManager.instance.partySetCardIndex[partySetManager.partyCardIndex] = partySetCardNum;
 
             // 파티셋카드의 자식오브젝트로 생성
@@ -237,7 +232,7 @@ public class PartySetManager : MonoBehaviour
         // ㄴ> 0번으로 이동
         if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("1");
+            //Debug.Log("1");
             playerCards[partySetCardNum].transform.SetSiblingIndex(0);
         }
 
@@ -246,7 +241,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 2 - 2 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("2");
+            //Debug.Log("2");
             if (partySetManager.partyCardIndex == 0 || partySetManager.partyCardIndex == 1)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -262,7 +257,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 3 - 2 ) 플레이어가 선택한 파티 번호 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("3");
+            //Debug.Log("3");
             if (partySetManager.partyCardIndex == 0 || partySetManager.partyCardIndex == 1 || partySetManager.partyCardIndex == 2)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -277,7 +272,7 @@ public class PartySetManager : MonoBehaviour
         // ㄴ> 0번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("4");
+            //Debug.Log("4");
             playerCards[partySetCardNum].transform.SetSiblingIndex(0);
         }
 
@@ -286,7 +281,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 5 - 2 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("5");
+            //Debug.Log("5");
             if (partySetManager.partyCardIndex == 0 || partySetManager.partyCardIndex == 1)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -304,7 +299,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 6 - 3 ) 플레이어가 선택한 파티 번호 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("6");
+            //Debug.Log("6");
             if (partySetManager.partyCardIndex == 0 || partySetManager.partyCardIndex == 1)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -326,7 +321,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 7 - 2 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("7");
+            //Debug.Log("7");
             if (partySetManager.partyCardIndex == 0 )
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -349,7 +344,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 8 - 3 ) 플레이어가 선택한 파티 번호 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] == -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("8");
+            //Debug.Log("8");
             if (partySetManager.partyCardIndex == 0 || partySetManager.partyCardIndex == 1)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -375,7 +370,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 9 - 2 ) 플레이어가 선택한 파티 번호 1번, 2번, 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("9");
+            //Debug.Log("9");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -391,7 +386,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 10 - 3 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("10");
+            //Debug.Log("10");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -413,7 +408,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 11 - 3 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("11");
+            //Debug.Log("11");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -437,7 +432,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 12 - 3 ) 플레이어가 선택한 파티 번호 2번, 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("12");
+            //Debug.Log("12");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -459,7 +454,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 13 - 3 ) 플레이어가 선택한 파티 번호 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] == -1)
         {
-            Debug.Log("13");
+            //Debug.Log("13");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -482,7 +477,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 14 - 3 ) 플레이어가 선택한 파티 번호 3번 ==> 2번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("14");
+            //Debug.Log("14");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -508,7 +503,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 15 - 2 ) 플레이어가 선택한 파티 번호 1번, 2번, 3번 ==> 1번으로 이동
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] == -1 && partySetManager.cardNums[2] == -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("15");
+            //Debug.Log("15");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);
@@ -527,7 +522,7 @@ public class PartySetManager : MonoBehaviour
         // ( 조건. 16 - 4 ) 플레이어가 선택한 파티 번호 3번 ==> 3번으로 이동 ( 기존 카드는 4번으로 이동 )
         else if (partySetManager.cardNums[0] != -1 && partySetManager.cardNums[1] != -1 && partySetManager.cardNums[2] != -1 && partySetManager.cardNums[3] != -1)
         {
-            Debug.Log("16");
+            //Debug.Log("16");
             if (partySetManager.partyCardIndex == 0)
             {
                 playerCards[partySetCardNum].transform.SetSiblingIndex(0);

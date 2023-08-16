@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     // 파티 구성 프리팹
     public GameObject[] curPartySetPrefabs = new GameObject[4];
+    public GameObject[] characterCardPrefabs;
 
     // 프로그램 실행시 유지할 값들
 

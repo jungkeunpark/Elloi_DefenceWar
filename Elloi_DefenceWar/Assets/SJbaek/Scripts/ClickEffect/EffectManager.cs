@@ -23,9 +23,6 @@ public class EffectManager : MonoBehaviour
 
     void EffectCreate()
     {
-        // 마우스의 현재 스크린 좌표를 얻어옴
-        Vector3 mousePosition = Input.mousePosition;
-       
         // 마우스 위치에서 조금씩 랜덤하게 벗어난 위치로 생성
         float offsetX = Random.Range(-offsetRange, offsetRange);
         float offsetY = Random.Range(-offsetRange, offsetRange);

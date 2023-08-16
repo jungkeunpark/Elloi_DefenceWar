@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StageWinManager : MonoBehaviour
 {
+    // 스테이지 이름
+    string curSceneName;
+
     // 스테이지 index (게임매니저가 들고 있음)
 
     // 스테이지 win 매니저가 들고 있을 변수들
@@ -30,19 +34,12 @@ public class StageWinManager : MonoBehaviour
     public float needLevelUpExp = 500f;  // 레벨업 까지 필요한 경험치
     public float curLevelExp = 100f;     // 현재 경험치
 
-    // 재시작 버튼 클릭 시
-    public void ClickRetryButton()
+    private void Awake()
     {
-        // ToDo: LoadScene (해당 씬)
+        // 현재 씬 이름
+        curSceneName = SceneManager.GetActiveScene().name;
     }
 
-    // 홈 버튼 클릭 시
-    public void ClickHomeButton()
-    {
-        // ToDo: LoadScene (스테이지 선택 씬)
-    }
-
-    // Update()
     private void Update()
     {
         // { 텍스트 출력
@@ -53,19 +50,23 @@ public class StageWinManager : MonoBehaviour
 
         // 경험치 바 채우기
         curExpBar.fillAmount = curLevelExp / needLevelUpExp;
+    }       // Update()
+
+    // 보상을 정하는 함수
+    public void SetReward()
+    {
+
     }
 
-    // 활성화 시 획득할 수 있는 보상 + 수량 정하기
-    private void OnEnable()
+    // 재시작 버튼 클릭 시
+    public void ClickRetryButton()
     {
-        // 경험치 증가
-        curLevelExp += curLevelExp;
+        SceneManager.LoadScene(curSceneName);
     }
 
-    // 비활성화 시 데이터 초기화
-    private void OnDisable()
+    // 홈 버튼 클릭 시
+    public void ClickHomeButton()
     {
-        coinAmount = 0;
-        expAmount = 0;
+        SceneManager.LoadScene("StageSelectScene");
     }
 }
