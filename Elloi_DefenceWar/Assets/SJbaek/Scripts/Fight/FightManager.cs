@@ -12,10 +12,10 @@ public class FightManager : MonoBehaviour
     public CharacterPoolManager characterPoolManager;
     public EnemyPoolManager enemyPoolManager;
 
-    // 캔버스들
-    public Canvas gamePauseCanvas;  // 게임 중지 캔버스
-    public Canvas gameWinCanvas;    // 게임 승리 캔버스
-    public Canvas gameLoseCanvas;   // 게임 패배 캔버스
+    // 캔버스들 (게임오브젝트로 빼서 변경함) sortingRayer...
+    public GameObject gamePauseCanvas;  // 게임 중지 캔버스
+    public GameObject gameWinCanvas;    // 게임 승리 캔버스
+    public GameObject gameLoseCanvas;   // 게임 패배 캔버스
 
     // 현재 스테이지
     public int stage = 0;
@@ -247,6 +247,12 @@ public class FightManager : MonoBehaviour
     // 게임 패배 버튼 클릭시
     public void ClickGameEnd()
     {
+        // 아이템을 사용했다면 되돌려 줌
+        if(useDoubleSpeed == true)
+        {
+            GameManager.instance.doubleSpeedCount++;
+        }
+
         DestoryPlayerTower();
     }
 

@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -733524889, guid: f452445e96068ff46b86463da31801d3, type: 3}
+  m_Sprite: {fileID: -1771502321, guid: f452445e96068ff46b86463da31801d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 4430118410227460348}
   - component: {fileID: -2783605559107853866}
   m_Layer: 5
-  m_Name: Enemy_Slime03
+  m_Name: Enemy_Slime02_test
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,12 +215,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aaa7ff48ecb2e840b1e5452909379e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHp: 50
+  enemyMaxHp: 200
   enemyCurHp: 0
-  enemyDamage: 5
+  enemyDamage: 20
   enemyDefense: 5
   enemyAttackSpeed: 2
-  enemyMoveSpeed: 0.6
+  enemyMoveSpeed: 0.1
   isBattle: 0
   isPlayer: 0
   isTower: 0

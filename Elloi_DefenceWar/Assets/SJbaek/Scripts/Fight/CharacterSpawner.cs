@@ -28,7 +28,6 @@ public class CharacterSpawner : MonoBehaviour
 
                 // º“»Ø
                 GameObject character = FightManager.fightManager.characterPoolManager.Get(num);
-                Debug.Log(spawnPoint.Length);
                 character.transform.position = spawnPoint[Random.Range(0, spawnPoint.Length - 1)].transform.position;
             }
         }
