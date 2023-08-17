@@ -21,11 +21,14 @@ public class Enemy : MonoBehaviour
 
     public Image enemyHPBar;                    // 몬스터 체력바
 
+    public Animator enemyAnimator;              // 몬스터 애니메이션
+
     PlayerCharacter playerCharacter;
 
     private void Awake()
     {
         enemyCurHp = enemyMaxHp;
+        enemyAnimator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -38,7 +41,7 @@ public class Enemy : MonoBehaviour
         // 사망
         if (enemyCurHp <= 0)
         {
-            EnemyDead();
+            enemyAnimator.SetTrigger("Die");
         }
 
         // 체력바 업데이트
@@ -59,25 +62,17 @@ public class Enemy : MonoBehaviour
             // 공격 속도 쿨타임
             attackTimer += Time.deltaTime;
 
+            // 공격 가능 시간
             if (attackTimer > enemyAttackSpeed)
             {
-                // 공격 시작
                 isAttack = true;
                 attackTimer = 0;
             }
 
             if (isAttack && attackTimer == 0)
             {
-                if(isPlayer)
-                {
-                    playerCharacter.characterCurHP -= enemyDamage;
-                    isAttack = false;
-                }
-                else if(isTower)
-                {
-                    FightManager.fightManager.curPlayerTowerHp -= enemyDamage;
-                    isAttack = false;
-                }
+                // 공격
+                enemyAnimator.SetBool("isAttack", true);
             }
         }
     }
@@ -131,5 +126,23 @@ public class Enemy : MonoBehaviour
 
         playerCharacter.isAttack = false;
         playerCharacter.isBattle = false;
+    }
+
+    public void EnemyAttack()
+    {
+        if (isPlayer)
+        {
+            playerCharacter.characterCurHP -= enemyDamage;
+        }
+        else if (isTower)
+        {
+            FightManager.fightManager.curPlayerTowerHp -= enemyDamage;
+        }
+    }
+
+    public void EnemyAttackEnd()
+    {
+        isAttack = false;
+        enemyAnimator.SetBool("isAttack", false);
     }
 }
