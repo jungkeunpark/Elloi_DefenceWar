@@ -19,8 +19,7 @@ public class PlayerCharacter : MonoBehaviour
 
     public bool isBattle = false;       // 전투 중인지 체크
     public bool isAttack = false;       // 공격 중인지 체크
-    public bool isEnemy = false;
-    public bool isTower = false;
+    public bool attackEnemy = false;    // 적을 공격중
     public float attackCoolTime;        // 공격 쿨타임
 
     public Enemy enemy;
@@ -104,40 +103,39 @@ public class PlayerCharacter : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
-            isAttack = true;
             isBattle = true;
-            isEnemy = true;
-            isTower = false;
+            attackEnemy = true;
             enemy = collision.GetComponent<Enemy>();
         }
 
         else if (collision.CompareTag("EnemyTower"))
         {
-            isAttack = true;
             isBattle = true;
-            isEnemy = false;
-            isTower = true;
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("EnemyTower") && isEnemy == false)
+        if (collision.CompareTag("Enemy"))
         {
-            isAttack = true;
             isBattle = true;
-            isEnemy = false;
-            isTower = true;
+            attackEnemy = true;
+            enemy = collision.GetComponent<Enemy>();
+        }
+
+        else if (collision.CompareTag("EnemyTower"))
+        {
+            isBattle = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy"))
         {
             isBattle = false;
-            isEnemy = false;
-            isTower = true;
+            attackEnemy = false;
+            enemy = null;
         }
     }
 
@@ -150,14 +148,14 @@ public class PlayerCharacter : MonoBehaviour
         characterImage.transform.eulerAngles = new Vector3(0, 0, -45f);
 
         // Enemy 컴포넌트 hp 감소
-        if (isEnemy)
+        if (attackEnemy)
         {
             if(enemy != null)
             {
                 enemy.enemyCurHp -= characterDamage;
             }
         }
-        if (isTower)
+        else if (!attackEnemy)
         {
             FightManager.fightManager.curEnemyTowerHp -= characterDamage;
         }

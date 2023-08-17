@@ -12,7 +12,6 @@ public class UIManager : MonoBehaviour
         canvases[0].gameObject.SetActive(true);
         canvases[1].gameObject.SetActive(false);
         canvases[2].gameObject.SetActive(false);
-        canvases[3].gameObject.SetActive(false);
     }
 
     public void OpenCharacterInfoCanvas()
@@ -20,7 +19,6 @@ public class UIManager : MonoBehaviour
         canvases[0].gameObject.SetActive(false);
         canvases[1].gameObject.SetActive(true);
         canvases[2].gameObject.SetActive(false);
-        canvases[3].gameObject.SetActive(false);
     }
 
     public void OpenPartySetCanavas()
@@ -28,14 +26,5 @@ public class UIManager : MonoBehaviour
         canvases[0].gameObject.SetActive(false);
         canvases[1].gameObject.SetActive(false);
         canvases[2].gameObject.SetActive(true);
-        canvases[3].gameObject.SetActive(false);
-    }
-
-    public void OpenGatchaCanvas()
-    {
-        canvases[0].gameObject.SetActive(false);
-        canvases[1].gameObject.SetActive(false);
-        canvases[2].gameObject.SetActive(false);
-        canvases[3].gameObject.SetActive(true);
     }
 }
