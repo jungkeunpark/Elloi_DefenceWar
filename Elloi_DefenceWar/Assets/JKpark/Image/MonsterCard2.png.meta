@@ -1,0 +1,4019 @@
+fileFormatVersion: 2
+guid: 191e4cf8facd39b4c962facce0acbc76
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonsterCard2_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1730
+        width: 109
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f28bda73c2558a4385ab564ac714a39
+      internalID: -1793485679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1896
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cdad23a05ffca438780952ea715e23
+      internalID: -210005450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_2
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1896
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c0ba855dcbcfc438269cc771687185
+      internalID: -1110603938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1875
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd5fb23c00a0144a8ddf14cd9996590
+      internalID: 401083167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_4
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1730
+        width: 117
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e480d86be33df1840a342171988d5a59
+      internalID: -825012127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_5
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1731
+        width: 122
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0c6f9462ef8554092bfa50c7fce296
+      internalID: 424710469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1759
+        width: 124
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313285bb4b02622418c9e3e280cc4780
+      internalID: -777435482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_7
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1742
+        width: 89
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a641d6b3007d94f4297c4a4f34124233
+      internalID: 1681009419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1734
+        width: 111
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a04f06c66724e44fa52847edc14a11b
+      internalID: -1396407072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1804
+        width: 12
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0f9af4b13c38e49843cd150b1a4ae1
+      internalID: 714296237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_10
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1730
+        width: 77
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e79f6d66d78774e875ef84e6a93a3e
+      internalID: -1182954667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_11
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1732
+        width: 124
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af95f66161c93864dabc12ec4c14133f
+      internalID: 1766880993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_12
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1730
+        width: 124
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976c226c3ef411c4d803a43c7cf004c4
+      internalID: 212699488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_13
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1742
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025af98b15b60074ba454395d9503801
+      internalID: 1199185283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1557
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdfb70f76bc3e341ab2f9da0b9d2f57
+      internalID: 530776885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1557
+        width: 107
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f96be3a7c35b8f4ebd88f49d7b2ed4f
+      internalID: -1949056780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1712
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bcbfd28b4bcec4481b27ff277eec6e
+      internalID: -1572908975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_17
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1557
+        width: 70
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328ede91305cdda48bf946577e4aba5e
+      internalID: -632134725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_18
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1557
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059516dfb4762a5429355ca41b54da56
+      internalID: -405510376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_19
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1557
+        width: 124
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8143986d3b5daa24c90043ad40c9f222
+      internalID: 789092467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1557
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4326ebf26c09dae48b45e78e9595d22b
+      internalID: 1644094979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_21
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1566
+        width: 104
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adab1d3e0faa474c86908bf05082caa
+      internalID: 1276210732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_22
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1557
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ba6f73df73c4d45bcfe45a0fb0b760
+      internalID: -645950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_23
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1562
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0056f74c5f0ee349a609eec4c88664a
+      internalID: 1684012683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_24
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1580
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23268635d6b9f7a44b3e605c8311cfa8
+      internalID: -844166149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1384
+        width: 107
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fda4c68feb20f40a56fb5da9b142d5
+      internalID: 336680875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_26
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1433
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30ee026d11aeb44b8220a25b7b082db
+      internalID: 676943647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1520
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bfaace279fd99439afb2f6a23d4006
+      internalID: 1054231419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_28
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1408
+        width: 124
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6f7c5d8d488cc4d8218b5e81609843
+      internalID: -158882559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_29
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1385
+        width: 123
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e73e6267a5bda40a3bd7cf8441404b
+      internalID: 1409530014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_30
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1384
+        width: 105
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835f4839a198c7e47a34ed9e03b2513c
+      internalID: 304252393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_31
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1384
+        width: 118
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b574dad2f1962c641b5e235a975c0704
+      internalID: 917200644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_32
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1384
+        width: 118
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae688432e626d264095e8f499aa790e8
+      internalID: -471042635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_33
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1384
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900ef1338de0a7c4ab71cfdd053ff9da
+      internalID: 1616814599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_34
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e7bb25e4bb75847b10060fbd3347da
+      internalID: -1189798201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_35
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1404
+        width: 122
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e198b719ca89774e8c0404aa727fa02
+      internalID: -1750483570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_36
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1419
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41339041fe6250941a3e59c2c83ad631
+      internalID: 105427450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1211
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0403acfe90838284d906c8801c5144d9
+      internalID: -1729654455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_38
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1211
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37afbde5929383247b44ad85cff1b356
+      internalID: -1040940063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_39
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1224
+        width: 124
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e2abedd45e3ee438e3ba420e31bca2
+      internalID: 966270715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_40
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1241
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027450767f267f64ba7611e50436a331
+      internalID: -1388183296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_41
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1211
+        width: 123
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7926754585fe0c746912c9717bf0fb5a
+      internalID: -2049997574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_42
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1230
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ae87f62e6c54d4f90986e4a46034c9
+      internalID: 941252303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_43
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1211
+        width: 123
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171bb869bbefc054797b7d3602fc7e39
+      internalID: -1360474331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_44
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1235
+        width: 81
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5876b88156489344824dab5e512a88b
+      internalID: -1892660648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_45
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1225
+        width: 123
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c681c3788e9be41ae273ef4a2126d8
+      internalID: -839515391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_46
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1038
+        width: 122
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7a203ce9335634caef4ac1027fd681
+      internalID: -1779018646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_47
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1039
+        width: 122
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39041192cac4c51468fb3c080c79b403
+      internalID: 1452124037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_48
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1059
+        width: 118
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38742ef52d64e364285e1d5cc3365d2e
+      internalID: -1765311637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_49
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1038
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c446e965a4f49134096244ae4bd5d509
+      internalID: -434571262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_50
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1038
+        width: 117
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924b48bb47bc75a47ad82438c98d0b20
+      internalID: -7692450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_51
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1038
+        width: 124
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ed967de13371646a7e082b837fbf2a
+      internalID: 1712008764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_52
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1061
+        width: 124
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2628e537cf2c11240983c90f40fbd7bd
+      internalID: 1265168194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_53
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1043
+        width: 124
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2f2180232a1b04c8e16ed5e2b2eecd
+      internalID: -561456758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_54
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1051
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdc5bcdf33478647b5e1eb17dc1158b
+      internalID: 1212378214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_55
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 1038
+        width: 108
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670831c3d0527f245907af8c497b40c2
+      internalID: 663703246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f698380f3840794d9e9b6c89e358112
+      internalID: -1876294422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_57
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 972
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553eea08bcc3c3a439f790d2ac9b17a9
+      internalID: -381073017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_58
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 865
+        width: 123
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42da5bbd24d6909498b08c11e02526f6
+      internalID: -334821467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_59
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 888
+        width: 120
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f21ecb2c225e2948b2281597c6a1a50
+      internalID: 1556862368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_60
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 865
+        width: 108
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669dc97caf20daa4d82d4aa19a5e5544
+      internalID: -1544124004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_61
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 875
+        width: 109
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409b63bd41ddd764093d0e7d948a2241
+      internalID: -1281360327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_62
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 866
+        width: 121
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297d7f11345449c408745bc1dd2c8711
+      internalID: -1545387444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_63
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 865
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00180c82bfde2ec458b8b4484bddb1c0
+      internalID: 864512966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_64
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 865
+        width: 121
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad34ba708f945d45b9cd887bf7bac19
+      internalID: 19958046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_65
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 865
+        width: 124
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001d09153b767a945875de8c48d56f43
+      internalID: -519653778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_66
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 865
+        width: 119
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57212d4df6bfad4b9b60e5cca89839a
+      internalID: -623188159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_67
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 865
+        width: 124
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f433d7ca299eb429f7b51b64e70ad5
+      internalID: 1162247888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_68
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 977
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7015c9eedafccf648bca586b857a2c63
+      internalID: 1913139670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_69
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 867
+        width: 112
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff570e529a16d449a0ee5683287f87a
+      internalID: -564520843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_70
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 982
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e5a2f3c626cd9459e7aaccc38d6b57
+      internalID: -805481571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_71
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 875
+        width: 111
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7638a26b895fe4e8af0c5756db1a31
+      internalID: -1123151453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_72
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 878
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af35224d25ebc7447bcb9d30d7d956b7
+      internalID: -807110378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_73
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 878
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934a81509514d184495e0a6b5ca3f159
+      internalID: 380938365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_74
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 878
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adabe492785c1b4dbca90a8b24f7985
+      internalID: -196780102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_75
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 955
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706ca252c3865064fbfc936381fdf6c1
+      internalID: 477138604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_76
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 887
+        width: 15
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f3294e992b2e54bba8e6ff0d7cd58a
+      internalID: -805744764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 702
+        width: 124
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e59548bd416e364b94088251d347f05
+      internalID: -89574866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_78
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 714
+        width: 93
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92301f5cfc879204595c2e122fc997b3
+      internalID: -710094295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_79
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 714
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d62f3c73b97a2043a0d559b9da340f7
+      internalID: -1214453728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_80
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 692
+        width: 121
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b72f181a1ceed7469a659219de631fe
+      internalID: 1086740541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_81
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 692
+        width: 121
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627955710c3a6f94da0fdbd1b310a81c
+      internalID: -224106748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_82
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 692
+        width: 120
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ae2c7846884b641977b3b671d3468d
+      internalID: 714256807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_83
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 693
+        width: 112
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2e5415b65dd544eb0de624ce56b5c3
+      internalID: -1498511352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_84
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 700
+        width: 122
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2163f130b750a4e81188f105d35297
+      internalID: -1253009602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_85
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 710
+        width: 124
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3372807c575584eaf0a9397cb11fff
+      internalID: -1515511535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_86
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 716
+        width: 124
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd81705d8420e1547aa0c05a84fa2133
+      internalID: -1412499745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_87
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 695
+        width: 124
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bef2ee180f909442b08f07903674964
+      internalID: -1358236666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_88
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 692
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889feba8b04a6bb45bc1c1ac9e52a791
+      internalID: 1961625315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_89
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 692
+        width: 124
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b68c8eac26df5b4e805ca4907f0bbc8
+      internalID: -1476059374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_90
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 692
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bbd510c7f75664c81360d8a061798a
+      internalID: 481731963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_91
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 715
+        width: 121
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcdee64fee0e64489c1422678fa72ac
+      internalID: 1771527175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_92
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 706
+        width: 124
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c912ccfff3754fa83f3bb283e9786
+      internalID: 2072439486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_93
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 696
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151acebcbfe7a8c46bbfe76210c43f3f
+      internalID: 1139080377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 531
+        width: 124
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f958f194cde9f4aaf85e377954d0c6
+      internalID: 2082248963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_95
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 519
+        width: 124
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9197c6266968af45b202ccb86ac98b0
+      internalID: -700667207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_96
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 519
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83085d665f086754894cfd268fa0d57a
+      internalID: -1590414747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_97
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 519
+        width: 121
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1456a6d4466ad4abd4e3214c24af9e
+      internalID: 586670616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_98
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 519
+        width: 119
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834146ab76caa4646acf30fac94c10f2
+      internalID: -701645427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_99
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 519
+        width: 123
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0054d1bb1f9fd84ab422706a1ceaef5
+      internalID: -60277001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_100
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 686
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b54de437897d6548bc32808a60d4cd4
+      internalID: -995380141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_101
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 686
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d92975875fc174986c179c17702ad5
+      internalID: -976956810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_102
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 663
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1de68afc1f04146bc1850d0318a358
+      internalID: -532224711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_103
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 520
+        width: 124
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b45fc8abf452e468f3ba0e2bb1b2d6
+      internalID: -2024472617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_104
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 519
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3e22a373711184f889a258abc248a2
+      internalID: 1405732818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_105
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 519
+        width: 102
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedfd32bfe3fcd24180819575b17af0a
+      internalID: -456178632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_106
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 522
+        width: 122
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bad9695bc0de6a499d4b36bbb6ab149
+      internalID: 1553238549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_107
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 551
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27d418dcb3997748aeb14452049c582
+      internalID: -1859703286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_108
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 538
+        width: 115
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea31f9e4431e3b47a97b200fdecdb38
+      internalID: 1066883732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_109
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 529
+        width: 113
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e7251f7bcd0d44baddb9cde3753795
+      internalID: -1355783935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_110
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 588
+        width: 5
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46866866dc9903348a0f8d6be692b2ac
+      internalID: -582146393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_111
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 519
+        width: 86
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5379f237ea3b4419a6675366020393
+      internalID: 958942002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_112
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 520
+        width: 121
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f059148f473d44ea10d8fed9d8c6a0
+      internalID: 365539216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_113
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 519
+        width: 124
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44950c78ab2e597439c17e2ba3e6e11e
+      internalID: -1607528421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_114
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 346
+        width: 119
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8ffeaf97c2d864a8f95881a119fa43
+      internalID: -1204600374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_115
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 346
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6303e95a1c0c741a1948ca89c1a02c
+      internalID: 1892299911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_116
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 352
+        width: 124
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f303d85d436d14e8a52868b34b7b4e
+      internalID: -1846664882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_117
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 363
+        width: 110
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38b0cbcf1053a443b6284e4f9fe94b0
+      internalID: -846105023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_118
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 364
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9679408a3f2774741be7956a51c797e6
+      internalID: 729511494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_119
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 346
+        width: 123
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b350971dd6f2035459ba00104f38d8c9
+      internalID: -593786361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_120
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 355
+        width: 123
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe0017a0783b0b40bb0629c8b7b203a
+      internalID: -1655839518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_121
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 346
+        width: 102
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d15a8e0f6b5660429cb974f4aa3666a
+      internalID: -435585210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_122
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 352
+        width: 108
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff52170bf262a8468aa710c32e1fccb
+      internalID: -921006563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_123
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 346
+        width: 115
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b265a848f0d594d488d78bbb3bab05d9
+      internalID: -751764933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_124
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 351
+        width: 99
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4424c31724a76744a89814c0026b30c1
+      internalID: -167806076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_125
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 347
+        width: 96
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ea722194f794f46b6c6b784a372d39
+      internalID: -480562869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_126
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 360
+        width: 121
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e28fad0690e8d40b7f7236770fb1d3
+      internalID: -499359226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_127
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 347
+        width: 123
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44b4ce1a4f9c074eadc9afa062c11bf
+      internalID: -1889653522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_128
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 346
+        width: 126
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2089a276959e914d883f224daf3ebd3
+      internalID: -1233669448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_129
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 346
+        width: 122
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f8d889b1928224baed5d02e28efad1
+      internalID: -1427048448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cd50a8257e9d94d898543736f55281
+      internalID: 19880813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_131
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 175
+        width: 124
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83e1b2beebe88f42a80b277ec723f64
+      internalID: -542310648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_132
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 173
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec33b452e631ad42853d60f5d890ce8
+      internalID: -818676870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_133
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 173
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c705d94683acf84f8998af761f7b85c
+      internalID: 1387642643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_134
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 316
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0296124916f4f439152c046ccdc154
+      internalID: -1550099001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_135
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 173
+        width: 124
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8646585abaf27954e8f289c6288aa60c
+      internalID: 1111647735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_136
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 174
+        width: 113
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05cd5910244e2d4ba5ed51c1d596363
+      internalID: -359578759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_137
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 341
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99336fc78ca2e5408ca1759f86fe704
+      internalID: -1796838341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_138
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 173
+        width: 123
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee4e6d50e9af4149a39aece56c3126e
+      internalID: -857616493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_139
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 178
+        width: 124
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e5b32d9d504684db7814c952c78f4e
+      internalID: -736220345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_140
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 173
+        width: 112
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe511c4c2b5ef04b817d0497466b6c0
+      internalID: 1189504099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_141
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 173
+        width: 124
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b621d25874a3ca34dbd4cd974ce98489
+      internalID: 2107798773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_142
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 173
+        width: 105
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611084245ba4fda4986b2d13fe1215e4
+      internalID: 1773390977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_143
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 184
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd415c1ed16f7f4fbfea420befc5f77
+      internalID: 1406726153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_144
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 196
+        width: 115
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91868180447e584429aa521d303faa5a
+      internalID: -1248472432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_145
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 184
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c116861fc0e8f9d47a2a965f6221815b
+      internalID: -1862325187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_146
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 173
+        width: 124
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4f66e303a28e7499ecf84fbc0c72ab
+      internalID: -176986719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_147
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 173
+        width: 124
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ecb794f31f7b841be69c8207561d98
+      internalID: 1133143672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_148
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 176
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18badff8e30e3784bbcb0e7dc56c062f
+      internalID: 674062048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_149
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 182
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b603b6389f26b4697b50ef21eaa67e
+      internalID: 1161491575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_150
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 122
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4cadd0c2e33154c9856108d7c233b4
+      internalID: -1158547264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_151
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 0
+        width: 124
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421baaa2009536e4fb7eb9786d8ab752
+      internalID: -1578118039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_152
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5b9cfcd8fd30c469e4aad225313b62
+      internalID: -1123437197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_153
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 120
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5d63ebd2e9a4f408a6aca42bced614
+      internalID: 903496786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_154
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3
+        width: 108
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd8d4447aafc884fb87eff25fd69f3a
+      internalID: 1440332060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_155
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 119
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79a948a09eaf4c4a92d4da4d039103c
+      internalID: -974800077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_156
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 5
+        width: 104
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843ab4e5b6da3a2409cbfb57e8714054
+      internalID: 251161477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_157
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 112
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97dc30ee80e5de42b33d2a981e12cfb
+      internalID: 150151933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_158
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 0
+        width: 117
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06359ded8aaa2e5409bd5454cebc5c6d
+      internalID: -1708099020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_159
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2
+        width: 109
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4963a3061315d847973fb7c15923230
+      internalID: 355751654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_160
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 121
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b902472fba79b41bf6fd35161eae6e
+      internalID: -564044095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_161
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 3
+        width: 102
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ceb66df29f11eb49b174a7daa975c3a
+      internalID: 994885989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_162
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 15
+        width: 122
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a4f31882251784a8790bb74a3784e7
+      internalID: -1967758402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_163
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 21
+        width: 100
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a25d0e9bbcc6345ba7d3891a634534
+      internalID: -585523881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_164
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 5
+        width: 122
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6ee025c35f69e46b046af6c3c8efd1
+      internalID: -1176284646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_165
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 11
+        width: 122
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa651ba983e144d45934fdb048cf325c
+      internalID: -1328665210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_166
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 142
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c9b4b2ab2849940b1e488924c90233
+      internalID: 1219965006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_167
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 128
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904ace346f3faf5488384a29e85b3965
+      internalID: -1855036307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_168
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 81
+        width: 18
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb555b2623a809c47a5d8546310c424f
+      internalID: 616686932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_169
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 90
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408aadfb0c3ca014f951ad6818fb7768
+      internalID: 668122302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_170
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 69
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46885b0a5db34be4c9b08a64a0b17f18
+      internalID: 171259671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_171
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 44
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96390f4d4338b0043820aea699deeec6
+      internalID: 319261455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_172
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 70
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52732c11aff91e4696134579c124369
+      internalID: -642874439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_173
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 23
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8ba9e4034836740b1f95354249a894
+      internalID: -1484657715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_174
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 9
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8154909feba7c804c9f7654346a54f78
+      internalID: -1806964402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonsterCard2_175
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 0
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5e3532a41258747b8a5dc6bad89597
+      internalID: 215161388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MonsterCard2_0: -1793485679
+      MonsterCard2_1: -210005450
+      MonsterCard2_10: -1182954667
+      MonsterCard2_100: -995380141
+      MonsterCard2_101: -976956810
+      MonsterCard2_102: -532224711
+      MonsterCard2_103: -2024472617
+      MonsterCard2_104: 1405732818
+      MonsterCard2_105: -456178632
+      MonsterCard2_106: 1553238549
+      MonsterCard2_107: -1859703286
+      MonsterCard2_108: 1066883732
+      MonsterCard2_109: -1355783935
+      MonsterCard2_11: 1766880993
+      MonsterCard2_110: -582146393
+      MonsterCard2_111: 958942002
+      MonsterCard2_112: 365539216
+      MonsterCard2_113: -1607528421
+      MonsterCard2_114: -1204600374
+      MonsterCard2_115: 1892299911
+      MonsterCard2_116: -1846664882
+      MonsterCard2_117: -846105023
+      MonsterCard2_118: 729511494
+      MonsterCard2_119: -593786361
+      MonsterCard2_12: 212699488
+      MonsterCard2_120: -1655839518
+      MonsterCard2_121: -435585210
+      MonsterCard2_122: -921006563
+      MonsterCard2_123: -751764933
+      MonsterCard2_124: -167806076
+      MonsterCard2_125: -480562869
+      MonsterCard2_126: -499359226
+      MonsterCard2_127: -1889653522
+      MonsterCard2_128: -1233669448
+      MonsterCard2_129: -1427048448
+      MonsterCard2_13: 1199185283
+      MonsterCard2_130: 19880813
+      MonsterCard2_131: -542310648
+      MonsterCard2_132: -818676870
+      MonsterCard2_133: 1387642643
+      MonsterCard2_134: -1550099001
+      MonsterCard2_135: 1111647735
+      MonsterCard2_136: -359578759
+      MonsterCard2_137: -1796838341
+      MonsterCard2_138: -857616493
+      MonsterCard2_139: -736220345
+      MonsterCard2_14: 530776885
+      MonsterCard2_140: 1189504099
+      MonsterCard2_141: 2107798773
+      MonsterCard2_142: 1773390977
+      MonsterCard2_143: 1406726153
+      MonsterCard2_144: -1248472432
+      MonsterCard2_145: -1862325187
+      MonsterCard2_146: -176986719
+      MonsterCard2_147: 1133143672
+      MonsterCard2_148: 674062048
+      MonsterCard2_149: 1161491575
+      MonsterCard2_15: -1949056780
+      MonsterCard2_150: -1158547264
+      MonsterCard2_151: -1578118039
+      MonsterCard2_152: -1123437197
+      MonsterCard2_153: 903496786
+      MonsterCard2_154: 1440332060
+      MonsterCard2_155: -974800077
+      MonsterCard2_156: 251161477
+      MonsterCard2_157: 150151933
+      MonsterCard2_158: -1708099020
+      MonsterCard2_159: 355751654
+      MonsterCard2_16: -1572908975
+      MonsterCard2_160: -564044095
+      MonsterCard2_161: 994885989
+      MonsterCard2_162: -1967758402
+      MonsterCard2_163: -585523881
+      MonsterCard2_164: -1176284646
+      MonsterCard2_165: -1328665210
+      MonsterCard2_166: 1219965006
+      MonsterCard2_167: -1855036307
+      MonsterCard2_168: 616686932
+      MonsterCard2_169: 668122302
+      MonsterCard2_17: -632134725
+      MonsterCard2_170: 171259671
+      MonsterCard2_171: 319261455
+      MonsterCard2_172: -642874439
+      MonsterCard2_173: -1484657715
+      MonsterCard2_174: -1806964402
+      MonsterCard2_175: 215161388
+      MonsterCard2_18: -405510376
+      MonsterCard2_19: 789092467
+      MonsterCard2_2: -1110603938
+      MonsterCard2_20: 1644094979
+      MonsterCard2_21: 1276210732
+      MonsterCard2_22: -645950
+      MonsterCard2_23: 1684012683
+      MonsterCard2_24: -844166149
+      MonsterCard2_25: 336680875
+      MonsterCard2_26: 676943647
+      MonsterCard2_27: 1054231419
+      MonsterCard2_28: -158882559
+      MonsterCard2_29: 1409530014
+      MonsterCard2_3: 401083167
+      MonsterCard2_30: 304252393
+      MonsterCard2_31: 917200644
+      MonsterCard2_32: -471042635
+      MonsterCard2_33: 1616814599
+      MonsterCard2_34: -1189798201
+      MonsterCard2_35: -1750483570
+      MonsterCard2_36: 105427450
+      MonsterCard2_37: -1729654455
+      MonsterCard2_38: -1040940063
+      MonsterCard2_39: 966270715
+      MonsterCard2_4: -825012127
+      MonsterCard2_40: -1388183296
+      MonsterCard2_41: -2049997574
+      MonsterCard2_42: 941252303
+      MonsterCard2_43: -1360474331
+      MonsterCard2_44: -1892660648
+      MonsterCard2_45: -839515391
+      MonsterCard2_46: -1779018646
+      MonsterCard2_47: 1452124037
+      MonsterCard2_48: -1765311637
+      MonsterCard2_49: -434571262
+      MonsterCard2_5: 424710469
+      MonsterCard2_50: -7692450
+      MonsterCard2_51: 1712008764
+      MonsterCard2_52: 1265168194
+      MonsterCard2_53: -561456758
+      MonsterCard2_54: 1212378214
+      MonsterCard2_55: 663703246
+      MonsterCard2_56: -1876294422
+      MonsterCard2_57: -381073017
+      MonsterCard2_58: -334821467
+      MonsterCard2_59: 1556862368
+      MonsterCard2_6: -777435482
+      MonsterCard2_60: -1544124004
+      MonsterCard2_61: -1281360327
+      MonsterCard2_62: -1545387444
+      MonsterCard2_63: 864512966
+      MonsterCard2_64: 19958046
+      MonsterCard2_65: -519653778
+      MonsterCard2_66: -623188159
+      MonsterCard2_67: 1162247888
+      MonsterCard2_68: 1913139670
+      MonsterCard2_69: -564520843
+      MonsterCard2_7: 1681009419
+      MonsterCard2_70: -805481571
+      MonsterCard2_71: -1123151453
+      MonsterCard2_72: -807110378
+      MonsterCard2_73: 380938365
+      MonsterCard2_74: -196780102
+      MonsterCard2_75: 477138604
+      MonsterCard2_76: -805744764
+      MonsterCard2_77: -89574866
+      MonsterCard2_78: -710094295
+      MonsterCard2_79: -1214453728
+      MonsterCard2_8: -1396407072
+      MonsterCard2_80: 1086740541
+      MonsterCard2_81: -224106748
+      MonsterCard2_82: 714256807
+      MonsterCard2_83: -1498511352
+      MonsterCard2_84: -1253009602
+      MonsterCard2_85: -1515511535
+      MonsterCard2_86: -1412499745
+      MonsterCard2_87: -1358236666
+      MonsterCard2_88: 1961625315
+      MonsterCard2_89: -1476059374
+      MonsterCard2_9: 714296237
+      MonsterCard2_90: 481731963
+      MonsterCard2_91: 1771527175
+      MonsterCard2_92: 2072439486
+      MonsterCard2_93: 1139080377
+      MonsterCard2_94: 2082248963
+      MonsterCard2_95: -700667207
+      MonsterCard2_96: -1590414747
+      MonsterCard2_97: 586670616
+      MonsterCard2_98: -701645427
+      MonsterCard2_99: -60277001
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
