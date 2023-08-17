@@ -26,6 +26,7 @@ public class UIManager : MonoBehaviour
         canvases[0].gameObject.SetActive(false);
         canvases[1].gameObject.SetActive(false);
         canvases[2].gameObject.SetActive(true);
+
     }
 
     public void OpenGatchaCanvas()
