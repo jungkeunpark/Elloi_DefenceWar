@@ -278,14 +278,25 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             Novice.transform.GetChild(0).gameObject.SetActive(true);
             //노비스등급의 모든 인덱스번호중에 한개를 뽑음
             int index = UnityEngine.Random.Range(601, 610);
-            //해당 인덱스에 해당하는 이미지 스프라이트를 불러옴
-            Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
-            //해당 인덱스에 해당하는 이름을 불러옴
-            String Name = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].name;
-            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-            NoviceImg.sprite = tempSprite;
-            //노비스등급의 이름에 가져온 이름을 기입
-            NoviceName.text = Name;
+            // 동일한 인덱스 찾기
+            for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+            {
+                // 동일한 인덱스 찾기
+                if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                {
+                    // 이미지 불러오기
+                    Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                    //해당 인덱스에 해당하는 이름을 불러옴
+                    String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                    //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                    NoviceImg.sprite = tempSprite;
+
+                    //노비스등급의 이름에 가져온 이름을 기입
+                    NoviceName.text = Name;
+                }
+            }
         }
         else if(randomValue>51.5f && randomValue<90f)
         {

@@ -12,4 +12,9 @@ public class LoadSceneStageWin : MonoBehaviour
     {
         SceneManager.LoadScene("BattleScene01_Test");
     }
+
+    public void LoadGatchaScene()
+    {
+        SceneManager.LoadScene("GatchaScene");
+    }
 }

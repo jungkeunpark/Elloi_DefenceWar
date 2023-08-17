@@ -9,7 +9,7 @@ public class Character
 {
     public Character (string _index, string _Rank, string _Name, string _Health, string _Damage, string _Defense, 
         string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
-    { Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; 
+    { index = _index; Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; 
         AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet; }
 
     public string index, Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
