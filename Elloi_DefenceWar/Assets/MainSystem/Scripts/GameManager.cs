@@ -9,10 +9,12 @@ using UnityEditor;
 [System.Serializable]
 public class Character
 {
-    public Character (string _index, string _Rank, string _Name, string _Health, string _Damage, string _Defense, 
+    public Character(string _index, string _Rank, string _Name, string _Health, string _Damage, string _Defense,
         string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
-    { index = _index; Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; 
-        AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet; }
+    {
+        index = _index; Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense;
+        AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet;
+    }
 
     public string index, Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
     public bool isGet;
@@ -54,6 +56,9 @@ public class GameManager : MonoBehaviour
     // 캐릭터 인덱스 넘버 저장할 변수
     public int characterIndex;
 
+    // 내가 가진 카드
+    public List<int> myGetCardsNumbers;
+
     private void Awake()
     {
         // 존재하고 있지 않다면 다시 최신화
@@ -65,7 +70,7 @@ public class GameManager : MonoBehaviour
         else
         {
             // 중복으로 존재한다면 파괴
-            if(instance != this)
+            if (instance != this)
             {
                 Destroy(this.gameObject);
             }
@@ -75,7 +80,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // 전체 캐릭터 리스트 불러오기
-        string[] line = CharacterDatabase.text.Substring(0, CharacterDatabase.text.Length -1).Split('\n');
+        string[] line = CharacterDatabase.text.Substring(0, CharacterDatabase.text.Length - 1).Split('\n');
 
         // print(line.Length); // 잘 들어갔는지 test
         for (int i = 0; i < line.Length; i++)
@@ -91,6 +96,10 @@ public class GameManager : MonoBehaviour
             if (tempRow)  // tempRow가 true이면
             {
                 MyCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
+<<<<<<< HEAD
+=======
+                myGetCardsNumbers.Add(i);
+>>>>>>> origin/SeungJoo
             }
         }
 
@@ -133,15 +142,26 @@ public class GameManager : MonoBehaviour
         }
 
         // 중복되었다면
+<<<<<<< HEAD
         if (sameCard != 0) { Debug.Log("중복되었습니다.");  return; }
 
         // 중복되지않았다면
         else if(sameCard == 0)
+=======
+        if (sameCard != 0) { Debug.Log("중복되었습니다."); return; }
+
+        // 중복되지않았다면
+        else if (sameCard == 0)
+>>>>>>> origin/SeungJoo
         {
             Debug.Log("중복되지않았습니다.");
 
             // 전체 캐릭터 카드에서 인덱스가 같은 카드의 정보 가져오기
+<<<<<<< HEAD
             for (int i = 0 ; i < AllCharacter_List.Count ; i++)
+=======
+            for (int i = 0; i < AllCharacter_List.Count; i++)
+>>>>>>> origin/SeungJoo
             {
                 if (AllCharacter_List[i].index == characterIndex.ToString())
                 {
@@ -157,5 +177,4 @@ public class GameManager : MonoBehaviour
         }
     }
 }
-
 

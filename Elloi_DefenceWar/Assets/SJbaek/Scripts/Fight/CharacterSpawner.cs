@@ -16,7 +16,7 @@ public class CharacterSpawner : MonoBehaviour
     public void Spawn(int num)
     {
         // 카드 비용을 float 형으로 변환
-        if(float.TryParse(GameManager.instance.MyCharacter_List[GameManager.instance.partySetCardIndex[num]].Cost, out float cardCost))
+        if(float.TryParse(GameManager.instance.AllCharacter_List[GameManager.instance.partySetCardIndex[num]].Cost, out float cardCost))
         {
             // 소환 가능한 자원이 있을 경우에만 소환 가능
             if (FightManager.fightManager.curResourceMoney < cardCost) { return; }

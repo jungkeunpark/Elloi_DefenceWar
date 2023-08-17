@@ -429,9 +429,8 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         }
         else
         {
-            
-            FailToBuy();
-            
+            //ï¿½Ý¾ï¿½ï¿½Ìºï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½ UIï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½
+            return;
         }
     }
     //³ë¸»°¡Ã­¹öÆ°À» ´©¸¥»óÅÂ·Î ¾Ö´Ï¸ÞÀÌ¼ÇÀÌ ³¡³ª¸é ½ÇÇàÇÏ´Â UI
@@ -607,7 +606,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             }
             else
             {
-                FailToBuy();
+                return;
             }
         }
     }
