@@ -175,8 +175,5 @@ public class PlayerCharacter : MonoBehaviour
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
-
-        enemy.isBattle = false;
-        enemy.isAttack = false;
     }
 }

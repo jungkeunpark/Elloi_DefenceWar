@@ -110,7 +110,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Player"))
         {
             isBattle = false;
             isTower = true;
@@ -123,9 +123,6 @@ public class Enemy : MonoBehaviour
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
-
-        playerCharacter.isAttack = false;
-        playerCharacter.isBattle = false;
     }
 
     public void EnemyAttack()

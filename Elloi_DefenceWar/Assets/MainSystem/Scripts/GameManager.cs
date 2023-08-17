@@ -167,6 +167,8 @@ public class GameManager : MonoBehaviour
                     AllCharacter_List[i].AttackSpeed, AllCharacter_List[i].MoveSpeed, AllCharacter_List[i].ResponeCoolTime,
                     AllCharacter_List[i].Cost, true));
 
+                    myGetCardsNumbers.Add(i);
+
                     return;
                 }
             }

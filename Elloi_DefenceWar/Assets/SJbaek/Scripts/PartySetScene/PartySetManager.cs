@@ -114,6 +114,8 @@ public class PartySetManager : MonoBehaviour
 
             // 선택한 카드 인덱스 번호 저장
             partySetManager.partyCardIndex = partySetCardNum;
+
+            // 기존 인덱스 번호 삭제
         }
 
         // 첫 클릭이 아니면서 동일한 카드를 선택했는가?
@@ -133,6 +135,7 @@ public class PartySetManager : MonoBehaviour
 
             // 인덱스 넘버 초기화
             partySetManager.partyCardIndex = -1;
+            GameManager.instance.partySetCardIndex[partySetCardNum] = -1;
 
             // 파티 셋 카드에 자식 오브젝트가 없다면 리턴
             if (partySetCards[partySetCardNum].transform.childCount <= 4) { return; }
@@ -175,6 +178,7 @@ public class PartySetManager : MonoBehaviour
 
                     // 기존 배열의 해당하는 요소를 -1로 바꿔줍니다.
                     partySetManager.cardNums[i] = -1;
+                    GameManager.instance.partySetCardIndex[i] = -1;
                 }
             }
 
