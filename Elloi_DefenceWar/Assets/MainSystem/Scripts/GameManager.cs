@@ -7,12 +7,12 @@ using System.IO;
 [System.Serializable]
 public class Character
 {
-    public Character (string _Rank, string _Name, string _Health, string _Damage, string _Defense, 
+    public Character (string _index, string _Rank, string _Name, string _Health, string _Damage, string _Defense, 
         string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
     { Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense; 
         AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet; }
 
-    public string Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
+    public string index, Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
     public bool isGet;
 }
 
@@ -49,6 +49,9 @@ public class GameManager : MonoBehaviour
     // 현재 진행중인 스테이지 인덱스
     public int nowStageIndex;
 
+    // 캐릭터 인덱스 넘버 저장할 변수
+    public int characterIndex;
+
     private void Awake()
     {
         // 존재하고 있지 않다면 다시 최신화
@@ -76,7 +79,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < line.Length; i++)
         {
             string[] row = line[i].Split('\t');
-            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9] == "TRUE"));
+            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10] == "TRUE"));
         }
 
         // 내 캐릭터 리스트 불러오기
