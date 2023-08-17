@@ -111,7 +111,7 @@ public class FightManager : MonoBehaviour
                 selectedCharacters[index].sprite = tempSprite;
                 selectedCharacters[index].SetNativeSize();
                 selectedCharacters[index].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
-                cardCostTexts[index].text = GameManager.instance.MyCharacter_List[GameManager.instance.partySetCardIndex[index]].Cost;
+                cardCostTexts[index].text = GameManager.instance.AllCharacter_List[GameManager.instance.partySetCardIndex[index]].Cost;
             }
 
             else { return; }

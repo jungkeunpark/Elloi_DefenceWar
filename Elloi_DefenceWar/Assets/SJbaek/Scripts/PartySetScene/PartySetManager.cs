@@ -28,9 +28,21 @@ public class PartySetManager : MonoBehaviour
     public TextMeshProUGUI[] costs;
     public TextMeshProUGUI[] respons;
 
+    // 내가 가진 카드 갯수
+    public TextMeshProUGUI myGetCardCount;
+
     private void Awake()
     {
         partySetManager = GetComponent<PartySetManager>();
+
+        // 내가 가진 카드 갯수 텍스트
+        myGetCardCount.text = string.Format("{0}", GameManager.instance.MyCharacter_List.Count);
+
+        // 내가 가진 카드만 활성화
+        for (int i = 0; i < GameManager.instance.myGetCardsNumbers.Count; i++)
+        {
+            playerCards[GameManager.instance.myGetCardsNumbers[i]].SetActive(true);
+        }
     }
 
     // 활성화 되었을 때
@@ -57,8 +69,8 @@ public class PartySetManager : MonoBehaviour
                 partySetCards[i].transform.GetChild(2).gameObject.SetActive(true);
 
                 // 카드 정보 수정
-                costs[i].text = string.Format("{0}", GameManager.instance.MyCharacter_List[cardNums[i]].Cost);
-                respons[i].text = string.Format("{0}", GameManager.instance.MyCharacter_List[cardNums[i]].ResponeCoolTime);
+                costs[i].text = string.Format("{0}", GameManager.instance.AllCharacter_List[cardNums[i]].Cost);
+                respons[i].text = string.Format("{0}", GameManager.instance.AllCharacter_List[cardNums[i]].ResponeCoolTime);
 
                 // 2. ( 오른쪽 ) 플레이어 카드에 정렬하고 이펙트 켜놓기
                 playerCards[cardNums[i]].transform.SetSiblingIndex(i);
@@ -210,8 +222,8 @@ public class PartySetManager : MonoBehaviour
             partySetCards[partySetManager.partyCardIndex].transform.GetChild(2).gameObject.SetActive(true);
 
             // 카드 정보 수정
-            costs[partySetManager.partyCardIndex].text = string.Format("{0}", GameManager.instance.MyCharacter_List[partySetCardNum].Cost);
-            respons[partySetManager.partyCardIndex].text = string.Format("{0}", GameManager.instance.MyCharacter_List[partySetCardNum].ResponeCoolTime);
+            costs[partySetManager.partyCardIndex].text = string.Format("{0}", GameManager.instance.AllCharacter_List[partySetCardNum].Cost);
+            respons[partySetManager.partyCardIndex].text = string.Format("{0}", GameManager.instance.AllCharacter_List[partySetCardNum].ResponeCoolTime);
         }
     }   // } 카드를 선택해서 파티셋 카드로 선택하기
 
