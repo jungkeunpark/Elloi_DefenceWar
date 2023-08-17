@@ -52,7 +52,10 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     private int PremiumJuwel = 300;
     private int HeroJuwel = 3000;
 
-
+    public GameObject FailObject;
+    public TMP_Text NormalFail;
+    public TMP_Text PremiumFail;
+    public TMP_Text HeroFail;
 
     private void Update()
     {
@@ -426,8 +429,9 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         }
         else
         {
-            //금액이부족합니다 UI추가예정
-            return;
+            
+            FailToBuy();
+            
         }
     }
     //노말가챠버튼을 누른상태로 애니메이션이 끝나면 실행하는 UI
@@ -603,7 +607,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             }
             else
             {
-                return;
+                FailToBuy();
             }
         }
     }
@@ -781,8 +785,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         }
         else
         {
-            //금액이부족합니다 UI추가예정
-            return;
+            FailToBuy();
         }
 
     }
@@ -793,5 +796,39 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         GameButton.transform.GetChild(2).gameObject.SetActive(true);
         //로비로 돌아가는 버튼 활성화
         GameButton.transform.GetChild(3).gameObject.SetActive(true);
+    }
+    public void FailToBuy()
+    {
+        Debug.Log("들어왔니?");
+        if (NormalButton == true && PremiumButton == false && HeroButton == false)
+        {
+            FailObject.transform.GetChild(0).gameObject.SetActive(true);
+            FailObject.transform.GetChild(1).gameObject.SetActive(true);
+            NormalFail.text = "일반 뽑기를 할 골드가" +(NormalGold - GameManager.instance.playerGold).ToString() + "골드 부족합니다.";
+        }
+
+        else if (NormalButton == false && PremiumButton == true && HeroButton == false)
+        {
+            FailObject.transform.GetChild(0).gameObject.SetActive(true);
+            FailObject.transform.GetChild(2).gameObject.SetActive(true);
+            PremiumFail.text = "프리미엄 뽑기를 할 다이아재화가" + (PremiumJuwel - GameManager.instance.playerJuwel).ToString() + "다이아 부족합니다.";
+        }
+
+        else if (NormalButton == false &&  PremiumButton == false &&  HeroButton == true)
+        {
+            FailObject.transform.GetChild(0).gameObject.SetActive(true);
+            FailObject.transform.GetChild(3).gameObject.SetActive(true);
+            HeroFail.text = "히어로 뽑기를 할 다이아재화가" + (HeroJuwel - GameManager.instance.playerJuwel).ToString() + "다이아 부족합니다.";
+        }
+
+
+    }
+
+    public void AfterFail()
+    {
+        FailObject.transform.GetChild(0).gameObject.SetActive(false);
+        FailObject.transform.GetChild(1).gameObject.SetActive(false);
+        FailObject.transform.GetChild(2).gameObject.SetActive(false);
+        FailObject.transform.GetChild(3).gameObject.SetActive(false);
     }
 }
