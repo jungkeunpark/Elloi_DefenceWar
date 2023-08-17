@@ -96,10 +96,9 @@ public class GameManager : MonoBehaviour
             if (tempRow)  // tempRow가 true이면
             {
                 MyCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
-<<<<<<< HEAD
-=======
+
                 myGetCardsNumbers.Add(i);
->>>>>>> origin/SeungJoo
+
             }
         }
 
@@ -142,26 +141,23 @@ public class GameManager : MonoBehaviour
         }
 
         // 중복되었다면
-<<<<<<< HEAD
+
         if (sameCard != 0) { Debug.Log("중복되었습니다.");  return; }
 
         // 중복되지않았다면
         else if(sameCard == 0)
-=======
+
         if (sameCard != 0) { Debug.Log("중복되었습니다."); return; }
 
         // 중복되지않았다면
         else if (sameCard == 0)
->>>>>>> origin/SeungJoo
+
         {
             Debug.Log("중복되지않았습니다.");
 
             // 전체 캐릭터 카드에서 인덱스가 같은 카드의 정보 가져오기
-<<<<<<< HEAD
-            for (int i = 0 ; i < AllCharacter_List.Count ; i++)
-=======
             for (int i = 0; i < AllCharacter_List.Count; i++)
->>>>>>> origin/SeungJoo
+
             {
                 if (AllCharacter_List[i].index == characterIndex.ToString())
                 {
