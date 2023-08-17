@@ -1,8 +1,8 @@
 using System;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.TextCore.Text;
+using UnityEngine.UI;
 
 public class LoadSceneGatchaPLAY : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     public bool Premiumretry = false;
     public bool Heroretry = false;
     public bool GotoLobby = false;
-   
+
     //가챠애니메이션의 마지막 장면
     public Sprite compareto_Novice;
     public Sprite compareto_Expert;
@@ -48,11 +48,15 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     public TMP_Text MasterName;
     public TMP_Text HeroName;
 
+    private int NormalGold = 3000;
+    private int PremiumJuwel = 300;
+    private int HeroJuwel = 3000;
+
 
 
     private void Update()
     {
-            //if애니메이션의 스프라이트가 마지막장면이 등장하면
+        //if애니메이션의 스프라이트가 마지막장면이 등장하면
         if (Novice.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite == compareto_Novice)
         {
             //애니메이션 종료
@@ -123,11 +127,11 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             {//골드로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(0).gameObject.SetActive(true);
             }//프리미엄 버튼 불값이 트루면 (234줄)
-            if(PremiumButton == true)
+            if (PremiumButton == true)
             {//300다이아로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(1).gameObject.SetActive(true);
             }//히어로 버튼 불값이 트루면 (284줄)
-            if(HeroButton == true)
+            if (HeroButton == true)
             {//3000다이아로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(2).gameObject.SetActive(true);
             }
@@ -147,11 +151,11 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             {//골드로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(0).gameObject.SetActive(true);
             }//프리미엄 버튼 불값이 트루면 (234줄)
-            if(PremiumButton == true)
+            if (PremiumButton == true)
             {//300다이아로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(1).gameObject.SetActive(true);
             }//히어로 버튼 불값이 트루면 (284줄)
-            if(HeroButton == true)
+            if (HeroButton == true)
             {//3000다이아로 재도전하는 게임버튼 활성화
                 GameButton.transform.GetChild(2).gameObject.SetActive(true);
             }
@@ -184,7 +188,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     }
     //노말 버튼을 누르면
     public void NormalPressbutton()
-    { 
+    {
         Novice.transform.GetChild(1).gameObject.SetActive(false);
         Expert.transform.GetChild(1).gameObject.SetActive(false);
         Elite.transform.GetChild(1).gameObject.SetActive(false);
@@ -228,31 +232,31 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         HeroGatcha();
     }
     //로비로 돌아가는 버튼을 누르면
-    public void Lobby() 
+    public void Lobby()
     {
-            //로비 활성화
-            lobby.gameObject.SetActive(true);
-            //노비스의 엔딩장면 비활성화
-            Novice.transform.GetChild(0).gameObject.SetActive(false);
-            Novice.transform.GetChild(1).gameObject.SetActive(false);
-            //익스퍼트의 엔딩장면 비활성화
-            Expert.transform.GetChild(0).gameObject.SetActive(false);
-            Expert.transform.GetChild(1).gameObject.SetActive(false);
-            //엘리트의 엔딩장면 비활성화
-            Elite.transform.GetChild(0).gameObject.SetActive(false);
-            Elite.transform.GetChild(1).gameObject.SetActive(false);
-            //마스터의 엔딩장면 비활성화
-            Master.transform.GetChild(0).gameObject.SetActive(false);
-            Master.transform.GetChild(1).gameObject.SetActive(false);
-            //히어로의 엔딩장면 비활성화
-            Hero.transform.GetChild(0).gameObject.SetActive(false);
-            Hero.transform.GetChild(1).gameObject.SetActive(false);
+        //로비 활성화
+        lobby.gameObject.SetActive(true);
+        //노비스의 엔딩장면 비활성화
+        Novice.transform.GetChild(0).gameObject.SetActive(false);
+        Novice.transform.GetChild(1).gameObject.SetActive(false);
+        //익스퍼트의 엔딩장면 비활성화
+        Expert.transform.GetChild(0).gameObject.SetActive(false);
+        Expert.transform.GetChild(1).gameObject.SetActive(false);
+        //엘리트의 엔딩장면 비활성화
+        Elite.transform.GetChild(0).gameObject.SetActive(false);
+        Elite.transform.GetChild(1).gameObject.SetActive(false);
+        //마스터의 엔딩장면 비활성화
+        Master.transform.GetChild(0).gameObject.SetActive(false);
+        Master.transform.GetChild(1).gameObject.SetActive(false);
+        //히어로의 엔딩장면 비활성화
+        Hero.transform.GetChild(0).gameObject.SetActive(false);
+        Hero.transform.GetChild(1).gameObject.SetActive(false);
 
-            //다시가챠하기 혹은 리트라이버튼 false
-            GameButton.transform.GetChild(3).gameObject.SetActive(false);
-            GameButton.transform.GetChild(2).gameObject.SetActive(false);
-            GameButton.transform.GetChild(1).gameObject.SetActive(false);
-            GameButton.transform.GetChild(0).gameObject.SetActive(false);  
+        //다시가챠하기 혹은 리트라이버튼 false
+        GameButton.transform.GetChild(3).gameObject.SetActive(false);
+        GameButton.transform.GetChild(2).gameObject.SetActive(false);
+        GameButton.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(0).gameObject.SetActive(false);
     }
 
 
@@ -260,105 +264,170 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     //노말가챠버튼을 누르면 실행
     public void NormalGatcha()
     {
-        //로비를 끄고
-        lobby.gameObject.SetActive(false);
-        //노말버튼을 눌렀다는 bool값 true로 전환
-        NormalButton = true;
-        PremiumButton = false;
-        HeroButton = false;
-
-     
-
-
-        //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
-        float randomValue = UnityEngine.Random.Range(0, 100f);
-        if(randomValue<51.5f)
+        if (GameManager.instance.playerGold >= NormalGold)
         {
-            //노비스의 가챠애니메이션 활성화
-            Novice.transform.GetChild(0).gameObject.SetActive(true);
-            //노비스등급의 모든 인덱스번호중에 한개를 뽑음
-            int index = UnityEngine.Random.Range(601, 610);
-            // 동일한 인덱스 찾기
-            for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+
+            //로비를 끄고
+            lobby.gameObject.SetActive(false);
+            //노말버튼을 눌렀다는 bool값 true로 전환
+            NormalButton = true;
+            PremiumButton = false;
+            HeroButton = false;
+            GameManager.instance.playerGold -= NormalGold;
+
+
+            //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
+            float randomValue = UnityEngine.Random.Range(0, 100f);
+            if (randomValue < 51.5f)
             {
+                //노비스의 가챠애니메이션 활성화
+                Novice.transform.GetChild(0).gameObject.SetActive(true);
+                //노비스등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(601, 610);
                 // 동일한 인덱스 찾기
-                if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
                 {
-                    // 이미지 불러오기
-                    Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
 
-                    //해당 인덱스에 해당하는 이름을 불러옴
-                    String Name = GameManager.instance.AllCharacter_List[i].Name;
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
 
-                    //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-                    NoviceImg.sprite = tempSprite;
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        NoviceImg.sprite = tempSprite;
 
-                    //노비스등급의 이름에 가져온 이름을 기입
-                    NoviceName.text = Name;
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        NoviceName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 51.5f && randomValue < 90f)
+            {
+                //익스퍼트의 가챠애니메이션 활성화
+                Expert.transform.GetChild(0).gameObject.SetActive(true);
+                //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(501, 521);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        ExpertImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        ExpertName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 90f && randomValue < 99.945f)
+            {
+                //엘리트의 가챠애니메이션 활성화
+                Elite.transform.GetChild(0).gameObject.SetActive(true);
+                //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(401, 440);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        EliteImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        EliteName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 99.945f && randomValue < 99.995f)
+            {
+                //마스터의 가챠애니메이션 활성화
+                Master.transform.GetChild(0).gameObject.SetActive(true);
+                //마스터등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(301, 360);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        MasterImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        MasterName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 99.995f && randomValue < 100f)
+            {
+                //히어로의 가챠애니메이션 활성화
+                Hero.transform.GetChild(0).gameObject.SetActive(true);
+                //히어로등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(101, 114);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        HeroImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        HeroName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
                 }
             }
         }
-        else if(randomValue>51.5f && randomValue<90f)
+        else
         {
-            //익스퍼트의 가챠애니메이션 활성화
-            Expert.transform.GetChild(0).gameObject.SetActive(true);
-            //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
-            int index = UnityEngine.Random.Range(501, 521);
-            //해당 인덱스에 해당하는 이미지 스프라이트를 불러옴
-            Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
-            //해당 인덱스에 해당하는 이름을 불러옴
-            String Name = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].name;
-            //익스퍼트등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-            ExpertImg.sprite = tempSprite;
-            //익스퍼트등급의 이름에 가져온 이름을 기입
-            ExpertName.text = Name;
-
-        }
-        else if(randomValue>90f && randomValue< 99.945f)
-        {
-            //엘리트의 가챠애니메이션 활성화
-            Elite.transform.GetChild(0).gameObject.SetActive(true);
-            //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
-            int index = UnityEngine.Random.Range(401, 440);
-            //해당 인덱스에 해당하는 이미지 스프라이트를 불러옴
-            Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
-            //해당 인덱스에 해당하는 이름을 불러옴
-            String Name = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].name;
-            //엘리트등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-            EliteImg.sprite = tempSprite;
-            //엘리트등급의 이름에 가져온 이름을 기입
-            EliteName.text = Name;
-
-        }
-        else if(randomValue>99.945f && randomValue < 99.995f)
-        {
-            //마스터의 가챠애니메이션 활성화
-            Master.transform.GetChild(0).gameObject.SetActive(true);
-            //마스터등급의 모든 인덱스번호중에 한개를 뽑음
-            int index = UnityEngine.Random.Range(301, 360);
-            //해당 인덱스에 해당하는 이미지 스프라이트를 불러옴
-            Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
-            //해당 인덱스에 해당하는 이름을 불러옴
-            String Name = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].name;
-            //마스터등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-            MasterImg.sprite = tempSprite;
-            //마스터등급의 이름에 가져온 이름을 기입
-            MasterName.text = Name;
-        }
-        else if(randomValue>99.995f && randomValue < 100f)
-        {
-            //히어로의 가챠애니메이션 활성화
-            Hero.transform.GetChild(0).gameObject.SetActive(true);
-            //히어로등급의 모든 인덱스번호중에 한개를 뽑음
-            int index = UnityEngine.Random.Range(101, 114);
-            //해당 인덱스에 해당하는 이미지 스프라이트를 불러옴
-            Sprite tempSprite = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].transform.GetChild(2).GetComponent<Image>().sprite;
-            //해당 인덱스에 해당하는 이름을 불러옴
-            String Name = GameManager.instance.characterCardPrefabs[GameManager.instance.partySetCardIndex[index]].name;
-            //히어로등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
-            HeroImg.sprite = tempSprite;
-            //히어로등급의 이름에 가져온 이름을 기입
-            HeroName.text = Name;
+            //금액이부족합니다 UI추가예정
+            return;
         }
     }
     //노말가챠버튼을 누른상태로 애니메이션이 끝나면 실행하는 UI
@@ -372,42 +441,171 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     //프리미엄가챠버튼을 누르면 실행
     public void PremiumGatcha()
     {
-        //로비를 끄고
-        lobby.gameObject.SetActive(false);
-        //프리미엄버튼을 눌렀다는 bool값 true로 전환
-        NormalButton = false;
-        PremiumButton = true;
-        HeroButton = false;
-        //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
-        float randomValue = UnityEngine.Random.Range(0, 100f);
-        if (randomValue < 42.5f)
-        {
-            //노비스의 가챠애니메이션 활성화
-            Novice.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 42.5f && randomValue < 66.5f)
-        {
-            //익스퍼트의 가챠애니메이션 활성화
-            Expert.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 66.5f && randomValue < 94.0f)
-        {
 
-            //엘리트의 가챠애니메이션 활성화
-            Elite.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 94.0f && randomValue < 99.5f)
+        if (GameManager.instance.playerJuwel >= PremiumJuwel)
         {
+            //로비를 끄고
+            lobby.gameObject.SetActive(false);
+            //프리미엄버튼을 눌렀다는 bool값 true로 전환
+            NormalButton = false;
+            PremiumButton = true;
+            HeroButton = false;
 
-            //마스터의 가챠애니메이션 활성화
-            Master.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 99.5f && randomValue < 100f)
-        {
-            //히어로의 가챠애니메이션 활성화
-            Hero.transform.GetChild(0).gameObject.SetActive(true);
-        }
+            GameManager.instance.playerJuwel -= PremiumJuwel;
 
+            //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
+            float randomValue = UnityEngine.Random.Range(0, 100f);
+            if (randomValue < 42.5f)
+            {
+                //노비스등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(601, 610);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        NoviceImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        NoviceName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 42.5f && randomValue < 66.5f)
+            {
+                //익스퍼트의 가챠애니메이션 활성화
+                Expert.transform.GetChild(0).gameObject.SetActive(true);
+                //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(501, 521);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        ExpertImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        ExpertName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 66.5f && randomValue < 94.0f)
+            {
+
+                //엘리트의 가챠애니메이션 활성화
+                Elite.transform.GetChild(0).gameObject.SetActive(true);
+                //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(401, 440);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        EliteImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        EliteName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 94.0f && randomValue < 99.5f)
+            {
+
+                //마스터의 가챠애니메이션 활성화
+                Master.transform.GetChild(0).gameObject.SetActive(true);
+                //마스터등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(301, 360);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        MasterImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        MasterName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 99.5f && randomValue < 100f)
+            {
+
+                //히어로의 가챠애니메이션 활성화
+                Hero.transform.GetChild(0).gameObject.SetActive(true);
+                //히어로등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(101, 114);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        HeroImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        HeroName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
     }
     //프리미엄가챠버튼을 누른상태로 애니메이션이 끝나면 실행하는 UI
     public void PremiumGatchaEnding()
@@ -420,40 +618,172 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     //히어로가챠버튼을 누르면 실행
     public void HeroGatcha()
     {
-        //로비를 끄고
-        lobby.gameObject.SetActive(false);
-        //히어로버튼을 눌렀다는 bool값 true로 전환
-        NormalButton = false;
-        PremiumButton = false;
-        HeroButton = true;
-        //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
-        float randomValue = UnityEngine.Random.Range(0, 100f);
-        if (randomValue < 29.45f)
+        if (GameManager.instance.playerJuwel >= HeroJuwel)
         {
-            //노비스의 가챠애니메이션 활성화
-            Novice.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 29.45f && randomValue < 43.45f)
-        {
-            //익스퍼트의 가챠애니메이션 활성화
-            Expert.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 43.45f && randomValue < 74.5f)
-        {
-            //엘리트의 가챠애니메이션 활성화
-            Elite.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 74.5f && randomValue < 95f)
-        {
-            //마스터의 가챠애니메이션 활성화
-            Master.transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (randomValue > 95f && randomValue < 100f)
-        {
-            //히어로의 가챠애니메이션 활성화
-            Hero.transform.GetChild(0).gameObject.SetActive(true);
-        }
+            //로비를 끄고
+            lobby.gameObject.SetActive(false);
+            //히어로버튼을 눌렀다는 bool값 true로 전환
+            NormalButton = false;
+            PremiumButton = false;
+            HeroButton = true;
+            Debug.Log("여기옴1");
+            GameManager.instance.playerJuwel -= HeroJuwel;
+            Debug.Log("여기옴2");
+            
 
+            //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
+            float randomValue = UnityEngine.Random.Range(0, 100f);
+            if (randomValue < 29.45f)
+            {
+                //노비스의 가챠애니메이션 활성화
+                Novice.transform.GetChild(0).gameObject.SetActive(true);
+                //노비스등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(601, 610);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        NoviceImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        NoviceName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 29.45f && randomValue < 43.45f)
+            {
+                //익스퍼트의 가챠애니메이션 활성화
+                Expert.transform.GetChild(0).gameObject.SetActive(true);
+                //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(501, 521);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        ExpertImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        ExpertName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 43.45f && randomValue < 74.5f)
+            {
+                //엘리트의 가챠애니메이션 활성화
+                Elite.transform.GetChild(0).gameObject.SetActive(true);
+                //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(401, 440);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        EliteImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        EliteName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 74.5f && randomValue < 95f)
+            {
+                //마스터의 가챠애니메이션 활성화
+                Master.transform.GetChild(0).gameObject.SetActive(true);
+                //마스터등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(301, 360);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        MasterImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        MasterName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+            else if (randomValue > 95f && randomValue < 100f)
+            {
+                //히어로의 가챠애니메이션 활성화
+                Hero.transform.GetChild(0).gameObject.SetActive(true);
+                //히어로등급의 모든 인덱스번호중에 한개를 뽑음
+                int index = UnityEngine.Random.Range(101, 114);
+                // 동일한 인덱스 찾기
+                for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                {
+                    // 동일한 인덱스 찾기
+                    if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                    {
+                        // 이미지 불러오기
+                        Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                        //해당 인덱스에 해당하는 이름을 불러옴
+                        String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                        //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                        HeroImg.sprite = tempSprite;
+
+                        //노비스등급의 이름에 가져온 이름을 기입
+                        HeroName.text = Name;
+
+                        //카드 획득
+                        GameManager.instance.MyCharacter(index);
+                    }
+                }
+            }
+        }
+        else
+        {
+            //금액이부족합니다 UI추가예정
+            return;
+        }
 
     }
     //히어로가챠버튼을 누른상태로 애니메이션이 끝나면 실행하는 UI

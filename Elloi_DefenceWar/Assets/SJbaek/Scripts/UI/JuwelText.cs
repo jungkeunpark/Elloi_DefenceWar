@@ -12,4 +12,9 @@ public class JuwelText : MonoBehaviour
         juwelText = GetComponent<TextMeshProUGUI>();
         juwelText.text = string.Format("{0}", GameManager.instance.playerJuwel);
     }
+    void Update()
+    {
+        juwelText = GetComponent<TextMeshProUGUI>();
+        juwelText.text = string.Format("{0}", GameManager.instance.playerJuwel);
+    }
 }

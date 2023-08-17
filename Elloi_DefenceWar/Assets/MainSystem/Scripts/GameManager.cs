@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 using System.IO;
+using System;
+using UnityEditor;
 
 [System.Serializable]
 public class Character
@@ -79,12 +81,23 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < line.Length; i++)
         {
             string[] row = line[i].Split('\t');
-            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10] == "TRUE"));
+
+            // 기본적으로 false로 초기화
+            char firstChar = row[10].Trim().ToUpper()[0];  // row[10]의 첫 번째 글자를 대문자로 변환
+            bool tempRow = (firstChar == 'T');  // 첫 번째 글자가 'T'이면 true, 'F'이면 false
+
+            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
+
+            if (tempRow)  // tempRow가 true이면
+            {
+                MyCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
+            }
         }
 
         // 내 캐릭터 리스트 불러오기
-        Load();
+        //Load();
     }
+
 
     // JSON 데이터 저장하는 함수
     void Save()
@@ -102,6 +115,46 @@ public class GameManager : MonoBehaviour
     {
         string jdata = File.ReadAllText(Application.dataPath + "/Resources/MyCharacterList.txt");
         MyCharacter_List = JsonConvert.DeserializeObject<List<Character>>(jdata);
+    }
+
+    // 내 캐릭터 리스트에 획득한 캐릭터만 추가하는 함수
+    public void MyCharacter(int characterIndex)
+    {
+        Debug.Log("캐릭터카드에 넣는 중..");
+        int sameCard = 0;
+
+        // 중복체크
+        for (int i = 0; i < MyCharacter_List.Count; i++)
+        {
+            if (MyCharacter_List[i].index == characterIndex.ToString())
+            {
+                sameCard++;
+            }
+        }
+
+        // 중복되었다면
+        if (sameCard != 0) { Debug.Log("중복되었습니다.");  return; }
+
+        // 중복되지않았다면
+        else if(sameCard == 0)
+        {
+            Debug.Log("중복되지않았습니다.");
+
+            // 전체 캐릭터 카드에서 인덱스가 같은 카드의 정보 가져오기
+            for (int i = 0 ; i < AllCharacter_List.Count ; i++)
+            {
+                if (AllCharacter_List[i].index == characterIndex.ToString())
+                {
+                    MyCharacter_List.Add(new Character(
+                    AllCharacter_List[i].index, AllCharacter_List[i].Rank, AllCharacter_List[i].Name,
+                    AllCharacter_List[i].Health, AllCharacter_List[i].Damage, AllCharacter_List[i].Defense,
+                    AllCharacter_List[i].AttackSpeed, AllCharacter_List[i].MoveSpeed, AllCharacter_List[i].ResponeCoolTime,
+                    AllCharacter_List[i].Cost, true));
+
+                    return;
+                }
+            }
+        }
     }
 }
 
