@@ -16,6 +16,7 @@ public class FightManager : MonoBehaviour
     public Canvas gamePauseCanvas;  // 게임 중지 캔버스
     public Canvas gameWinCanvas;    // 게임 승리 캔버스
     public Canvas gameLoseCanvas;   // 게임 패배 캔버스
+    public GameObject gameWinManager;   // 게임 승리 매니저
 
     // 현재 스테이지
     public int stage = 0;
@@ -282,6 +283,7 @@ public class FightManager : MonoBehaviour
 
         // 승리 UI 등장
         gameWinCanvas.gameObject.SetActive(true);
+        gameWinManager.SetActive(true);
     }
 
     // 플레이어 타워 파괴
