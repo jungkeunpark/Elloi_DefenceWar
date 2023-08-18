@@ -405,6 +405,10 @@ MonoBehaviour:
   attackTimer: 0
   enemyHPBar: {fileID: 5782125338125056569}
   enemyAnimator: {fileID: 0}
+  poolManager: {fileID: 0}
+  effectPrefab: {fileID: 8042969564235693196, guid: 8959fa9ef267cee4e94f0e79fc4ec21b, type: 3}
+  defaultTime: 0.05
+  offsetRange: 40
 --- !u!1 &4898202156851783425
 GameObject:
   m_ObjectHideFlags: 0

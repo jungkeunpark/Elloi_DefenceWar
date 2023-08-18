@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScene : MonoBehaviour
 {
-    public float waitTime = 1f;
+    public float waitTime = 1.5f;
     public float currentTime = default;
 
     void Update()

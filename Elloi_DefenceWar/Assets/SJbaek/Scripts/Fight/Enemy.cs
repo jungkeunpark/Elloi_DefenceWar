@@ -6,7 +6,7 @@ using UnityEngine.TextCore.Text;
 
 public class Enemy : MonoBehaviour
 {
-    public int enemyMaxHp = 100;               // 몬스터 최대 체력
+    public int enemyMaxHp = 100;                // 몬스터 최대 체력
     public int enemyCurHp;                      // 몬스터 현재 체력
     public int enemyDamage = 5;                 // 몬스터 데미지
     public int enemyDefense = 5;                // 몬스터 방어력
@@ -25,10 +25,20 @@ public class Enemy : MonoBehaviour
 
     PlayerCharacter playerCharacter;
 
+
+
+    // 사망 이펙트를 위한 변수
+    public GameObject poolManager;
+    private RectTransform enemyRect;
+    public GameObject effectPrefab;
+    public float defaultTime = 0.05f;
+    public int offsetRange = 40;
+
     private void Awake()
     {
         enemyCurHp = enemyMaxHp;
         enemyAnimator = GetComponent<Animator>();
+        enemyRect = GetComponent<RectTransform>();
     }
 
     private void OnEnable()
@@ -120,6 +130,12 @@ public class Enemy : MonoBehaviour
     public void EnemyDead()
     {
         transform.eulerAngles = new Vector3(0, 0, 0);
+
+        for(int i = 0; i < 40; i++) // 20개의 이펙트를 소환
+        {
+            EffectCreate();
+        }
+        
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
@@ -141,5 +157,23 @@ public class Enemy : MonoBehaviour
     {
         isAttack = false;
         enemyAnimator.SetBool("isAttack", false);
+    }
+
+    // 이펙트 생성
+    void EffectCreate()
+    {
+        // 생성 위치 에서 조금씩 랜덤하게 벗어난 위치로 생성
+        float offsetX = Random.Range(-offsetRange, offsetRange);
+        float offsetY = Random.Range(-offsetRange, offsetRange);
+
+        // 이펙트 생성 위치 현재 적의 위치
+        GameObject effect = Instantiate(effectPrefab, enemyRect);
+
+        // 이펙트의 부모를 설정하여 enemyRect의 자식이 아니게 만듦
+        effect.transform.SetParent(enemyRect.transform.parent);
+
+        // 이펙트 생성
+        RectTransform effectRectTransform = effect.GetComponent<RectTransform>();
+        effectRectTransform.anchoredPosition = new Vector3(effectRectTransform.anchoredPosition.x + offsetX, effectRectTransform.anchoredPosition.y + offsetY, 0f); // 원하는 위치로 수정
     }
 }
