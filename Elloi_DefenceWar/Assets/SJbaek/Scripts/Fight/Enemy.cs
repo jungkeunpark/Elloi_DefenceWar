@@ -6,25 +6,23 @@ using UnityEngine.TextCore.Text;
 
 public class Enemy : MonoBehaviour
 {
-    public int enemyMaxHp = 100;                // 몬스터 최대 체력
-    public int enemyCurHp;                      // 몬스터 현재 체력
-    public int enemyDamage = 5;                 // 몬스터 데미지
-    public int enemyDefense = 5;                // 몬스터 방어력
-    public float enemyAttackSpeed = 2f;         // 몬스터 공격속도
-    public float enemyMoveSpeed = 0.3f;         // 몬스터 이동속도
+    public int enemyMaxHp = 100;                    // 몬스터 최대 체력
+    public int enemyCurHp;                          // 몬스터 현재 체력
+    public int enemyDamage = 5;                     // 몬스터 데미지
+    public int enemyDefense = 5;                    // 몬스터 방어력
+    public float enemyAttackSpeed = 1f;             // 몬스터 공격속도
+    public float enemyMoveSpeed = 0.3f;             // 몬스터 이동속도
 
     public bool isBattle = false;               // 전투 중인지 체크
-    public bool isPlayer = false;               // 플레이어 공격 중인지 체크
-    public bool isTower = false;                // 타워 공격 중인지 체크
     public bool isAttack = false;
+    public bool attackPlayer = false;           // 플레이어 공격 중인지 체크
     public float attackTimer;                   // 공격 쿨타임
 
     public Image enemyHPBar;                    // 몬스터 체력바
 
     public Animator enemyAnimator;              // 몬스터 애니메이션
 
-    PlayerCharacter playerCharacter;
-
+    public PlayerCharacter playerCharacter;     // 플레이어 체력을 가져올 스크립트
 
 
     // 사망 이펙트를 위한 변수
@@ -73,7 +71,7 @@ public class Enemy : MonoBehaviour
             attackTimer += Time.deltaTime;
 
             // 공격 가능 시간
-            if (attackTimer > enemyAttackSpeed)
+            if (attackTimer >= enemyAttackSpeed)
             {
                 isAttack = true;
                 attackTimer = 0;
@@ -89,32 +87,31 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && playerCharacter == null)
         {
-            playerCharacter = collision.GetComponent<PlayerCharacter>();
             isBattle = true;
-            isAttack = true;
-            isPlayer = true;
-            isTower = false;
+            attackPlayer = true;
+            playerCharacter = collision.GetComponent<PlayerCharacter>();
         }
 
         else if (collision.CompareTag("PlayerTower"))
         {
             isBattle = true;
-            isAttack = true;
-            isPlayer = false;
-            isTower = true;
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("PlayerTower"))
+        if (collision.CompareTag("Player") && playerCharacter == null)
         {
             isBattle = true;
-            isAttack = true;
-            isPlayer = false;
-            isTower = true;
+            attackPlayer = true;
+            playerCharacter = collision.GetComponent<PlayerCharacter>();
+        }
+
+        else if (collision.CompareTag("PlayerTower"))
+        {
+            isBattle = true;
         }
     }
 
@@ -123,7 +120,8 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isBattle = false;
-            isTower = true;
+            attackPlayer = false;
+            playerCharacter = null;
         }
     }
 
@@ -136,6 +134,7 @@ public class Enemy : MonoBehaviour
             EffectCreate();
         }
         
+        FightManager.fightManager.activeEnemys.Remove(gameObject);
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
@@ -143,11 +142,14 @@ public class Enemy : MonoBehaviour
 
     public void EnemyAttack()
     {
-        if (isPlayer)
+        if (attackPlayer)
         {
-            playerCharacter.characterCurHP -= enemyDamage;
+            if(playerCharacter != null)
+            {
+                playerCharacter.characterCurHP -= enemyDamage;
+            }
         }
-        else if (isTower)
+        else if (!attackPlayer)
         {
             FightManager.fightManager.curPlayerTowerHp -= enemyDamage;
         }

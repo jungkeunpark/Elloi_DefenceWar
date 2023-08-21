@@ -9,14 +9,14 @@ using UnityEditor;
 [System.Serializable]
 public class Character
 {
-    public Character(string _index, string _Rank, string _Name, string _Health, string _Damage, string _Defense,
+    public Character(string _index, string _Rank, string _Name, string _type, string _Health, string _Damage, string _Defense,
         string _AttackSpeed, string _MoveSpeed, string _ResponeCoolTime, string _Cost, bool _isGet)
     {
-        index = _index; Rank = _Rank; Name = _Name; Health = _Health; Damage = _Damage; Defense = _Defense;
+        index = _index; Rank = _Rank; Name = _Name; type = _type; Health = _Health; Damage = _Damage; Defense = _Defense;
         AttackSpeed = _AttackSpeed; MoveSpeed = _MoveSpeed; ResponeCoolTime = _ResponeCoolTime; Cost = _Cost; isGet = _isGet;
     }
 
-    public string index, Rank, Name, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
+    public string index, Rank, Name, type, Health, Damage, Defense, AttackSpeed, MoveSpeed, ResponeCoolTime, Cost;
     public bool isGet;
 }
 
@@ -88,14 +88,14 @@ public class GameManager : MonoBehaviour
             string[] row = line[i].Split('\t');
 
             // 기본적으로 false로 초기화
-            char firstChar = row[10].Trim().ToUpper()[0];  // row[10]의 첫 번째 글자를 대문자로 변환
+            char firstChar = row[11].Trim().ToUpper()[0];  // row[10]의 첫 번째 글자를 대문자로 변환
             bool tempRow = (firstChar == 'T');  // 첫 번째 글자가 'T'이면 true, 'F'이면 false
 
-            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
+            AllCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], tempRow));
 
             if (tempRow)  // tempRow가 true이면
             {
-                MyCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], tempRow));
+                MyCharacter_List.Add(new Character(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], tempRow));
 
                 myGetCardsNumbers.Add(i);
 
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
                 if (AllCharacter_List[i].index == characterIndex.ToString())
                 {
                     MyCharacter_List.Add(new Character(
-                    AllCharacter_List[i].index, AllCharacter_List[i].Rank, AllCharacter_List[i].Name,
+                    AllCharacter_List[i].index, AllCharacter_List[i].Rank, AllCharacter_List[i].Name, AllCharacter_List[i].type,
                     AllCharacter_List[i].Health, AllCharacter_List[i].Damage, AllCharacter_List[i].Defense,
                     AllCharacter_List[i].AttackSpeed, AllCharacter_List[i].MoveSpeed, AllCharacter_List[i].ResponeCoolTime,
                     AllCharacter_List[i].Cost, true));

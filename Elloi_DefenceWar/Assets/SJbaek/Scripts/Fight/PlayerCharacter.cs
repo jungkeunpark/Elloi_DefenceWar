@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static PlayerCharacter;
 
 public class PlayerCharacter : MonoBehaviour
 {
@@ -22,7 +23,20 @@ public class PlayerCharacter : MonoBehaviour
     public bool attackEnemy = false;    // 적을 공격중
     public float attackCoolTime;        // 공격 쿨타임
 
-    public Enemy enemy;
+    public Enemy enemy;                 // 적 hp를 가져올 스크립트
+
+    // 원거리 캐릭터 test
+    public GameObject Arrow;                // 원거리 공격 무기
+    private float focusEnemyDis = Mathf.Infinity;        // 내가 정한 적과의 거리
+    private float towerDistance;
+
+    // 근거리, 원거리
+    public enum CharacterType
+    {
+        Melee, Range
+    }
+
+    public CharacterType characterType;
 
     public void SetCharacterCardValues(int index)
     {
@@ -39,6 +53,7 @@ public class PlayerCharacter : MonoBehaviour
             characterIndex = GameManager.instance.partySetCardIndex[index];
             characterMaxHP = int.Parse(GameManager.instance.AllCharacter_List[characterIndex].Health);
             characterCurHP = characterMaxHP;
+            characterType = int.Parse(GameManager.instance.AllCharacter_List[characterIndex].type) == 0 ? CharacterType.Melee : CharacterType.Range;
             characterDamage = int.Parse(GameManager.instance.AllCharacter_List[characterIndex].Damage);
             characterDefense = int.Parse(GameManager.instance.AllCharacter_List[characterIndex].Defense);
             characterAttackSpeed = float.Parse(GameManager.instance.AllCharacter_List[characterIndex].AttackSpeed);
@@ -71,44 +86,114 @@ public class PlayerCharacter : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isBattle && !isAttack) 
+        // 근접 캐릭터
+        switch(characterType)
         {
-            // 위치 재조정
-            characterImage.transform.eulerAngles = new Vector3(0, 0, 0);
-            // 이동
-            transform.Translate((characterMoveSpeed / 100) * Time.deltaTime * Vector2.right);
-        }
-        else if(isBattle)
-        {
-            transform.Translate(Vector3.zero);
-
-            // 공격 속도 쿨타임
-            attackCoolTime += Time.deltaTime;
-
-            if (attackCoolTime > characterAttackSpeed)
+            case CharacterType.Melee:
             {
-                // 공격 시작
-                isAttack = true;
-                attackCoolTime = 0;
+                if (!isBattle && !isAttack)
+                {
+                    // 위치 재조정
+                    characterImage.transform.eulerAngles = new Vector3(0, 0, 0);
+                    // 이동
+                    transform.Translate((characterMoveSpeed / 100) * Time.deltaTime * Vector2.right);
+                }
+                else if (isBattle)
+                {
+                    transform.Translate(Vector3.zero);
+
+                    // 공격 속도 쿨타임
+                    attackCoolTime += Time.deltaTime;
+
+                    if (attackCoolTime >= characterAttackSpeed)
+                    {
+                        // 공격 시작
+                        isAttack = true;
+                        attackCoolTime = 0;
+                    }
+
+                    if (isAttack && attackCoolTime == 0)
+                    {
+                        StartCoroutine(MeleeAttack(enemy));
+                    }
+                }
+                break;
             }
 
-            if (isAttack && attackCoolTime==0)
+            case CharacterType.Range:
             {
-                StartCoroutine(Attack(enemy));
+                // 적 거리 탐색
+                foreach (GameObject focusEnemy in FightManager.fightManager.activeEnemys)
+                {
+                    float tempDistance = Vector2.Distance(transform.position, focusEnemy.transform.position);
+
+                    // 저장된 거리보다 작다면 저장된 거리에 저장
+                    if (focusEnemyDis > tempDistance)
+                    {
+                        focusEnemyDis = tempDistance;
+                        // enemy = focusEnemy.GetComponent<Enemy>();
+                        Debug.Log(focusEnemyDis);
+                    }
+                }
+
+                // 적 타워 거리 탐색
+                // towerDistance = Vector2.Distance(transform.position, )
+
+                // 거리 안에 들어오면 공격 시작
+                if (focusEnemyDis <= 5)
+                {
+                    isBattle = true;
+                }
+
+                else if (focusEnemyDis > 5)
+                {
+                    isBattle = false;
+                }
+
+                if (!isBattle)
+                {
+                    // 위치 재조정
+                    characterImage.transform.eulerAngles = new Vector3(0, 0, 0);
+                    // 이동
+                    transform.Translate((characterMoveSpeed / 100) * Time.deltaTime * Vector2.right);
+                }
+
+                else if (isBattle) 
+                {
+                    transform.Translate(Vector3.zero);
+
+                    // 공격 속도 쿨타임
+                    attackCoolTime += Time.deltaTime;
+
+                    // 거리가 다시 멀어졌다면?
+                    if(focusEnemyDis > 5)
+                    {
+                        return;
+                    }
+
+                    if (attackCoolTime >= characterAttackSpeed)
+                    {
+                        // 공격 시작
+                        RangeAttack(enemy);
+                        focusEnemyDis = Mathf.Infinity;
+                        attackCoolTime = 0;
+                    }
+                }
+                break;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Enemy"))
+        if(collision.CompareTag("Enemy") && enemy == null && characterType == CharacterType.Melee)
         {
             isBattle = true;
             attackEnemy = true;
             enemy = collision.GetComponent<Enemy>();
         }
 
-        else if (collision.CompareTag("EnemyTower"))
+        else if (collision.CompareTag("EnemyTower") && characterType == CharacterType.Melee)
         {
             isBattle = true;
         }
@@ -116,14 +201,14 @@ public class PlayerCharacter : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") && enemy == null && characterType == CharacterType.Melee)
         {
             isBattle = true;
             attackEnemy = true;
             enemy = collision.GetComponent<Enemy>();
         }
 
-        else if (collision.CompareTag("EnemyTower"))
+        else if (collision.CompareTag("EnemyTower") && characterType == CharacterType.Melee)
         {
             isBattle = true;
         }
@@ -131,7 +216,7 @@ public class PlayerCharacter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") && characterType == CharacterType.Melee)
         {
             isBattle = false;
             attackEnemy = false;
@@ -139,7 +224,7 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
-    public IEnumerator Attack(Enemy enemy)
+    public IEnumerator MeleeAttack(Enemy enemy)
     {
         characterImage.transform.eulerAngles = new Vector3(0, 0, 0);
         yield return new WaitForSeconds(0.1f);
@@ -167,6 +252,12 @@ public class PlayerCharacter : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         isAttack = false;
+    }
+
+    public void RangeAttack(Enemy enemy)
+    {
+        GameObject arrow = Instantiate(FightManager.fightManager.arrowPrefabs[0], transform.position, Quaternion.identity);
+        arrow.transform.SetParent(transform, false);
     }
 
     public void ChracterDead()
