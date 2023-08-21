@@ -62,8 +62,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\UseItemActiveEffect.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaHero1times.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaNormal10times.cs" />
+    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaHero.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Test\ArrowTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneGatcha.cs" />
@@ -82,9 +81,10 @@
     <Compile Include="Assets\SJbaek\Scripts\Fight\Enemy.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\CharacterPoolManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaPremium1times.cs" />
+    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaPremium.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\JKpark\Scripts\ScrollActivate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -102,7 +102,6 @@
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadingScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\GoldText.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaHero10times.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\EnemyPoolManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneStageSelect.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetv2.cs" />
@@ -116,13 +115,12 @@
     <Compile Include="Assets\SJbaek\Scripts\UI\NameText.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\Title.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaNormal1times.cs" />
+    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaNormal.cs" />
     <Compile Include="Assets\JKpark\Scripts\StartScripts.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadScene_Final.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SelectScene\GatchaManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaPremium10times.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\MainSystem\Scripts\GameManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\ClickEffect\MouseClickEffect.cs" />
@@ -138,6 +136,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Test\EnemyAttack.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CharacterInfoScene\MyCardCheck.cs" />
+    <Compile Include="Assets\JKpark\Scripts\Percantages.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
