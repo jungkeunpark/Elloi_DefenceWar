@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.TextCore.Text;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -54,10 +55,7 @@ public class Enemy : MonoBehaviour
 
         // 체력바 업데이트
         enemyHPBar.fillAmount = (float)enemyCurHp / (float)enemyMaxHp;
-    }
-
-    void FixedUpdate()
-    {
+    
         if (!isBattle && !isAttack)
         {
             transform.Translate(enemyMoveSpeed * Time.deltaTime * Vector2.left);
@@ -68,7 +66,7 @@ public class Enemy : MonoBehaviour
             transform.Translate(Vector3.zero);
 
             // 공격 속도 쿨타임
-            attackTimer += Time.deltaTime;
+            attackTimer += Time.deltaTime / 2;
 
             // 공격 가능 시간
             if (attackTimer >= enemyAttackSpeed)

@@ -80,6 +80,8 @@ MonoBehaviour:
   attackEnemy: 0
   attackCoolTime: 0
   enemy: {fileID: 0}
+  Arrow: {fileID: 0}
+  characterType: 0
 --- !u!50 &408143023255229313
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +127,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0
 --- !u!212 &-2910827066475208631
 SpriteRenderer:
