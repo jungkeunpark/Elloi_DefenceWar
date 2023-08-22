@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 10f)
+        if (timer > 15f)
         {
             EnemySpawn();
             timer = 0f;
@@ -26,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
 
     void EnemySpawn()
     {
-        GameObject enemy = FightManager.fightManager.enemyPoolManager.Get(Random.Range(0, 2));
+        GameObject enemy = FightManager.fightManager.enemyPoolManager.Get(Random.Range(0, 3));
         enemy.transform.position = enemySpawnPoint[Random.Range(1, enemySpawnPoint.Length)].transform.position;
 
         // 테스트 코드

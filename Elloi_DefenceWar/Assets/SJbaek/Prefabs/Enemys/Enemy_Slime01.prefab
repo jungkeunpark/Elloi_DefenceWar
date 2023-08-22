@@ -283,8 +283,8 @@ MonoBehaviour:
   - {fileID: 4099275334939114586}
   - {fileID: 4099275335197911697}
   m_Bounds:
-    m_Center: {x: 0.016861558, y: 0.0019842982, z: 0}
-    m_Extent: {x: 0.50501835, y: 0.44454348, z: 0}
+    m_Center: {x: 0.016860783, y: 0.001983583, z: 0}
+    m_Extent: {x: 0.50501853, y: 0.44454372, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -347,19 +347,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aaa7ff48ecb2e840b1e5452909379e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHp: 100
+  enemyMaxHp: 40
   enemyCurHp: 0
-  enemyDamage: 5
+  enemyDamage: 10
   enemyDefense: 5
-  enemyAttackSpeed: 2
+  enemyAttackSpeed: 1
   enemyMoveSpeed: 0.3
   isBattle: 0
-  isPlayer: 0
-  isTower: 0
   isAttack: 0
+  attackPlayer: 0
   attackTimer: 0
   enemyHPBar: {fileID: 980862527458608881}
   enemyAnimator: {fileID: 0}
+  playerCharacter: {fileID: 0}
   poolManager: {fileID: 0}
   effectPrefab: {fileID: 8042969564235693196, guid: 8959fa9ef267cee4e94f0e79fc4ec21b, type: 3}
   defaultTime: 0.05

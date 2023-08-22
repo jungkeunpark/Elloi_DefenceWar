@@ -35,8 +35,11 @@ public class GameManager : MonoBehaviour
     public int playerGold = 10000;
     public int playerJuwel = 3000;
     public int playerLevel = 1;
-    public int exp = 0;
+    public int curExp = 0;
     public string playerName = "최강미남박정근";
+
+    // 레벨업에 필요한 경험치
+    public int[] needLevelUpExp = new int[20] { 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400 };
 
     // 파티 구성 된 캐릭터 카드
     public GameObject[] partySetCard = new GameObject[4];
@@ -52,6 +55,9 @@ public class GameManager : MonoBehaviour
 
     // 현재 진행중인 스테이지 인덱스
     public int nowStageIndex;
+
+    // 클리어한 스테이지
+    public List<int> clearStageIndex = new List<int> { default };
 
     // 캐릭터 인덱스 넘버 저장할 변수
     public int characterIndex;

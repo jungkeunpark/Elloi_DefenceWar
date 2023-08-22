@@ -1129,8 +1129,9 @@ MonoBehaviour:
   playerGold: 10000
   playerJuwel: 3000
   playerLevel: 1
-  exp: 0
+  curExp: 0
   playerName: "\uCD5C\uAC15\uBBF8\uB0A8\uBC15\uC815\uADFC"
+  needLevelUpExp: f401000058020000bc0200002003000084030000e80300004c040000b00400001405000078050000dc05000040060000a4060000080700006c070000d00700003408000098080000fc08000060090000
   partySetCard:
   - {fileID: 0}
   - {fileID: 0}
@@ -1144,6 +1145,7 @@ MonoBehaviour:
   doubleSpeedCount: 30
   autoItemCount: 30
   nowStageIndex: 0
+  clearStageIndex: ffffffff
   characterIndex: 0
   myGetCardsNumbers: 
 --- !u!1 &1204557064

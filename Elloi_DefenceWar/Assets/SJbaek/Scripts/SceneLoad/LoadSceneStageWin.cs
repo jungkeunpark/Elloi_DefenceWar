@@ -2,9 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadSceneStageWin : MonoBehaviour
 {
+    // 클리어 시 골드 버튼으로 변경
+    public Sprite clearButton;
+    // 클리어 시 깃발 자식오브젝트 활성화
+    public Button[] stageButtons;
+
+    // 클리어 한 스테이지 버튼바꾸기 및 깃발 활성화
+    public void Start()
+    {
+        foreach(int index in GameManager.instance.clearStageIndex)
+        {
+            if (index == -1) { continue; }
+
+            else if (index >= 0)
+            {
+                // 골드 버튼으로 변경
+                stageButtons[index].image.sprite = clearButton;
+
+                // 깃발 활성화
+                stageButtons[index].transform.GetChild(0).gameObject.SetActive(true);
+            }
+
+            else { continue; }
+        } 
+    }
+
     public void LoadGatchaScene()
     {
         SceneManager.LoadScene("GatchaScene");
