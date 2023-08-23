@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 public class GatchaPremium : MonoBehaviour
 {
-    LoadSceneGatchaPLAY loadSceneGatchaPLAY;
+    public static GatchaPremium gatchaPremium;
     //게임오브젝트 (가챠애니메이션 + 가챠엔딩장면)최상위
     public GameObject Novice;
     public GameObject Expert;
@@ -43,19 +44,26 @@ public class GatchaPremium : MonoBehaviour
     public TMP_Text EliteName;
     public TMP_Text MasterName;
     public TMP_Text HeroName;
-    public TMP_Text[] TenGatchaNames = default;
     private int PremiumJuwel = 200;
+    private int TenTimePremiumJuwel = 2000;
+    public TMP_Text[] TenGatchaNames = default;
 
     public GameObject PremiumFailObject;
     public TMP_Text PremiumFail;
+    public int[] Premium10times = new int[10];
 
-    public int[] Premium10times = default;
+    private void Awake()
+    {
+        gatchaPremium = this;
+    }
+
+
     //프리미엄가챠버튼을 누르면 실행
     public void PremiumGatcha()
     {
         //로비를 끄고
         lobby.gameObject.SetActive(false);
-
+        LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton = true;
         BeforeBuy.transform.GetChild(0).gameObject.SetActive(true);
         BeforeBuy.transform.GetChild(2).gameObject.SetActive(true);
     }
@@ -67,14 +75,17 @@ public class GatchaPremium : MonoBehaviour
         if (GameManager.instance.playerJuwel >= PremiumJuwel)
         {
             GameManager.instance.playerJuwel -= PremiumJuwel;
+
+            LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
             BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
             BeforeBuy.transform.GetChild(1).gameObject.SetActive(false);
-
+            LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button1Time = true;
 
             //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
             float randomValue = UnityEngine.Random.Range(0, 100f);
             if (randomValue < 42.5f)
             {
+                Novice.transform.GetChild(0).gameObject.SetActive(true);
                 //노비스등급의 모든 인덱스번호중에 한개를 뽑음
                 int index = UnityEngine.Random.Range(601, 610);
                 // 동일한 인덱스 찾기
@@ -105,7 +116,7 @@ public class GatchaPremium : MonoBehaviour
                 //익스퍼트의 가챠애니메이션 활성화
                 Expert.transform.GetChild(0).gameObject.SetActive(true);
                 //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
-                int index = UnityEngine.Random.Range(501, 521);
+                int index = UnityEngine.Random.Range(501, 520);
                 // 동일한 인덱스 찾기
                 for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
                 {
@@ -221,7 +232,7 @@ public class GatchaPremium : MonoBehaviour
             }
             else
             {
-                loadSceneGatchaPLAY.FailToBuy();
+                LoadSceneGatchaPLAY.loadSceneGatchaPlay.FailToBuy();
             }
         }
 
@@ -229,12 +240,19 @@ public class GatchaPremium : MonoBehaviour
 
     public void PremiumGatchaTenTime()
     {
-        if (GameManager.instance.playerJuwel >= 10 * PremiumJuwel)
-        {
 
-            GameManager.instance.playerJuwel -= 10 * PremiumJuwel;
+        if (GameManager.instance.playerJuwel >= TenTimePremiumJuwel)
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
+
+            }
+            LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
+            GameManager.instance.playerJuwel -= TenTimePremiumJuwel;
             BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
-            BeforeBuy.transform.GetChild(1).gameObject.SetActive(false);
+            BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
+            LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button10Time = true;
 
             for (int a = 0; a < 10; a++)
             {
@@ -244,64 +262,165 @@ public class GatchaPremium : MonoBehaviour
                     //노비스등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(601, 610);
                     Premium10times[a] = index;
+
+                    for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                    {
+                        // 동일한 인덱스 찾기
+                        if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                        {
+                            // 이미지 불러오기
+                            Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
+
+                            //해당 인덱스에 해당하는 이름을 불러옴
+                            String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                            TenGatchaImg[a].sprite = tempSprite;
+                            //노비스등급의 이름에 가져온 이름을 기입
+                            TenGatchaNames[a].text = Name;
+                            //카드 획득
+                            GameManager.instance.MyCharacter(index);
+                        }
+                    }
                 }
                 else if (randomValue > 42.5f && randomValue < 66.5f)
                 {
                     //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
-                    int index = UnityEngine.Random.Range(501, 521);
+                    int index = UnityEngine.Random.Range(501, 520);
                     Premium10times[a] = index;
+                    for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                    {
+                        // 동일한 인덱스 찾기
+                        if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                        {
+                            // 이미지 불러오기
+                            Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
 
+                            //해당 인덱스에 해당하는 이름을 불러옴
+                            String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                            TenGatchaImg[a].sprite = tempSprite;
+
+                            //노비스등급의 이름에 가져온 이름을 기입
+                            TenGatchaNames[a].text = Name;
+
+                            //카드 획득
+                            GameManager.instance.MyCharacter(index);
+                        }
+                    }
                 }
                 else if (randomValue > 66.5f && randomValue < 94.0f)
                 {
                     //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(401, 440);
                     Premium10times[a] = index;
+                    for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                    {
+                        // 동일한 인덱스 찾기
+                        if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                        {
+                            // 이미지 불러오기
+                            Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
 
+                            //해당 인덱스에 해당하는 이름을 불러옴
+                            String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                            TenGatchaImg[a].sprite = tempSprite;
+
+                            //노비스등급의 이름에 가져온 이름을 기입
+                            TenGatchaNames[a].text = Name;
+
+                            //카드 획득
+                            GameManager.instance.MyCharacter(index);
+                        }
+                    }
                 }
                 else if (randomValue > 94.0f && randomValue < 99.5f)
                 {
                     //마스터등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(301, 360);
                     Premium10times[a] = index;
+                    for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                    {
+                        // 동일한 인덱스 찾기
+                        if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                        {
+                            // 이미지 불러오기
+                            Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
 
+                            //해당 인덱스에 해당하는 이름을 불러옴
+                            String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                            TenGatchaImg[a].sprite = tempSprite;
+
+                            //노비스등급의 이름에 가져온 이름을 기입
+                            TenGatchaNames[a].text = Name;
+
+                            //카드 획득
+                            GameManager.instance.MyCharacter(index);
+                        }
+                    }
                 }
                 else if (randomValue > 99.5f && randomValue < 100f)
                 {
                     //히어로등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(101, 114);
                     Premium10times[a] = index;
+                    for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
+                    {
+                        // 동일한 인덱스 찾기
+                        if (GameManager.instance.AllCharacter_List[i].index == index.ToString())
+                        {
+                            // 이미지 불러오기
+                            Sprite tempSprite = GameManager.instance.characterCardPrefabs[i].transform.GetChild(2).GetComponent<Image>().sprite;
 
+                            //해당 인덱스에 해당하는 이름을 불러옴
+                            String Name = GameManager.instance.AllCharacter_List[i].Name;
+
+                            //노비스등급의 이미지의 스프라이트에 가져온 이미지 스프라이트 기입
+                            TenGatchaImg[a].sprite = tempSprite;
+
+                            //노비스등급의 이름에 가져온 이름을 기입
+                            TenGatchaNames[a].text = Name;
+
+                            //카드 획득
+                            GameManager.instance.MyCharacter(index);
+                        }
+                    }
                 }
 
 
                 int b = Mathf.Min(Premium10times);
-                if (b > 101 && b < 114)
+                if (b >= 101 && b <= 114)
                 {
                     Hero.transform.GetChild(0).gameObject.SetActive(true);
                 }
-                else if (301 < b && b < 360)
+                else if (301 <= b && b <= 360)
                 {
                     Master.transform.GetChild(0).gameObject.SetActive(true);
                 }
-                else if (401 < b && b < 440)
+                else if (401 <= b && b <= 440)
                 {
                     Elite.transform.GetChild(0).gameObject.SetActive(true);
                 }
-                else if (501 < b && b < 521)
+                else if (501 <= b && b <= 520)
                 {
                     Expert.transform.GetChild(0).gameObject.SetActive(true);
                 }
-                else if (601 < b && b < 610)
+                else if (601 <= b && b <= 610)
                 {
                     Novice.transform.GetChild(0).gameObject.SetActive(true);
                 }
-
             }
+
+            ScrollActivate.scrollActivate.press();
         }
         else
         {
-            loadSceneGatchaPLAY.FailToBuy();
+            LoadSceneGatchaPLAY.loadSceneGatchaPlay.FailToBuy();
         }
     }
 

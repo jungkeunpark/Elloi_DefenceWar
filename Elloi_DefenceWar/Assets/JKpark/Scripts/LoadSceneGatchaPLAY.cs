@@ -1,12 +1,11 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LoadSceneGatchaPLAY : MonoBehaviour
 {
-    GatchaNormal gatchaNormal;
-    GatchaPremium gatchaPremium;
-    GatchaHero gatchaHero;
+    public static LoadSceneGatchaPLAY loadSceneGatchaPlay;
 
     //게임오브젝트 (가챠애니메이션 + 가챠엔딩장면)최상위
     public GameObject Novice;
@@ -66,17 +65,17 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     public TMP_Text PremiumFail;
     public TMP_Text HeroFail;
 
-    public bool NormalButton;
-    public bool PremiumButton;
-    public bool HeroButton;
-    public bool Button1Time;
-    public bool Button10Time;
+    public bool NormalButton = false;
+    public bool PremiumButton = false;
+    public bool HeroButton = false;
+    public bool Button1Time = false;
+    public bool Button10Time = false;
     //노말가챠버튼을 누르면 실행
 
 
     public void FailToBuy()
     {
-        Debug.Log("들어왔니?");
+
         if (NormalButton == true && PremiumButton == false && HeroButton == false)
         {
             if (Button1Time == true && Button10Time == false)
@@ -138,6 +137,10 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        loadSceneGatchaPlay = this;
+    }
 
     private void Update()
     {
@@ -180,6 +183,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             {
 
                 TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(true);
+                ScrollActivate.scrollActivate.GoCoroutine();
             }
 
         }
@@ -213,7 +217,8 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             }
             else if (Button10Time == true && Button1Time == false)
             {
-
+                TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(true);
+                ScrollActivate.scrollActivate.GoCoroutine();
             }
         }
         //if애니메이션의 스프라이트가 마지막장면이 등장하면
@@ -247,6 +252,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             else if (Button10Time == true && Button1Time == false)
             {
                 TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(true);
+                ScrollActivate.scrollActivate.GoCoroutine();
             }
         }
         //if애니메이션의 스프라이트가 마지막장면이 등장하면
@@ -279,6 +285,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             else if (Button10Time == true && Button1Time == false)
             {
                 TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(true);
+                ScrollActivate.scrollActivate.GoCoroutine();
             }
         }
         //if애니메이션의 스프라이트가 마지막장면이 등장하면
@@ -313,11 +320,12 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
             else if (Button10Time == true && Button1Time == false)
             {
                 TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(true);
+                ScrollActivate.scrollActivate.GoCoroutine();
             }
         }
     }
 
-    //노말 버튼을 누르면
+    //노말 리트라이 버튼을 누르면
     public void NormalPressbutton()
     {
         Novice.transform.GetChild(1).gameObject.SetActive(false);
@@ -332,7 +340,48 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         //normalGatcha메소드 실행
         if (GameManager.instance.playerGold >= NormalGold)
         {
-            gatchaNormal.NormalGatchaOneTime();
+            GatchaNormal.gatchanormal.NormalGatchaOneTime();
+        }
+        else
+        {
+            FailToBuy();
+        }
+    }
+
+    //10연차노말 리트라이 버튼을 누르면
+    public void TenTimesNormalPressbutton()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            GatchaNormal.gatchanormal.Normal10times[i] = default;
+            GatchaNormal.gatchanormal.TenGatchaImg[i].sprite = default;
+            GatchaNormal.gatchanormal.TenGatchaNames[i].text = default;
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(0).gameObject);
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(2).gameObject);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(1).gameObject.SetActive(false);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(3).gameObject.SetActive(false);
+        }
+
+
+        for (int i = 0; i < 7; i++)
+        {
+            ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
+
+        }
+        LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
+        Novice.transform.GetChild(1).gameObject.SetActive(false);
+        Expert.transform.GetChild(1).gameObject.SetActive(false);
+        Elite.transform.GetChild(1).gameObject.SetActive(false);
+        Master.transform.GetChild(1).gameObject.SetActive(false);
+        Hero.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(3).gameObject.SetActive(false);
+        GameButton.transform.GetChild(2).gameObject.SetActive(false);
+        GameButton.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(0).gameObject.SetActive(false);
+        //normalGatcha메소드 실행
+        if (GameManager.instance.playerGold >= NormalGold)
+        {
+            GatchaNormal.gatchanormal.NormalGatchaTenTime();
         }
         else
         {
@@ -354,7 +403,48 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         //normalGatcha메소드 실행
         if (GameManager.instance.playerJuwel >= PremiumJuwel)
         {
-            gatchaPremium.PremiumGatcha();
+            GatchaPremium.gatchaPremium.PremiumGatchaOneTime();
+        }
+        else
+        {
+            FailToBuy();
+        }
+    }
+    //프리미엄 리트라이 버튼을 누르면
+    public void TenTimesPremiumPressbutton()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            GatchaPremium.gatchaPremium.Premium10times[i] = default;
+            GatchaPremium.gatchaPremium.TenGatchaImg[i].sprite = default;
+            GatchaPremium.gatchaPremium.TenGatchaNames[i].text = default;
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(0).gameObject);
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(2).gameObject);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(1).gameObject.SetActive(false);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(3).gameObject.SetActive(false);
+        }
+
+
+        for (int i = 0; i < 7; i++)
+        {
+            ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
+
+        }
+
+
+        Novice.transform.GetChild(1).gameObject.SetActive(false);
+        Expert.transform.GetChild(1).gameObject.SetActive(false);
+        Elite.transform.GetChild(1).gameObject.SetActive(false);
+        Master.transform.GetChild(1).gameObject.SetActive(false);
+        Hero.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(3).gameObject.SetActive(false);
+        GameButton.transform.GetChild(2).gameObject.SetActive(false);
+        GameButton.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(0).gameObject.SetActive(false);
+        //normalGatcha메소드 실행
+        if (GameManager.instance.playerJuwel >= PremiumJuwel)
+        {
+            GatchaPremium.gatchaPremium.PremiumGatchaTenTime();
         }
         else
         {
@@ -364,6 +454,7 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
     //히어로 리트라이 버튼을 누르면
     public void HeroPressbutton()
     {
+
         Novice.transform.GetChild(1).gameObject.SetActive(false);
         Expert.transform.GetChild(1).gameObject.SetActive(false);
         Elite.transform.GetChild(1).gameObject.SetActive(false);
@@ -376,19 +467,66 @@ public class LoadSceneGatchaPLAY : MonoBehaviour
         //normalGatcha메소드 실행
         if (GameManager.instance.playerJuwel >= HeroJuwel)
         {
-            gatchaHero.HeroGatcha();
+            GatchaHero.gatchaHero.HeroGatchaOneTime();
         }
         else
         {
             FailToBuy();
         }
     }
+    //히어로 10연차리트라이 버튼을 누르면
+    public void TenTimesHeroPressbutton()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            GatchaHero.gatchaHero.Hero10times[i] = default;
+            GatchaHero.gatchaHero.TenGatchaImg[i].sprite = default;
+            GatchaHero.gatchaHero.TenGatchaNames[i].text = default;
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(0).gameObject);
+            Destroy(ScrollActivate.scrollActivate.Ending[i].transform.GetChild(2).gameObject);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(1).gameObject.SetActive(false);
+            ScrollActivate.scrollActivate.Ending[i].transform.GetChild(3).gameObject.SetActive(false);
+        }
+
+
+        for (int i = 0; i < 7; i++)
+        {
+            ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
+
+        }
+
+        Novice.transform.GetChild(1).gameObject.SetActive(false);
+        Expert.transform.GetChild(1).gameObject.SetActive(false);
+        Elite.transform.GetChild(1).gameObject.SetActive(false);
+        Master.transform.GetChild(1).gameObject.SetActive(false);
+        Hero.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(3).gameObject.SetActive(false);
+        GameButton.transform.GetChild(2).gameObject.SetActive(false);
+        GameButton.transform.GetChild(1).gameObject.SetActive(false);
+        GameButton.transform.GetChild(0).gameObject.SetActive(false);
+        //normalGatcha메소드 실행
+        if (GameManager.instance.playerJuwel >= HeroJuwel)
+        {
+            GatchaHero.gatchaHero.HeroGatchaTenTime();
+        }
+        else
+        {
+            FailToBuy();
+        }
+    }
+
     //로비로 돌아가는 버튼을 누르면
     public void Lobby()
     {
         //로비 활성화
+        BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
+        BeforeBuy.transform.GetChild(1).gameObject.SetActive(false);
+        BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
+        BeforeBuy.transform.GetChild(3).gameObject.SetActive(false);
         lobby.gameObject.SetActive(true);
+        lobby.transform.GetChild(0).gameObject.SetActive(true);
         //노비스의 엔딩장면 비활성화
+        TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
         Novice.transform.GetChild(0).gameObject.SetActive(false);
         Novice.transform.GetChild(1).gameObject.SetActive(false);
         //익스퍼트의 엔딩장면 비활성화
