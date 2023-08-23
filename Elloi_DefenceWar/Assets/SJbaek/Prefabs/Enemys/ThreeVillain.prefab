@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.0958252, y: -2.7458382}
+  m_AnchoredPosition: {x: 0, y: -0.06}
   m_SizeDelta: {x: 72, y: 11}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7888005187007217744
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 1856408807170820313}
   m_Layer: 5
   m_Name: ThreeVillain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -422,7 +422,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856408807170820315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -701.62445}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 120, y: 120, z: 120}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -517,8 +517,8 @@ MonoBehaviour:
   - {fileID: 1856408806259836526}
   - {fileID: 1856408805690783010}
   m_Bounds:
-    m_Center: {x: 0.019105017, y: -0.02651906, z: 0}
-    m_Extent: {x: 0.32410505, y: 0.423481, z: 0}
+    m_Center: {x: 0.019105017, y: -0.026520014, z: 0}
+    m_Extent: {x: 0.32410505, y: 0.42348003, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -577,7 +577,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019105017, y: -0.02651906}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -588,7 +588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6482101, y: 0.846962}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1856408807170820313
 MonoBehaviour:
@@ -602,12 +602,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aaa7ff48ecb2e840b1e5452909379e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHp: 100
+  enemyMaxHp: 250
   enemyCurHp: 0
-  enemyDamage: 5
+  enemyDamage: 35
   enemyDefense: 5
   enemyAttackSpeed: 1
-  enemyMoveSpeed: 0.3
+  enemyMoveSpeed: 0.4
   isBattle: 0
   isAttack: 0
   attackPlayer: 0
@@ -654,7 +654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.0958252, y: -2.7458382}
+  m_AnchoredPosition: {x: 0, y: -0.06}
   m_SizeDelta: {x: 72, y: 11}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &5714961724371220876

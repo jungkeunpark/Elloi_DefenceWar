@@ -63,6 +63,12 @@ public class Enemy : MonoBehaviour
 
         if (isBattle)
         {
+            // 전투 중 사망
+            if (enemyCurHp <= 0)
+            {
+                enemyAnimator.SetTrigger("Die");
+            }
+
             transform.Translate(Vector3.zero);
 
             // 공격 속도 쿨타임
@@ -136,10 +142,22 @@ public class Enemy : MonoBehaviour
         gameObject.SetActive(false);
         isBattle = false;
         isAttack = false;
+
+        // 플레이어의 전투 종료
+        if (playerCharacter != null)
+        {
+            playerCharacter.isBattle = false;
+        }
     }
 
     public void EnemyAttack()
     {
+        // 공격 중 사망
+        if (enemyCurHp <= 0)
+        {
+            enemyAnimator.SetTrigger("Die");
+        }
+
         if (attackPlayer)
         {
             if(playerCharacter != null)

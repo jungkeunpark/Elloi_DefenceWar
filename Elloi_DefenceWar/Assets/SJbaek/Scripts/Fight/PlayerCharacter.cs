@@ -23,6 +23,7 @@ public class PlayerCharacter : MonoBehaviour
     public bool isBattle = false;       // 전투 중인지 체크
     public bool isAttack = false;       // 공격 중인지 체크
     public bool attackEnemy = false;    // 적을 공격중
+    public bool attackTower = false;    // 타워를 공격중
     public float attackCoolTime;        // 공격 쿨타임
 
     public Enemy enemy;                 // 적 hp를 가져올 스크립트
@@ -193,6 +194,7 @@ public class PlayerCharacter : MonoBehaviour
         else if (collision.CompareTag("EnemyTower") && characterType == CharacterType.Melee)
         {
             isBattle = true;
+            attackTower = true;
         }
     }
 
@@ -208,6 +210,7 @@ public class PlayerCharacter : MonoBehaviour
         else if (collision.CompareTag("EnemyTower") && characterType == CharacterType.Melee)
         {
             isBattle = true;
+            attackTower = true;
         }
     }
 
@@ -237,7 +240,7 @@ public class PlayerCharacter : MonoBehaviour
                 enemy.enemyCurHp -= characterDamage;
             }
         }
-        else if (!attackEnemy)
+        else if (attackTower)
         {
             FightManager.fightManager.curEnemyTowerHp -= characterDamage;
         }
