@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed8ff20468eeff4c8352d666d7258cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterIndex: 143
-  characterMaxHP: 30
-  characterCurHP: 30
-  characterDamage: 7
-  characterDefense: 1
-  characterAttackSpeed: 3
-  characterMoveSpeed: 50
-  respawnCoolTime: 23
-  characterCost: 32
+  characterIndex: 28
+  characterMaxHP: 330
+  characterCurHP: 330
+  characterDamage: 107
+  characterDefense: 3
+  characterAttackSpeed: 0.7
+  characterMoveSpeed: 32
+  respawnCoolTime: 24
+  characterCost: 370
   characterImage: {fileID: 3408568221163475234}
   characterHPBar: {fileID: 9166835336814698613}
   isBattle: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   attackCoolTime: 0
   enemy: {fileID: 0}
   Arrow: {fileID: 0}
-  characterType: 1
+  characterType: 0
 --- !u!50 &408143023255229313
 Rigidbody2D:
   serializedVersion: 4
@@ -294,7 +294,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 75, y: 133}
+  m_SizeDelta: {x: 124, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5641681524463341262
 CanvasRenderer:
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -173666724, guid: 3cdc4afb73e3b974b815718284d44216, type: 3}
+  m_Sprite: {fileID: -1698904106, guid: e6b3fcff5ffaa3841b2397536adef513, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
