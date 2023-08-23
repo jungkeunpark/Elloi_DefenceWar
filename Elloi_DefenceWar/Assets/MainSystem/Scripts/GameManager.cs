@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
     public int[] needLevelUpExp = new int[20] { 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100, 2200, 2300, 2400 };
 
     // 파티 구성 된 캐릭터 카드
-    public GameObject[] partySetCard = new GameObject[4];
-    public int[] partySetCardIndex = new int[4] { -1, -1, -1, -1 };
+    public GameObject[] partySetCard = new GameObject[6];
+    public int[] partySetCardIndex = new int[6] { -1, -1, -1, -1, -1, -1 };
 
     // 게임 데이터
     public TextAsset CharacterDatabase; // 캐릭터 데이터

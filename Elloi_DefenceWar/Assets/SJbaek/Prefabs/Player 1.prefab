@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 102, y: 111}
+  m_SizeDelta: {x: 124, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9138830803293564815
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1678531900, guid: 63893a21eba031946af80b535a88affc, type: 3}
+  m_Sprite: {fileID: 1090238163, guid: 20be3087ed3aafa4c8de5c28c0e44198, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -140,20 +140,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed8ff20468eeff4c8352d666d7258cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterIndex: 137
-  characterMaxHP: 100
-  characterCurHP: 100
-  characterDamage: 27
-  characterDefense: 1
-  characterAttackSpeed: 0.9
-  characterMoveSpeed: 57
+  characterIndex: 139
+  characterMaxHP: 500
+  characterCurHP: 500
+  characterDamage: 10
+  characterDefense: 2
+  characterAttackSpeed: 0.5
+  characterMoveSpeed: 60
   respawnCoolTime: 23
-  characterCost: 288
+  characterCost: 350
   characterImage: {fileID: 7470832650685653772}
   characterHPBar: {fileID: 237811129532530334}
   isBattle: 0
   isAttack: 0
   attackEnemy: 0
+  attackTower: 0
   attackCoolTime: 0
   enemy: {fileID: 0}
   Arrow: {fileID: 0}

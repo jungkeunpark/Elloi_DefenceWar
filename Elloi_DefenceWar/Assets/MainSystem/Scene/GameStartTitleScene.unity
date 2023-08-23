@@ -981,6 +981,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   characterCardPrefabs:
   - {fileID: 7922890082587596461, guid: eae49ad82a0709442862ddb3bf122df7, type: 3}
   - {fileID: 7217288455279862617, guid: 93ea8bae76cb20c4b90658149b672aab, type: 3}
@@ -1137,7 +1139,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  partySetCardIndex: ffffffffffffffffffffffffffffffff
+  - {fileID: 0}
+  - {fileID: 0}
+  partySetCardIndex: ffffffffffffffffffffffffffffffffffffffffffffffff
   CharacterDatabase: {fileID: 4900000, guid: dc8cab02cb39e0243bb47ab82a7915d4, type: 3}
   AllCharacter_List: []
   MyCharacter_List: []

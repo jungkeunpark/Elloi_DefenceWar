@@ -14,7 +14,7 @@ public class PartySetManager : MonoBehaviour
     public int partyCardIndex = -1;
 
     // 동일한 카드 체크
-    public int[] cardNums = new int[4] { -1, -1, -1, -1 };
+    public int[] cardNums = new int[6] { -1, -1, -1, -1, -1, -1 };
 
     // (왼쪽) 파티셋 카드
     public GameObject[] partySetCards;
@@ -48,6 +48,10 @@ public class PartySetManager : MonoBehaviour
     // 활성화 되었을 때
     private void OnEnable()
     {
+        // 카드 정렬
+        // GameManager.instance.MyCharacter_List.Sort();
+        GameManager.instance.myGetCardsNumbers.Sort();
+
         // 게임매니저에 -1이 아닌 값이 있다면 파티셋 인덱스에 똑같이 적용해주기
         for (int i = 0; i < partySetCards.Length; i++)
         {
@@ -78,7 +82,6 @@ public class PartySetManager : MonoBehaviour
                 // 카드 이펙트 활성화
                 playerCards[cardNums[i]].transform.GetChild(0).gameObject.SetActive(true);
                 playerCards[cardNums[i]].transform.GetChild(1).gameObject.SetActive(true);
-
             }
         }
     }
@@ -130,8 +133,8 @@ public class PartySetManager : MonoBehaviour
             // 클릭된 카드 초기화
             partySetManager.isPartyCardClicked = false;
 
-            // 삭제된 플레이어 카드 이동
-            DeletedCardMove(partySetCardNum);
+            // 삭제된 플레이어 카드 이동 (08 / 23 카드 이동 로직 잠시 스탑)
+            // DeletedCardMove(partySetCardNum);
 
             // 인덱스 넘버 초기화
             partySetManager.partyCardIndex = -1;
@@ -196,8 +199,8 @@ public class PartySetManager : MonoBehaviour
                 playerCards[partySetManager.cardNums[partySetManager.partyCardIndex]].transform.GetChild(1).gameObject.SetActive(false);
             }
 
-            // 카드 이동
-            MoveCard(partySetCardNum);
+            // 카드 이동 (08 / 23 카드 이동 로직 잠시 스탑)
+            // MoveCard(partySetCardNum);
 
             // 카드 넘버 배열에 해당 카드 번호를 넣습니다.
             partySetManager.cardNums[partySetManager.partyCardIndex] = partySetCardNum;
