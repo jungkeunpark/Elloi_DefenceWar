@@ -12,16 +12,16 @@ public class CharacterSpawner : MonoBehaviour
     public Image[] coolTimeGauges;     // 쿨타임 게이지
 
     // 쿨타임이 다 찼는지 체크
-    public bool[] spawnAble = new bool[4] { true, true, true, true };
+    public bool[] spawnAble = new bool[6] { true, true, true, true, true, true };
 
     // 비용
-    public float[] costs = new float[4];             
+    public float[] costs = new float[6];             
 
     // 쿨타임 타이머
-    public float[] timers = new float[4];
+    public float[] timers = new float[6];
 
     // 해당 카드의 쿨타임
-    public float[] coolTimes = new float[4];
+    public float[] coolTimes = new float[6];
     
 
     private void Awake()
@@ -94,6 +94,36 @@ public class CharacterSpawner : MonoBehaviour
             else if (timers[3] < coolTimes[3])
             {
                 coolTimeGauges[3].fillAmount = 1 - (timers[3] / coolTimes[3]);
+            }
+        }
+
+        // 5번 쿨타임
+        if (spawnAble[4] == false)
+        {
+            timers[4] += Time.deltaTime;
+
+            if (timers[4] >= coolTimes[4])
+            {
+                spawnAble[4] = true;
+            }
+            else if (timers[4] < coolTimes[4])
+            {
+                coolTimeGauges[4].fillAmount = 1 - (timers[4] / coolTimes[4]);
+            }
+        }
+
+        // 6번 쿨타임
+        if (spawnAble[5] == false)
+        {
+            timers[5] += Time.deltaTime;
+
+            if (timers[5] >= coolTimes[5])
+            {
+                spawnAble[5] = true;
+            }
+            else if (timers[5] < coolTimes[5])
+            {
+                coolTimeGauges[5].fillAmount = 1 - (timers[5] / coolTimes[5]);
             }
         }
     }

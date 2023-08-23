@@ -41,7 +41,7 @@ public class CardInfo : MonoBehaviour
 
     public void CardClick(int cardNum)
     {
-        Debug.Log(cardNum);
+        // Debug.Log(cardNum);
         // 보유중인 카드를 클릭했을 때 정보 보이기
         for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
         {

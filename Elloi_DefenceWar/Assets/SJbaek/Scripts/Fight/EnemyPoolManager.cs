@@ -34,6 +34,7 @@ public class EnemyPoolManager : MonoBehaviour
             {
                 select = character;
                 select.SetActive(true);
+                FightManager.fightManager.activeEnemys.Add(select);
                 break;
             }
         }
@@ -42,6 +43,7 @@ public class EnemyPoolManager : MonoBehaviour
         {
             select = Instantiate(enemyPrefabs[index], transform);
             pools[index].Add(select);
+            FightManager.fightManager.activeEnemys.Add(select);
         }
 
         return select;

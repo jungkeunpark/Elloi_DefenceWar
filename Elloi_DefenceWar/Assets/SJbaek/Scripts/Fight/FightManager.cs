@@ -22,9 +22,9 @@ public class FightManager : MonoBehaviour
     public int stage = 0;
 
     // 스테이지마다 달라질 변수들
-    public List<int> maxResourceMoneys;  // 플레이어 자원
-    public List<int> maxPlayerTowerHps;  // 플레이어 타워 체력
-    public List<int> maxEnemyTowerHps;   // 적 타워 체력
+    public List<int> maxResourceMoneys = new List<int>{ 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000};  // 플레이어 자원
+    public List<int> maxPlayerTowerHps = new List<int> { 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800};  // 플레이어 타워 체력
+    public List<int> maxEnemyTowerHps = new List<int> { 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000};   // 적 타워 체력
 
     public int maxPlayerTowerHp;    // 최대 플레이어 타워 체력
     public int curPlayerTowerHp;    // 현재 플레이어 타워 체력
@@ -73,6 +73,15 @@ public class FightManager : MonoBehaviour
     // 아이템 갯수 텍스트
     public TextMeshProUGUI doubleSpeedCount;
     public TextMeshProUGUI autoCount;
+
+    // 활성화된 적들
+    public List<GameObject> activeEnemys;
+
+    // 화살 프리팹
+    public List<GameObject> arrowPrefabs;
+
+    // 적 타워 위치를 위한 게임오브젝트
+    public GameObject enemyTower;
 
     private void Awake()
     {
@@ -182,11 +191,7 @@ public class FightManager : MonoBehaviour
         if (isDoubleSpeed == false)
         {
             // 아이템 사용 체크
-            if(useDoubleSpeed == true)
-            {
-                return;
-            }
-            else if(useDoubleSpeed == false)
+            if(useDoubleSpeed == false)
             {
                 // 아이템 갯수 차감
                 useDoubleSpeed = true;

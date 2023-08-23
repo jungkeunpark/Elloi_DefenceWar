@@ -70,7 +70,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CharacterInfoScene\CardObjDatas.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\LevelText.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\ClickEffect\EffectManager.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Effect\EffectManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\JKpark\Scripts\ScrollManager.cs" />
@@ -95,6 +95,7 @@
     <Compile Include="Assets\SJbaek\Scripts\UI\JuwelText.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneStageWin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Test\EnemyDieEffectManagerTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\JKpark\Scripts\LoadSceneGatchaPLAY.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\EnemyTest.cs" />
@@ -105,13 +106,14 @@
     <Compile Include="Assets\SJbaek\Scripts\UI\GoldText.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\EnemyPoolManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadSceneStageSelect.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Fight\WinLose\StageLose.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySetScene\PartySetv2.cs" />
     <Compile Include="Assets\SJbaek\PlayStage01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\JKpark\Scripts\FightWarriorScripts.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\Win\StageWinManager.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Fight\WinLose\StageWinManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\GameData.cs" />
     <Compile Include="Assets\SJbaek\Scripts\UI\NameText.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\Title.cs" />
@@ -120,11 +122,12 @@
     <Compile Include="Assets\JKpark\Scripts\StartScripts.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadScene_Final.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SelectScene\GatchaManager.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Test\DoTweenTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\MainSystem\Scripts\GameManager.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\ClickEffect\MouseClickEffect.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Effect\MouseClickEffect.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SelectScene\UIManager.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Fight\CharacterSpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -133,10 +136,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\SJbaek\Scripts\PartySet.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\SJbaek\Scripts\Effect\EnemyDieEffect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\JKpark\Scripts\Percantages.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\SJbaek\Scripts\Test\EnemyAttack.cs" />
     <Compile Include="Assets\SJbaek\Scripts\CharacterInfoScene\MyCardCheck.cs" />
   </ItemGroup>
   <ItemGroup>
