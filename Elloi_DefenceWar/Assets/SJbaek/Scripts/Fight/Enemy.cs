@@ -50,7 +50,8 @@ public class Enemy : MonoBehaviour
         // 사망
         if (enemyCurHp <= 0)
         {
-            enemyAnimator.SetTrigger("Die");
+            // enemyAnimator.SetTrigger("Die");
+            EnemyDead();
         }
 
         // 체력바 업데이트
@@ -66,7 +67,8 @@ public class Enemy : MonoBehaviour
             // 전투 중 사망
             if (enemyCurHp <= 0)
             {
-                enemyAnimator.SetTrigger("Die");
+                // enemyAnimator.SetTrigger("Die");
+                EnemyDead();
             }
 
             transform.Translate(Vector3.zero);
