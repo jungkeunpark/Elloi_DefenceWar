@@ -73,7 +73,6 @@ namespace TMPro.Examples
             }
             else if (SpawnType == 1)
             {
-                //Debug.Log("Spawning TextMesh Objects.");
 
                 m_floatingText_Transform = m_floatingText.transform;
                 m_floatingText_Transform.position = m_transform.position + new Vector3(0, 15f, 0);
@@ -211,7 +210,6 @@ namespace TMPro.Examples
                 yield return k_WaitForEndOfFrame;
             }
 
-            //Debug.Log("Done Counting down.");
 
             yield return k_WaitForSecondsRandom[Random.Range(0, 20)];
 

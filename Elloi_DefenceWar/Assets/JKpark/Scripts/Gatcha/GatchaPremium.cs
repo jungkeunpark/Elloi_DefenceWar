@@ -463,9 +463,6 @@ public class GatchaPremium : MonoBehaviour
                 LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton = true;
                 for (int a = 0; a < ticket; a++)
                 {
-                    Debug.Log("PremiumBonus : " + PremiumBonus);
-                    Debug.Log("ticket : " + ticket);
-                    Debug.Log("Premiumbonusindex : " + Premiumbonusindex[a]);
                     //마스터등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(301, 360);
                     Premiumbonusindex[a] = index;
@@ -506,7 +503,7 @@ public class GatchaPremium : MonoBehaviour
                 BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
                 BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
                 LoadSceneGatchaPLAY.loadSceneGatchaPlay.ButtonBonus = true;
-
+                LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton = true;
                 for (int a = 0; a < 10; a++)
                 {
                     //마스터등급의 모든 인덱스번호중에 한개를 뽑음

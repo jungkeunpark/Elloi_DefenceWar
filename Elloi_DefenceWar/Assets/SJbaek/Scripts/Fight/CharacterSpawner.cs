@@ -26,7 +26,6 @@ public class CharacterSpawner : MonoBehaviour
 
     private void Awake()
     {
-        //Debug.Log( GetComponentsInChildren<RectTransform>().Length);
         spawnPoint = GetComponentsInChildren<RectTransform>();
 
         for (int i = 0; i < coolTimeGauges.Length; i++)

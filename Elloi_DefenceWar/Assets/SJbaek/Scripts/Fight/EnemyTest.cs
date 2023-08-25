@@ -30,13 +30,11 @@ public class EnemyTest : MonoBehaviour
 
             if (attackTimer > 1f)
             {
-                Debug.Log("1.1초 공격함");
                 attackTimer = 0f;
             }
 
             if (attackTimer2 > 1f)
             {
-                Debug.Log("1.5초 공격함");
                 attackTimer2 = 0f;
             }  
         }
@@ -45,7 +43,6 @@ public class EnemyTest : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
 
         if (collision.gameObject.tag.Equals("PartyCard"))
         {

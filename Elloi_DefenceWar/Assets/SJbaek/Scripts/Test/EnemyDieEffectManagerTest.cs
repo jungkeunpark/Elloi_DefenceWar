@@ -36,6 +36,5 @@ public class EnemyDieEffectManagerTest : MonoBehaviour
         GameObject effect = Instantiate(startPrefab, gameCanvas.transform);
         RectTransform effectRectTransform = effect.GetComponent<RectTransform>();
         effectRectTransform.anchoredPosition = new Vector3(offsetX, offsetY, 0f); // 원하는 위치로 수정
-        Debug.Log("생성됨");
     }
 }

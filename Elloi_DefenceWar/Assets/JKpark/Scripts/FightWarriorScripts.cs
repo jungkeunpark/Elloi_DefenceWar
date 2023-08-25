@@ -31,7 +31,6 @@ public class FightWarriorScripts : MonoBehaviour
     {
         characterName =  GameManager.instance.MyCharacter_List[cardNum].Name;
         health = int.Parse(GameManager.instance.MyCharacter_List[cardNum].Health);
-        Debug.LogFormat("{0} 내 체력 잘 찍히는지?", health);
         damage = int.Parse(GameManager.instance.MyCharacter_List[cardNum].Damage);
         defense = int.Parse(GameManager.instance.MyCharacter_List[cardNum].Defense);
         attackSpeed = int.Parse(GameManager.instance.MyCharacter_List[cardNum].AttackSpeed);

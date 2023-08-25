@@ -134,7 +134,6 @@ public class GameManager : MonoBehaviour
     // 내 캐릭터 리스트에 획득한 캐릭터만 추가하는 함수
     public void MyCharacter(int characterIndex)
     {
-        Debug.Log("캐릭터카드에 넣는 중..");
         int sameCard = 0;
 
         // 중복체크
@@ -148,18 +147,17 @@ public class GameManager : MonoBehaviour
 
         // 중복되었다면
 
-        if (sameCard != 0) { Debug.Log("중복되었습니다.");  return; }
+        if (sameCard != 0) {   return; }
 
         // 중복되지않았다면
         else if(sameCard == 0)
 
-        if (sameCard != 0) { Debug.Log("중복되었습니다."); return; }
+        if (sameCard != 0) {  return; }
 
         // 중복되지않았다면
         else if (sameCard == 0)
 
         {
-            Debug.Log("중복되지않았습니다.");
 
             // 전체 캐릭터 카드에서 인덱스가 같은 카드의 정보 가져오기
             for (int i = 0; i < AllCharacter_List.Count; i++)

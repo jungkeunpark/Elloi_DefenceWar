@@ -135,8 +135,6 @@ public class PlayerCharacter : MonoBehaviour
                         if (focusEnemyDis > tempDistance)
                         {
                             focusEnemyDis = tempDistance;
-                            // enemy = focusEnemy.GetComponent<Enemy>();
-                            Debug.Log(focusEnemyDis);
                         }
                     }
 

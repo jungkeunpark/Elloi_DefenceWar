@@ -24,7 +24,6 @@ public class ArrowTest : MonoBehaviour
         {
             if (attackEnemy)
             {
-                Debug.Log("적에게 닿았다!");
                 // 화살 비활성화
                 Destroy(gameObject);
 
@@ -32,7 +31,6 @@ public class ArrowTest : MonoBehaviour
             }
             else if(attackTower)
             {
-                Debug.Log("적 타워에 닿았다!");
                 // 화살 비활성화
                 Destroy(gameObject);
                 FightManager.fightManager.curEnemyTowerHp -= arrowDamage;
