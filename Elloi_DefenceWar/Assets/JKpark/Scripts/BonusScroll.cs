@@ -14,12 +14,10 @@ public class BonusScroll : MonoBehaviour
     public Animator Heroanimator = default;
     public TMPro.TextMeshProUGUI Premiumtext;
     public TMPro.TextMeshProUGUI Premiumbeforetext;
-    public TMPro.TextMeshProUGUI Premiumafter1text;
-    public TMPro.TextMeshProUGUI Premiumafter10text;
+
     public TMPro.TextMeshProUGUI Herotext;
     public TMPro.TextMeshProUGUI Herobeforetext;
-    public TMPro.TextMeshProUGUI Heroafter1text;
-    public TMPro.TextMeshProUGUI Heroafter10text;
+
 
 
     public GameObject[] Ranks;
@@ -46,12 +44,10 @@ public class BonusScroll : MonoBehaviour
         }
         Premiumtext.text = string.Format("{0} / {1}", GatchaPremium.gatchaPremium.PremiumBonus, GatchaPremium.gatchaPremium.premiumBonusMax);
         Premiumbeforetext.text = string.Format("다음 마스터까지 남은 뽑기 수 : {0}", a);
-        Premiumafter1text.text = string.Format("{0} / 10", GatchaPremium.gatchaPremium.PremiumBonus);
-        Premiumafter10text.text = string.Format("{0} / 100", GatchaPremium.gatchaPremium.PremiumBonus);
+        
         Herotext.text = string.Format("{0} / {1}", GatchaHero.gatchaHero.HeroBonus, GatchaHero.gatchaHero.HeroBonusMax);
         Herobeforetext.text = string.Format("다음 히어로까지 남은 뽑기 수 : {0}", b);
-        Heroafter1text.text = string.Format("{0} / 10", GatchaHero.gatchaHero.HeroBonus);
-        Heroafter10text.text = string.Format("{0} / 10", GatchaHero.gatchaHero.HeroBonus);
+
         
     }
     public void GoCoroutine()
@@ -124,14 +120,14 @@ public class BonusScroll : MonoBehaviour
 
 
 
-            if (indexnumber[i] >= 300)
+            if (indexnumber[i] >= 200)
             {
                 GameObject Rank = Instantiate(Ranks[0], Image[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Image[i].transform;
                 Rank.transform.SetSiblingIndex(0);
 
             }
-            else if (indexnumber[i] >= 100)
+            else if (indexnumber[i] < 200)
             {
                 GameObject Rank = Instantiate(Ranks[1], Image[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Image[i].transform;
@@ -146,8 +142,7 @@ public class BonusScroll : MonoBehaviour
     {
         for (int i = 0; i < GatchaPremium.gatchaPremium.ticket; i++)
         {
-            Debug.Log(GatchaPremium.gatchaPremium.ticket);
-            Debug.Log("들어오긴한거지?");
+
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(0).gameObject.SetActive(true);
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(1).gameObject.SetActive(true);
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(2).gameObject.SetActive(false);
@@ -156,8 +151,8 @@ public class BonusScroll : MonoBehaviour
         }        
         for (int i = 0; i < GatchaHero.gatchaHero.ticket; i++)
         {
-            Debug.Log(GatchaPremium.gatchaPremium.ticket);
-            Debug.Log("들어오긴한거지?");
+
+
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(0).gameObject.SetActive(true);
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(1).gameObject.SetActive(true);
             ScrollActivate.scrollActivate.Bonus[i].transform.GetChild(2).gameObject.SetActive(false);

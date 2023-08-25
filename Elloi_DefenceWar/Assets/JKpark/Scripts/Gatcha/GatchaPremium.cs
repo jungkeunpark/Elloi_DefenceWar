@@ -40,7 +40,7 @@ public class GatchaPremium : MonoBehaviour
     public Image HeroImg;
     public Image[] TenGatchaImg = default;
     public Image[] BonusTenGatchaImg = default;
-    public int ticket;
+    public int ticket = 0;
 
     public TMP_Text NoviceName;
     public TMP_Text ExpertName;
@@ -437,12 +437,13 @@ public class GatchaPremium : MonoBehaviour
 
     public void PremiumGatchaBonus()
     {
-        BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
-        BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
+        
         
 
         if ((int)(PremiumBonus / premiumBonusMax) >= 1)
         {
+            BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
+            BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
             ticket = (int)(PremiumBonus / premiumBonusMax);
 
             Master.transform.GetChild(0).gameObject.SetActive(true);

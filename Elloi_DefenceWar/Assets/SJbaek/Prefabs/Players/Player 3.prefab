@@ -64,17 +64,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed8ff20468eeff4c8352d666d7258cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Player 3.prefab
-  characterIndex: 104
-  characterMaxHP: 79
-  characterCurHP: 79
-  characterDamage: 18
-  characterDefense: 1
-  characterAttackSpeed: 1.5
-  characterMoveSpeed: 100
-  respawnCoolTime: 7
-  characterCost: 56
-=======
   characterIndex: 7
   characterMaxHP: 460
   characterCurHP: 460
@@ -84,7 +73,6 @@ MonoBehaviour:
   characterMoveSpeed: 57
   respawnCoolTime: 41
   characterCost: 720
->>>>>>> origin/SeungJoo:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Players/Player 3.prefab
   characterImage: {fileID: 5840285771157078798}
   characterHPBar: {fileID: 3112705997129072014}
   isBattle: 0
@@ -306,11 +294,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-<<<<<<< HEAD:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Player 3.prefab
-  m_SizeDelta: {x: 91, y: 110}
-=======
   m_SizeDelta: {x: 118, y: 158}
->>>>>>> origin/SeungJoo:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Players/Player 3.prefab
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5651240246147727428
 CanvasRenderer:
@@ -340,11 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Player 3.prefab
-  m_Sprite: {fileID: -1388238216, guid: 63893a21eba031946af80b535a88affc, type: 3}
-=======
   m_Sprite: {fileID: -1323861133, guid: f8f1d8eaa0057444b90bf659b525e737, type: 3}
->>>>>>> origin/SeungJoo:Elloi_DefenceWar/Assets/SJbaek/Prefabs/Players/Player 3.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
