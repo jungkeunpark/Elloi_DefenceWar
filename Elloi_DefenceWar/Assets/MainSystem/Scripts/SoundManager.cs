@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -104,5 +105,25 @@ public class SoundManager : MonoBehaviour
                 break;
             }
         }
+    }
+
+    // 효과음 볼륨 조절
+    public void SetSEVolume(string _name, float _volume)
+    {
+        // 동일한 효과음이 있다면 볼륨 조절
+        for(int i = 0; i < audioSource_MP3Player.Length; i++)
+        {
+            if (playSoundName[i] == _name)
+            {
+                audioSource_MP3Player[i].volume = _volume;
+                break;
+            }
+        }
+    }
+
+    // 배경음 볼륨 조절
+    public void SetBGMVolume(float _volume)
+    {
+        audioSource_BGMPlayer.volume = _volume;
     }
 }

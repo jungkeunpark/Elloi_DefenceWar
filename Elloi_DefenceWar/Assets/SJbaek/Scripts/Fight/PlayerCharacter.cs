@@ -232,6 +232,22 @@ public class PlayerCharacter : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         characterImage.transform.eulerAngles = new Vector3(0, 0, -45f);
 
+        // 공격 효과음
+        int randomSE = Random.Range(0, 7);
+        if(randomSE == 0)
+        { 
+            SoundManager.soundManager.PlaySE("CharacterAttack1"); 
+        }
+        else if(1 <= randomSE && randomSE <= 3)
+        {
+            SoundManager.soundManager.PlaySE("CharacterAttack2");
+        }
+        else
+        {
+            SoundManager.soundManager.PlaySE("CharacterAttack3");
+        }
+        
+
         // Enemy 컴포넌트 hp 감소
         if (attackEnemy)
         {
@@ -259,6 +275,18 @@ public class PlayerCharacter : MonoBehaviour
         GameObject arrow = Instantiate(FightManager.fightManager.arrowPrefabs[0], transform.position, Quaternion.identity);
         arrow.transform.SetParent(transform, false);
         isBattle = false;
+
+        // 효과음 출력
+        int randomSE = Random.Range(0, 2);
+        if (randomSE == 0)
+        {
+            SoundManager.soundManager.PlaySE("ArrowSE");
+        }
+        else
+        {
+            SoundManager.soundManager.PlaySE("ArrowSE2");
+        }
+        
     }
 
     public void ChracterDead()

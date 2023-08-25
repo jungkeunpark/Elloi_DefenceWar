@@ -404,7 +404,9 @@ MonoBehaviour:
   - name: CharacterAttack1
     clip: {fileID: 8300000, guid: f82f30df584ae6c4997868b674e262ac, type: 3}
   - name: CharacterAttack2
-    clip: {fileID: 8300000, guid: b9b9b3ae63f04fd4b8bf474095c623c6, type: 3}
+    clip: {fileID: 8300000, guid: 6d6a9106c07736c48be798b107002482, type: 3}
+  - name: CharacterAttack3
+    clip: {fileID: 8300000, guid: 728cfcf941e1da84bbbccd5de578a164, type: 3}
   - name: EnemyDie
     clip: {fileID: 8300000, guid: bc8ef54d15c97144590b68f5a7b5a643, type: 3}
   - name: ChoiceButton
@@ -413,13 +415,23 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0418e5af9b25e914a9f48501d9d9ccf5, type: 3}
   - name: PartySetButton
     clip: {fileID: 8300000, guid: e4b7a90047165f54c8eb90f9233ec9f7, type: 3}
-  - name: PartySetButton2
+  - name: ReturnStageSelect
     clip: {fileID: 8300000, guid: 1ba95544bc8ea7e46b5c8fbc754b12d4, type: 3}
   - name: TitleSceneClickButton
     clip: {fileID: 8300000, guid: 15542e8af8589ed408989f5acc112c58, type: 3}
+  - name: ArrowSE
+    clip: {fileID: 8300000, guid: 5aebc8627b1c53f41b43c66539d35142, type: 3}
+  - name: ArrowSE2
+    clip: {fileID: 8300000, guid: 43e4e0220ede7464994d89b6aed01890, type: 3}
+  - name: EnemyDie
+    clip: {fileID: 8300000, guid: 5d2da7d0ee5b20d4facb66dd1b17c201, type: 3}
+  - name: CharacterDie
+    clip: {fileID: 8300000, guid: 0053d8f48decb6445b254e867a6e1031, type: 3}
   bgmSounds:
   - name: Title_BGM
     clip: {fileID: 8300000, guid: 082a7a3467c60a746bf081c4af1bf8fe, type: 3}
+  - name: MainScene_BGM
+    clip: {fileID: 8300000, guid: 2f7e92f621b871a48b87fb1cccfd88c5, type: 3}
   audioSource_BGMPlayer: {fileID: 360945730}
   audioSource_MP3Player:
   - {fileID: 360945729}
