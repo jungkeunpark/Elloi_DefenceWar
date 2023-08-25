@@ -89,6 +89,9 @@ public class PartySetManager : MonoBehaviour
     // { 파티셋 카드 클릭
     public void TapClick(int partySetCardNum)
     {
+        // 클릭 효과음 출력
+        SoundManager.soundManager.PlaySE("CharacterInfo");
+
         // 첫 클릭인가?
         if (partySetManager.isPartyCardClicked == false && partySetManager.partyCardIndex == -1)
         {
@@ -162,6 +165,9 @@ public class PartySetManager : MonoBehaviour
     // { 카드를 선택해서 파티셋 카드로 선택하기
     public void MyCardClick(int partySetCardNum)
     {
+        // 클릭 효과음 출력
+        SoundManager.soundManager.PlaySE("PartySetButton");
+
         // 파티셋 카드가 선택이 안되었거나 동일한 캐릭터 카드를 클릭했다면
         if (partySetManager.isPartyCardClicked == false || partySetManager.cardNums[partySetManager.partyCardIndex] == partySetCardNum) { return; }
 

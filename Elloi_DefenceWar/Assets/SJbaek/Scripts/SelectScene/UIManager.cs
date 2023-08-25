@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
         canvases[2].gameObject.SetActive(false);
         managers[0].gameObject.SetActive(false);
         managers[1].gameObject.SetActive(false);
+        SoundManager.soundManager.PlaySE("ReturnStageSelect");
 
     }
 
@@ -26,6 +27,7 @@ public class UIManager : MonoBehaviour
         managers[0].gameObject.SetActive(true);
         canvases[1].gameObject.SetActive(true);
         canvases[2].gameObject.SetActive(false);
+        SoundManager.soundManager.PlaySE("ChoiceButton");
     }
 
     public void OpenPartySetCanavas()
@@ -34,7 +36,7 @@ public class UIManager : MonoBehaviour
         managers[1].gameObject.SetActive(true);
         canvases[1].gameObject.SetActive(false);
         canvases[2].gameObject.SetActive(true);
-
+        SoundManager.soundManager.PlaySE("ChoiceButton");
     }
 
     public void OpenGatchaCanvas()
@@ -42,5 +44,6 @@ public class UIManager : MonoBehaviour
         canvases[0].gameObject.SetActive(false);
         canvases[1].gameObject.SetActive(false);
         canvases[2].gameObject.SetActive(false);
+        SoundManager.soundManager.PlaySE("ChoiceButton");
     }
 }
