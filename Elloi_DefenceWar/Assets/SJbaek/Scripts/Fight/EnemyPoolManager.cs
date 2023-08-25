@@ -26,6 +26,9 @@ public class EnemyPoolManager : MonoBehaviour
 
     public GameObject Get(int index)
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("EnemySummon");
+
         GameObject select = null;
 
         foreach (GameObject character in pools[index])

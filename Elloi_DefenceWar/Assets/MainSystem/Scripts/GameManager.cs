@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     // 싱글톤 패턴 사용
     public static GameManager instance;
 
+    // 다음 씬 이름
+    public string nextScene;
+
     // 파티 구성 프리팹
     public GameObject[] curPartySetPrefabs = new GameObject[4];
     public GameObject[] characterCardPrefabs;

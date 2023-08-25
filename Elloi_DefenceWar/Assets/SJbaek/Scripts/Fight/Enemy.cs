@@ -133,6 +133,9 @@ public class Enemy : MonoBehaviour
 
     public void EnemyDead()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("EnemyDie");
+
         transform.eulerAngles = new Vector3(0, 0, 0);
 
         for(int i = 0; i < 40; i++) // 20개의 이펙트를 소환
@@ -159,6 +162,9 @@ public class Enemy : MonoBehaviour
         {
             enemyAnimator.SetTrigger("Die");
         }
+
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("EnemyAttack");
 
         if (attackPlayer)
         {

@@ -85,6 +85,9 @@ public class FightManager : MonoBehaviour
 
     private void Awake()
     {
+        // BGM 출력
+        SoundManager.soundManager.PlayBGM("Advent_BGM");
+
         fightManager = this;
 
         // 게임 시간 초기화
@@ -237,6 +240,9 @@ public class FightManager : MonoBehaviour
 
                 // 레벨 업
                 curResourceLevel++;
+
+                // 효과음 출력
+                SoundManager.soundManager.PlaySE("MoneyLevelUp");
             }
         }
     }       // end 자원 레벨업 하는 함수
@@ -244,6 +250,9 @@ public class FightManager : MonoBehaviour
     // 게임 정지 버튼 클릭 시
     public void ClickGamePause()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("PartySetButton");
+
         // 게임 정지 UI 활성화
         gamePauseCanvas.gameObject.SetActive(true);
         // 게임 시간 0으로 변경
@@ -253,8 +262,11 @@ public class FightManager : MonoBehaviour
     // 게임 패배 버튼 클릭시
     public void ClickGameEnd()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("StageLoseSE");
+
         // 아이템을 사용했다면 되돌려 줌
-        if(useDoubleSpeed == true)
+        if (useDoubleSpeed == true)
         {
             GameManager.instance.doubleSpeedCount++;
         }
@@ -265,6 +277,9 @@ public class FightManager : MonoBehaviour
     // 게임 재게 버튼 클릭시
     public void ClickGameResume()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("ChoiceButton2");
+
         // 게임 정지 UI 비활성화
         gamePauseCanvas.gameObject.SetActive(false);
 
@@ -277,7 +292,6 @@ public class FightManager : MonoBehaviour
         {
             Time.timeScale = 2;
         }
-        
     }
 
     // 적 타워 파괴

@@ -81,12 +81,18 @@ public class StageLose : MonoBehaviour
     // 재시작 버튼 클릭 시
     public void ClickRetryButton()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("ReturnStageSelect");
+
         SceneManager.LoadScene(curSceneName);
     }
 
     // 홈 버튼 클릭 시
     public void ClickHomeButton()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("ReturnStageSelect");
+
         SceneManager.LoadScene("StageSelectScene");
     }
 }

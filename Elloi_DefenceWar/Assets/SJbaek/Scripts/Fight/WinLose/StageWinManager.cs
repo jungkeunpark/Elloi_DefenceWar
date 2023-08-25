@@ -43,7 +43,11 @@ public class StageWinManager : MonoBehaviour
 
     private void OnEnable()
     {
+        // 보상 정하기
         SetReward();
+
+        // 효과음 출력하기
+        SoundManager.soundManager.PlaySE("StageWinSE");
     }
 
     private void Start()
@@ -128,12 +132,18 @@ public class StageWinManager : MonoBehaviour
     // 재시작 버튼 클릭 시
     public void ClickRetryButton()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("ReturnStageSelect");
+        // 재시작
         SceneManager.LoadScene(curSceneName);
     }
 
     // 홈 버튼 클릭 시
     public void ClickHomeButton()
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("ReturnStageSelect");
+        // 메인 씬 이동
         SceneManager.LoadScene("StageSelectScene");
     }
 }
