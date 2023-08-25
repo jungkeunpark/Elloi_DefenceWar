@@ -33,6 +33,9 @@ public class CharacterPoolManager : MonoBehaviour
 
     public GameObject Get(int index)
     {
+        // 효과음 출력
+        SoundManager.soundManager.PlaySE("CharacterSummon");
+
         GameObject select = null;
 
         foreach (GameObject character in pools[index])

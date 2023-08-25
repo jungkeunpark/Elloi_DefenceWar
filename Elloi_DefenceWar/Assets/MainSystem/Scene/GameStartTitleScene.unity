@@ -407,10 +407,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 6d6a9106c07736c48be798b107002482, type: 3}
   - name: CharacterAttack3
     clip: {fileID: 8300000, guid: 728cfcf941e1da84bbbccd5de578a164, type: 3}
-  - name: EnemyDie
-    clip: {fileID: 8300000, guid: bc8ef54d15c97144590b68f5a7b5a643, type: 3}
+  - name: EnemyAttack
+    clip: {fileID: 8300000, guid: b099351b84209994d8c79cb33c673564, type: 3}
   - name: ChoiceButton
     clip: {fileID: 8300000, guid: 40432b4890f8f414589158307c6cb63e, type: 3}
+  - name: ChoiceButton2
+    clip: {fileID: 8300000, guid: 46d0692873068214fb2a4d51621807df, type: 3}
   - name: CharacterInfo
     clip: {fileID: 8300000, guid: 0418e5af9b25e914a9f48501d9d9ccf5, type: 3}
   - name: PartySetButton
@@ -427,11 +429,19 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5d2da7d0ee5b20d4facb66dd1b17c201, type: 3}
   - name: CharacterDie
     clip: {fileID: 8300000, guid: 0053d8f48decb6445b254e867a6e1031, type: 3}
+  - name: StageWinSE
+    clip: {fileID: 8300000, guid: 4ed819ac98c485c489b594a81c0dfe64, type: 3}
+  - name: StageLoseSE
+    clip: {fileID: 8300000, guid: 7f3ff025f3434f445a6e39044060425a, type: 3}
+  - name: MoneyLevelUp
+    clip: {fileID: 8300000, guid: 52e98d9e9f6387b4c9b8431a75231f03, type: 3}
   bgmSounds:
   - name: Title_BGM
     clip: {fileID: 8300000, guid: 082a7a3467c60a746bf081c4af1bf8fe, type: 3}
   - name: MainScene_BGM
     clip: {fileID: 8300000, guid: 2f7e92f621b871a48b87fb1cccfd88c5, type: 3}
+  - name: Advent_BGM
+    clip: {fileID: 8300000, guid: 677d70031b9cf6d4d96447b90486117c, type: 3}
   audioSource_BGMPlayer: {fileID: 360945730}
   audioSource_MP3Player:
   - {fileID: 360945729}

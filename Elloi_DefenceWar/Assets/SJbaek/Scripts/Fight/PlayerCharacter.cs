@@ -289,6 +289,7 @@ public class PlayerCharacter : MonoBehaviour
 
     public void ChracterDead()
     {
+        SoundManager.soundManager.PlaySE("CharacterDie");
         transform.eulerAngles = new Vector3(0, 0, 0);
         gameObject.SetActive(false);
         isBattle = false;

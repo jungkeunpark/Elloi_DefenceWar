@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+// using UnityEngine.UIElements;
 
 public class StageManager : MonoBehaviour
 {
+
     // 클리어 시 골드 버튼으로 변경
     public Sprite clearButton;
     // 클리어 시 깃발 자식오브젝트 활성화
@@ -31,7 +33,6 @@ public class StageManager : MonoBehaviour
         } 
     }
 
-
     private void Awake()
     {
         // BGM 켜기
@@ -51,129 +52,161 @@ public class StageManager : MonoBehaviour
     // Load 스테이지
     public void LoadFightStage00Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene00");
+        StageLoadScene.LoadScene("BattleScene00");
     }
 
     public void LoadFightStage01Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene01");
+        StageLoadScene.LoadScene("BattleScene01");
     }
 
     public void LoadFightStage02Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene02");
+        StageLoadScene.LoadScene("BattleScene02");
     }
 
     public void LoadFightStage03Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene03");
+        StageLoadScene.LoadScene("BattleScene03");
     }
 
     public void LoadFightStage04Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene04");
+        StageLoadScene.LoadScene("BattleScene04");
     }
 
     public void LoadFightStage05Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene05");
+        StageLoadScene.LoadScene("BattleScene05");
     }
 
     public void LoadFightStage06Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene06");
+        StageLoadScene.LoadScene("BattleScene06");
     }
 
     public void LoadFightStage07Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene07");
+        StageLoadScene.LoadScene("BattleScene07");
     }
 
     public void LoadFightStage08Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene08");
+        StageLoadScene.LoadScene("BattleScene08");
     }
 
     public void LoadFightStage09Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene09");
+        StageLoadScene.LoadScene("BattleScene09");
     }
 
     public void LoadFightStage10Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene10");
+        StageLoadScene.LoadScene("BattleScene10");
     }
 
     public void LoadFightStage11Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene11");
+        StageLoadScene.LoadScene("BattleScene11");
     }
 
     public void LoadFightStage12Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene12");
+        StageLoadScene.LoadScene("BattleScene12");
     }
 
     public void LoadFightStage13Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene13");
+        StageLoadScene.LoadScene("BattleScene13");
     }
 
     public void LoadFightStage14Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene14");
+        StageLoadScene.LoadScene("BattleScene14");
     }
 
     public void LoadFightStage15Scene()
     {
+        // 효과음 켜기
+        SoundManager.soundManager.PlaySE("TitleSceneClickButton");
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
-        SceneManager.LoadScene("BattleScene15");
+        StageLoadScene.LoadScene("BattleScene00");
     }
 }
