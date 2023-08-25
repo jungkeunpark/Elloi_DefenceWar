@@ -83,6 +83,7 @@ public class GatchaPremium : MonoBehaviour
 
         if (GameManager.instance.playerJuwel >= PremiumJuwel)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             GameManager.instance.playerJuwel -= PremiumJuwel;
 
             LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
@@ -253,6 +254,7 @@ public class GatchaPremium : MonoBehaviour
 
         if (GameManager.instance.playerJuwel >= TenTimePremiumJuwel)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             for (int i = 0; i < 7; i++)
             {
                 ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
@@ -442,6 +444,7 @@ public class GatchaPremium : MonoBehaviour
 
         if ((int)(PremiumBonus / premiumBonusMax) >= 1)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
             BeforeBuy.transform.GetChild(2).gameObject.SetActive(false);
             ticket = (int)(PremiumBonus / premiumBonusMax);

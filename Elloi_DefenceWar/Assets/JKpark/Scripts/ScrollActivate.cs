@@ -45,7 +45,7 @@ public class ScrollActivate : MonoBehaviour
         {
             if (indexnumber[i] > 601)
             {
-
+                SoundManager.soundManager.PlaySE("ScrollAppear");
                 GameObject Scroll = Instantiate(Scrolls[0], Ending[i].transform.position, Quaternion.identity);
                 Scroll.transform.parent = Ending[i].transform;
                 Scroll.transform.SetSiblingIndex(2);
@@ -53,6 +53,7 @@ public class ScrollActivate : MonoBehaviour
             }
             else if (indexnumber[i] > 501)
             {
+                SoundManager.soundManager.PlaySE("ScrollAppear");
                 GameObject Scroll = Instantiate(Scrolls[1], Ending[i].transform.position, Quaternion.identity);
                 Scroll.transform.parent = Ending[i].transform;
                 Scroll.transform.SetSiblingIndex(2);
@@ -60,6 +61,7 @@ public class ScrollActivate : MonoBehaviour
             }
             else if (indexnumber[i] > 401)
             {
+                SoundManager.soundManager.PlaySE("ScrollAppear");
                 GameObject Scroll = Instantiate(Scrolls[2], Ending[i].transform.position, Quaternion.identity);
                 Scroll.transform.parent = Ending[i].transform;
                 Scroll.transform.SetSiblingIndex(2);
@@ -67,6 +69,7 @@ public class ScrollActivate : MonoBehaviour
             }
             else if (indexnumber[i] > 301)
             {
+                SoundManager.soundManager.PlaySE("ScrollAppear");
                 GameObject Scroll = Instantiate(Scrolls[3], Ending[i].transform.position, Quaternion.identity);
                 Scroll.transform.parent = Ending[i].transform;
                 Scroll.transform.SetSiblingIndex(2);
@@ -74,6 +77,7 @@ public class ScrollActivate : MonoBehaviour
             }
             else if (indexnumber[i] > 101)
             {
+                SoundManager.soundManager.PlaySE("ScrollAppear");
                 GameObject Scroll = Instantiate(Scrolls[4], Ending[i].transform.position, Quaternion.identity);
                 Scroll.transform.parent = Ending[i].transform;
                 Scroll.transform.SetSiblingIndex(2);
@@ -170,6 +174,7 @@ public class ScrollActivate : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
+            SoundManager.soundManager.PlaySE("TitleSceneClickButton");
             Ending[i].transform.GetChild(0).gameObject.SetActive(true);
             Ending[i].transform.GetChild(1).gameObject.SetActive(true);
             Ending[i].transform.GetChild(2).gameObject.SetActive(false);

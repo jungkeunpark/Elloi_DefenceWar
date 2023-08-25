@@ -23,17 +23,18 @@ public class StageLoadScene : MonoBehaviour
     IEnumerator Cor_LoadScene()
     {
         yield return null;
-        AsyncOperation op = SceneManager.LoadSceneAsync(GameManager.instance.nextScene);
-        op.allowSceneActivation = false;
+
+        SceneManager.LoadSceneAsync(GameManager.instance.nextScene);
+
         timer = 0.0f;
-        while (op.isDone == false)
+
+        while (true)
         {
             yield return null;
             timer += Time.deltaTime;
 
-            if (timer > 1.0f)
+            if (timer > 1.5f)
             {
-                op.allowSceneActivation = true;
                 yield break;
             }
             

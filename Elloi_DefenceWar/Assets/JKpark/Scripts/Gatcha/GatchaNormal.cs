@@ -7,7 +7,7 @@ public class GatchaNormal : MonoBehaviour
 {
     public static GatchaNormal gatchanormal;
 
-    
+
     public GameObject Novice;
     public GameObject Expert;
     public GameObject Elite;
@@ -58,7 +58,7 @@ public class GatchaNormal : MonoBehaviour
     {
         //로비를 끄고
         lobby.gameObject.SetActive(false);
-        
+
 
         BeforeBuy.transform.GetChild(0).gameObject.SetActive(true);
         BeforeBuy.transform.GetChild(1).gameObject.SetActive(true);
@@ -67,6 +67,7 @@ public class GatchaNormal : MonoBehaviour
     {
         if (GameManager.instance.playerGold >= NormalGold)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             GameManager.instance.playerGold -= NormalGold;
             LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
             BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
@@ -231,11 +232,13 @@ public class GatchaNormal : MonoBehaviour
 
     public void NormalGatchaTenTime()
     {
+
         if (GameManager.instance.playerGold >= TenTimeNormalGold)
         {
-            for(int i = 0;i<7;i++)
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
+            for (int i = 0; i < 7; i++)
             {
-            ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
+                ScrollActivate.scrollActivate.commonbuttonui.transform.GetChild(i).gameObject.SetActive(false);
 
             }
             LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
@@ -253,7 +256,7 @@ public class GatchaNormal : MonoBehaviour
                     //노비스등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(601, 610);
                     Normal10times[a] = index;
-                   
+
 
                     for (int i = 0; i < GameManager.instance.AllCharacter_List.Count; i++)
                     {
@@ -411,7 +414,7 @@ public class GatchaNormal : MonoBehaviour
                     Novice.transform.GetChild(0).gameObject.SetActive(true);
                 }
 
-                
+
             }
 
             ScrollActivate.scrollActivate.press();
