@@ -73,6 +73,7 @@
     <Compile Include="Assets\SJbaek\Scripts\Effect\EffectManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\JKpark\Scripts\GridController\DownGridController.cs" />
     <Compile Include="Assets\JKpark\Scripts\ScrollManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -120,8 +121,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\JKpark\Scripts\Gatcha\GatchaNormal.cs" />
     <Compile Include="Assets\JKpark\Scripts\StartScripts.cs" />
+    <Compile Include="Assets\JKpark\Scripts\BonusScroll.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SceneLoad\LoadScene_Final.cs" />
     <Compile Include="Assets\SJbaek\Scripts\SelectScene\GatchaManager.cs" />
+    <Compile Include="Assets\JKpark\Scripts\GridController\UPGridController.cs" />
     <Compile Include="Assets\SJbaek\Scripts\Test\DoTweenTest.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />

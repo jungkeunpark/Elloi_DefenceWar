@@ -75,7 +75,7 @@ public class GatchaNormal : MonoBehaviour
             LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button1Time = true;
             //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
             float randomValue = UnityEngine.Random.Range(0, 100f);
-            if (randomValue < 51.5f)
+            if (randomValue <= 53.59f)
             {
                 Novice.transform.GetChild(0).gameObject.SetActive(true);
                 //노비스등급의 모든 인덱스번호중에 한개를 뽑음
@@ -103,7 +103,7 @@ public class GatchaNormal : MonoBehaviour
                     }
                 }
             }
-            else if (randomValue > 51.5f && randomValue < 90f)
+            else if (randomValue > 53.59f && randomValue <= 95.59f)
             {
                 //익스퍼트의 가챠애니메이션 활성화
                 Expert.transform.GetChild(0).gameObject.SetActive(true);
@@ -132,7 +132,7 @@ public class GatchaNormal : MonoBehaviour
                     }
                 }
             }
-            else if (randomValue > 90f && randomValue < 99.945f)
+            else if (randomValue > 95.59f && randomValue <= 99.99745f)
             {
                 //엘리트의 가챠애니메이션 활성화
                 Elite.transform.GetChild(0).gameObject.SetActive(true);
@@ -161,7 +161,7 @@ public class GatchaNormal : MonoBehaviour
                     }
                 }
             }
-            else if (randomValue > 99.945f && randomValue < 99.995f)
+            else if (randomValue > 99.99745f && randomValue <= 99.99995f)
             {
                 //마스터의 가챠애니메이션 활성화
                 Master.transform.GetChild(0).gameObject.SetActive(true);
@@ -190,7 +190,7 @@ public class GatchaNormal : MonoBehaviour
                     }
                 }
             }
-            else if (randomValue > 99.995f && randomValue < 100f)
+            else if (randomValue > 99.99995f && randomValue <= 100f)
             {
                 //히어로의 가챠애니메이션 활성화
                 Hero.transform.GetChild(0).gameObject.SetActive(true);
@@ -248,7 +248,7 @@ public class GatchaNormal : MonoBehaviour
             {
                 float randomValue = UnityEngine.Random.Range(0, 100f);
                 //랜덤확률을 돌려서 확률에따라 히어로//마스터//엘리트//익스퍼트//노말 소환
-                if (randomValue < 51.5f)
+                if (randomValue <= 53.59f)
                 {
                     //노비스등급의 모든 인덱스번호중에 한개를 뽑음
                     int index = UnityEngine.Random.Range(601, 610);
@@ -276,7 +276,7 @@ public class GatchaNormal : MonoBehaviour
                     }
 
                 }
-                else if (randomValue > 51.5f && randomValue < 90f)
+                else if (randomValue > 53.59f && randomValue <= 95.59f)
                 {
 
                     //익스퍼트등급의 모든 인덱스번호중에 한개를 뽑음
@@ -304,7 +304,7 @@ public class GatchaNormal : MonoBehaviour
                         }
                     }
                 }
-                else if (randomValue > 90f && randomValue < 99.945f)
+                else if (randomValue > 95.59f && randomValue <= 99.99745f)
                 {
 
                     //엘리트등급의 모든 인덱스번호중에 한개를 뽑음
@@ -332,7 +332,7 @@ public class GatchaNormal : MonoBehaviour
                         }
                     }
                 }
-                else if (randomValue > 99.945f && randomValue < 99.995f)
+                else if (randomValue > 99.99745f && randomValue <= 99.99995f)
                 {
 
                     //마스터등급의 모든 인덱스번호중에 한개를 뽑음
@@ -360,7 +360,7 @@ public class GatchaNormal : MonoBehaviour
                         }
                     }
                 }
-                else if (randomValue > 99.995f && randomValue < 100f)
+                else if (randomValue > 99.99995f && randomValue <= 100f)
                 {
 
                     //히어로등급의 모든 인덱스번호중에 한개를 뽑음

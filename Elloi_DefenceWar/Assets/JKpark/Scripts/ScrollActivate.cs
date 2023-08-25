@@ -7,6 +7,7 @@ public class ScrollActivate : MonoBehaviour
 {
     public static ScrollActivate scrollActivate;
     public GameObject[] Ending;
+    public GameObject[] Bonus;
 
     public List<int> indexnumber;
     public List<Text> Name;
@@ -19,7 +20,6 @@ public class ScrollActivate : MonoBehaviour
     public Animator Eliteanimator = default;
     public Animator Masteranimator = default;
     public Animator Heroanimator = default;
-    private bool animationFinished = false;
 
     public GameObject[] Ranks;
     public GameObject[] Scrolls;
@@ -35,6 +35,7 @@ public class ScrollActivate : MonoBehaviour
     {
         StartCoroutine(TempoGacha());
     }
+
 
 
 
@@ -94,27 +95,30 @@ public class ScrollActivate : MonoBehaviour
 
 
 
+
+
+
     public void press()
     {
 
         for (int i = 0; i < 10; i++)
         {
-            if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.NormalButton == true)
+            if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.NormalButton == true && LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button10Time == true)
             {
                 indexnumber[i] = GatchaNormal.gatchanormal.Normal10times[i];
             }
-            else if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton == true)
+            else if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton == true && LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button10Time == true)
             {
                 indexnumber[i] = GatchaPremium.gatchaPremium.Premium10times[i];
             }
-            else if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.HeroButton == true)
+            else if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.HeroButton == true && LoadSceneGatchaPLAY.loadSceneGatchaPlay.Button10Time == true)
             {
                 indexnumber[i] = GatchaHero.gatchaHero.Hero10times[i];
             }
 
 
 
-            if (indexnumber[i] > 600)
+            if (indexnumber[i] >= 600)
             {
 
                 GameObject Rank = Instantiate(Ranks[0], Ending[i].transform.position, Quaternion.identity);
@@ -126,7 +130,7 @@ public class ScrollActivate : MonoBehaviour
 
 
             }
-            else if (indexnumber[i] > 500)
+            else if (indexnumber[i] >= 500)
             {
                 GameObject Rank = Instantiate(Ranks[1], Ending[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Ending[i].transform;
@@ -134,7 +138,7 @@ public class ScrollActivate : MonoBehaviour
 
 
             }
-            else if (indexnumber[i] > 400)
+            else if (indexnumber[i] >= 400)
             {
                 GameObject Rank = Instantiate(Ranks[2], Ending[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Ending[i].transform;
@@ -142,14 +146,14 @@ public class ScrollActivate : MonoBehaviour
 
 
             }
-            else if (indexnumber[i] > 300)
+            else if (indexnumber[i] >= 300)
             {
                 GameObject Rank = Instantiate(Ranks[3], Ending[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Ending[i].transform;
                 Rank.transform.SetSiblingIndex(0);
 
             }
-            else if (indexnumber[i] > 100)
+            else if (indexnumber[i] >= 100)
             {
                 GameObject Rank = Instantiate(Ranks[4], Ending[i].transform.position, Quaternion.identity);
                 Rank.transform.parent = Ending[i].transform;
@@ -188,6 +192,7 @@ public class ScrollActivate : MonoBehaviour
             commonbuttonui.transform.GetChild(6).gameObject.SetActive(true);
         }
     }
+
 
 
 
