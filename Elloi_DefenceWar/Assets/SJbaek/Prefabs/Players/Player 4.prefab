@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed8ff20468eeff4c8352d666d7258cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterIndex: 10
-  characterMaxHP: 3000
-  characterCurHP: 3000
-  characterDamage: 312
-  characterDefense: 10
-  characterAttackSpeed: 0.8
-  characterMoveSpeed: 25
+  characterIndex: 2
+  characterMaxHP: 120
+  characterCurHP: 120
+  characterDamage: 33
+  characterDefense: 0
+  characterAttackSpeed: 0.48
+  characterMoveSpeed: 60
   respawnCoolTime: 22
-  characterCost: 960
+  characterCost: 200
   characterImage: {fileID: 5840285771157078798}
   characterHPBar: {fileID: 3112705997129072014}
   isBattle: 0
@@ -294,7 +294,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 76, y: 136}
+  m_SizeDelta: {x: 122, y: 153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5651240246147727428
 CanvasRenderer:
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1840046001, guid: 5b7c304f63287df4c91f2a230ee1e159, type: 3}
+  m_Sprite: {fileID: -1889571433, guid: 20be3087ed3aafa4c8de5c28c0e44198, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
