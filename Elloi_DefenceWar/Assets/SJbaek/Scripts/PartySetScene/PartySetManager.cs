@@ -143,7 +143,7 @@ public class PartySetManager : MonoBehaviour
             partySetManager.partyCardIndex = -1;
             GameManager.instance.partySetCardIndex[partySetCardNum] = -1;
 
-            // 파티 셋 카드에 자식 오브젝트가 없다면 리턴
+            // 파티 셋 카드에 이미 지정된 파티 카드가 없다면
             if (partySetCards[partySetCardNum].transform.childCount <= 4) { return; }
 
             // 파티 셋 카드에 자식 오브젝트가 있다면,
