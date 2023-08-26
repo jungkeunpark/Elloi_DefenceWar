@@ -435,6 +435,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7f3ff025f3434f445a6e39044060425a, type: 3}
   - name: MoneyLevelUp
     clip: {fileID: 8300000, guid: 52e98d9e9f6387b4c9b8431a75231f03, type: 3}
+  - name: ScrollAppear
+    clip: {fileID: 8300000, guid: 1e70044b99a30a5478e5d06dd0a384ca, type: 3}
+  - name: Gatcha_BGM
+    clip: {fileID: 8300000, guid: e6900b269d18dd5448ce1ab574616f07, type: 3}
   bgmSounds:
   - name: Title_BGM
     clip: {fileID: 8300000, guid: 082a7a3467c60a746bf081c4af1bf8fe, type: 3}
@@ -442,6 +446,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 2f7e92f621b871a48b87fb1cccfd88c5, type: 3}
   - name: Advent_BGM
     clip: {fileID: 8300000, guid: 677d70031b9cf6d4d96447b90486117c, type: 3}
+  - name: GatchaScene_BGM
+    clip: {fileID: 8300000, guid: cee8c1527cdaecc40a4e87c2220d0c16, type: 3}
   audioSource_BGMPlayer: {fileID: 360945730}
   audioSource_MP3Player:
   - {fileID: 360945729}
@@ -1754,6 +1760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac145a1fbe9a233468433e5b3c258c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 
   curPartySetPrefabs:
   - {fileID: 0}
   - {fileID: 0}

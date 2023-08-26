@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -45,7 +46,12 @@ public class StageManager : MonoBehaviour
     {
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
+        // 가챠 BGM 켜기
+        SoundManager.soundManager.PlayBGM("GatchaScene_BGM");
+
         // 가챠 씬 로드
+        // Tween 종료
+        DOTween.KillAll();
         SceneManager.LoadScene("GatchaScene");
     }
 
@@ -57,6 +63,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene00");
     }
 
@@ -67,6 +75,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene01");
     }
 
@@ -77,6 +87,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene02");
     }
 
@@ -87,6 +99,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene03");
     }
 
@@ -97,6 +111,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene04");
     }
 
@@ -107,6 +123,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene05");
     }
 
@@ -117,6 +135,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene06");
     }
 
@@ -127,6 +147,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene07");
     }
 
@@ -137,6 +159,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene08");
     }
 
@@ -147,6 +171,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene09");
     }
 
@@ -157,6 +183,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene10");
     }
 
@@ -167,6 +195,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene11");
     }
 
@@ -177,6 +207,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene12");
     }
 
@@ -187,6 +219,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene13");
     }
 
@@ -197,6 +231,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene14");
     }
 
@@ -207,6 +243,8 @@ public class StageManager : MonoBehaviour
         // BGM 끄기
         SoundManager.soundManager.StopBGM();
         // 스테이지 로드
+        // Tween 종료
+        DOTween.KillAll();
         StageLoadScene.LoadScene("BattleScene00");
     }
 }

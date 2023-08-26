@@ -59,6 +59,7 @@ public class BonusScroll : MonoBehaviour
     {
         if (LoadSceneGatchaPLAY.loadSceneGatchaPlay.PremiumButton == true && LoadSceneGatchaPLAY.loadSceneGatchaPlay.ButtonBonus == true)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
 
             for (int i = 0; i < GatchaPremium.gatchaPremium.ticket; i++)
             {

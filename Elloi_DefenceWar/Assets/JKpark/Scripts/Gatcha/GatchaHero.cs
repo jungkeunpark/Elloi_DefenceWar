@@ -78,6 +78,7 @@ public class GatchaHero : MonoBehaviour
     {
         if (GameManager.instance.playerJuwel >= HeroJuwel)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             GameManager.instance.playerJuwel -= HeroJuwel;
 
             LoadSceneGatchaPLAY.loadSceneGatchaPlay.TenTimesGatcha.transform.GetChild(0).gameObject.SetActive(false);
@@ -245,6 +246,7 @@ public class GatchaHero : MonoBehaviour
     {
         if (GameManager.instance.playerJuwel >= TenTimeHeroJuwel)
         {
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
 
             for (int i = 0; i < 7; i++)
             {
@@ -427,7 +429,7 @@ public class GatchaHero : MonoBehaviour
     {
         if ((int)(HeroBonus / HeroBonusMax) >= 1)
         {
-            
+            SoundManager.soundManager.PlaySE("Gatcha_BGM");
             BeforeBuy.transform.GetChild(0).gameObject.SetActive(false);
             BeforeBuy.transform.GetChild(3).gameObject.SetActive(false);
             ticket = (int)(HeroBonus / HeroBonusMax);
